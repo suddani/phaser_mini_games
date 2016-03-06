@@ -53,6 +53,18 @@ task :release => [:image, :build] do
   package.release
 end
 
+desc "Create a release"
+task :release_push => [:image, :build] do
+  package = GamePackeger.new(nil)
+  package.release
+  repo_target = `git config --get remote.origin.url`
+  `cd release/jack_danger && git init .  && git checkout -b gh-pages`
+  `cd release/jack_danger && git add . && git commit -m "release"`
+  `cd release/jack_danger && git commit`
+  `cd release/jack_danger && git remote add origin #{repo_target}`
+  `cd release/jack_danger && git push -f origin gh-pages`
+end
+
 desc "Clean release data"
 task :clean do
   package = GamePackeger.new(nil)
