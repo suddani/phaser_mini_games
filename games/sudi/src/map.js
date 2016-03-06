@@ -40,15 +40,11 @@ Map.prototype.create_collsion = function() {
 }
 
 //find objects in a Tiled layer that containt a property called "type" equal to a certain value
-Map.prototype.findObjectsByType = function(type, layer="entities", callback) {
+Map.prototype.findObjectsByType = function(type, layer, callback) {
   var result = new Array();
   var self = this;
   this.map.objects[layer].forEach(function(element){
     if(!type || element.properties.type === type) {
-      //Phaser uses top left, Tiled bottom left so we have to adjust the y position
-      //also keep in mind that the cup images are a bit smaller than the tile which is 16x16
-      //so they might not be placed in the exact pixel position as in Tiled
-      // element.y -= self.map.heightInPixels;
       if (callback) callback(self, element);
       result.push(element);
     }
