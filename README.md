@@ -21,6 +21,8 @@ If you want to run a specific game
 bundle exec rake run[sudi]
 ```
 
+Now open your browser at http://localhost:8080/
+
 ## Build
 Building concatinated and minified versions of the source code
 ```
@@ -49,7 +51,7 @@ Builiding the release versions
 ```
 bundle exec rake release
 ```
-Running the release version
+Running the release version, this also runs at http://localhost:8080/ so make sure your dev version is not running
 ```
 bundle exec rake release_run
 ```
