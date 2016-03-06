@@ -2,9 +2,8 @@ define("games/sudi/src/game", [
   "games/sudi/src/physics",
   "games/sudi/src/player",
   "games/sudi/src/coin",
-  "games/sudi/src/enemy",
   "games/sudi/src/map",
-function(Physics, Player, Coin, Enemy, Map) {
+function(Physics, Player, Coin, Map) {
   console.log("Load sudi game")
   function Main() {
   }
@@ -31,28 +30,40 @@ function(Physics, Player, Coin, Enemy, Map) {
     // this.load.atlas("mygame");
   }
   Main.prototype.create = function() {
+    var self = this;
     Pad.init(this.game);
     removeLoadingScreen();
 
     Physics.init(this.game);
-
-    this.coin = new Coin(this);
     this.player = new Player(this);
-    this.enemy = new Enemy(this);
+
+    this.coins = this.game.add.group();
+    this.coins.enableBody = true;
+    this.coins.physicsBodyType = Phaser.Physics.ARCADE;
 
     this.map = new Map(this);
     this.map.load("level1");
+    this.map.findObjectsByType("coin", "entities", function(map, element) {
+      var coin = new Coin(self, self.coins);
+      coin.setPosition(element.x, element.y);
+      Object.keys(element.properties).forEach(function(key){
+        coin.set(key, element.properties[key]);
+      });
+    });
 
-    this.coin.set(400, 300);
+    this.map.findObjectsByType("player", "entities", function(map, element) {
+      self.player.setPosition(element.x, element.y);
+    });
 
     this.game.stage.backgroundColor = "#4488AA";
   }
   Main.prototype.update = function() {
     var dt = this.time.physicsElapsedMS * 0.001;
     this.player.update(dt);
-    this.coin.update(dt);
+    // this.coin.update(dt);
 
-    this.game.physics.arcade.collide(this.player.sprite, this.coin.sprite, function() {
+    this.game.physics.arcade.collide(this.player.sprite, this.map.groundlayer);
+    this.game.physics.arcade.collide(this.player.sprite, this.coins, function() {
       this.player.update_touching(this.player.sprite.body.touching);
       // return true;
     }, null, this);
@@ -61,7 +72,7 @@ function(Physics, Player, Coin, Enemy, Map) {
   Main.prototype.render = function() {
     game.debug.text(game.time.suggestedFps, 32, 32);
     this.game.debug.body(this.player.sprite);
-    this.game.debug.body(this.coin.sprite);
+    this.game.debug.body(this.coins);
   }
   return Main;
 }]);

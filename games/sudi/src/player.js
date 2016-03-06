@@ -26,6 +26,11 @@ function Player(state) {
   this.touching = {};
 }
 
+Player.prototype.setPosition = function(x,y) {
+  this.x = this.sprite.x = x;
+  this.y = this.sprite.y = y;
+}
+
 Player.prototype.reset_body_size = function() {
   if (this.duck)
     this.sprite.body.setSize(10,22);
