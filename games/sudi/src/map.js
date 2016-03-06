@@ -1,7 +1,7 @@
 define("games/sudi/src/map", function() {
-function Map(state) {
+function Map(state, entity_manager) {
   this.state = state;
-
+  this.entity_manager = entity_manager;
 }
 
 Map.prototype.load = function(level_name) {
@@ -22,6 +22,8 @@ Map.prototype.load = function(level_name) {
   // this.map.calculateFaces("groundlayer");
   this.groundlayer.resizeWorld();
   this.create_collsion();
+  this.entity_manager.setWorldGeometry(this.collisionLayer);
+  this.spawnEntities();
 }
 
 Map.prototype.create_collsion = function() {
@@ -33,10 +35,15 @@ Map.prototype.create_collsion = function() {
   this.findObjectsByType(null, "collision", function(map, element) {
     var collision = collisionLayer.create(element.x, element.y);
     collision.body.setSize(element.width,element.height);
-    // collision.exists = false;
     collision.body.immovable = true;
-    // console.log(element)
   });
+}
+
+Map.prototype.spawnEntities = function() {
+  var entities = this.findObjectsByType(null, "entities");
+  for (var i in entities) {
+    this.entity_manager.create_from_properties(entities[i]);
+  }
 }
 
 //find objects in a Tiled layer that containt a property called "type" equal to a certain value

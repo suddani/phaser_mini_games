@@ -1,6 +1,7 @@
 define("games/sudi/src/player", [function() {
-function Player(state) {
+function Player(state, group) {
   this.state = state;
+  this.group = group;
   this.speed = 200;
   this.speedY = 0;
 
@@ -8,7 +9,11 @@ function Player(state) {
 
   this.ground = 450;
 
-  window.player = this.sprite = this.state.add.sprite(16,this.ground, "jack");
+  this.sprite = this.state.add.sprite(16,this.ground, "jack");
+  if (this.group) {
+    this.group.add(this.sprite);
+  }
+  this.sprite.entity = this;
   this.sprite.anchor.set(0.5, 1);
   this.sprite.animations.add("idle", [0,1,2,1], 5);
   this.sprite.animations.add("walk", [0,3,4,3], 14);
@@ -26,8 +31,12 @@ function Player(state) {
 
   this.state.camera.follow(this.sprite);
 
-  this.touching = {};
+  // this.touching = {};
 }
+
+Player.prototype.set = function (property, value) {
+
+};
 
 Player.prototype.setPosition = function(x,y) {
   this.x = this.sprite.x = x;
@@ -42,14 +51,14 @@ Player.prototype.reset_body_size = function() {
     this.sprite.body.setSize(10,30);
 }
 
-Player.prototype.update_touching = function(touching) {
-  this.touching = JSON.parse(JSON.stringify(touching));
-}
+// Player.prototype.update_touching = function(touching) {
+//   this.touching = JSON.parse(JSON.stringify(touching));
+// }
 
 Player.prototype.update = function(dt) {
-  this.on_floor = (this.sprite.body.onFloor() || this.touching.down);
+  this.on_floor = (this.sprite.body.onFloor() || this.sprite.body.touching.down);
   var isMoved = this.controls(dt);
-  this.touching = {};
+  // this.touching = {};
 }
 
 Player.prototype.onFloor = function() {
@@ -73,7 +82,7 @@ Player.prototype.controls = function() {
   }
   if (Pad.isDown(Pad.UP) && this.onFloor()) {
     // console.log("Start jumping")
-    this.sprite.body.position.y -= 1;
+    // this.sprite.body.position.y -= 1;
     this.sprite.body.velocity.y = -200;
     isMoved = true;
   }

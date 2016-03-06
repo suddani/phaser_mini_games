@@ -22,13 +22,14 @@
                  "name":"leader",
                  "properties":
                     {
-                     "type":"leader"
+                     "class":"Leader",
+                     "type":"interactable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":366,
+                 "x":367,
                  "y":401
                 }, 
                 {
@@ -37,14 +38,15 @@
                  "name":"leader",
                  "properties":
                     {
-                     "type":"leader"
+                     "class":"Leader",
+                     "type":"interactable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":366,
-                 "y":369
+                 "x":367,
+                 "y":371
                 }, 
                 {
                  "gid":30,
@@ -52,13 +54,14 @@
                  "name":"leader",
                  "properties":
                     {
-                     "type":"leader"
+                     "class":"Leader",
+                     "type":"interactable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":366,
+                 "x":367,
                  "y":339
                 }, 
                 {
@@ -67,14 +70,15 @@
                  "name":"leader",
                  "properties":
                     {
-                     "type":"leader"
+                     "class":"Leader",
+                     "type":"interactable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":366,
-                 "y":307
+                 "x":367,
+                 "y":309
                 }, 
                 {
                  "gid":15,
@@ -82,14 +86,15 @@
                  "name":"player",
                  "properties":
                     {
+                     "class":"Player",
                      "type":"player"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":99,
-                 "y":429
+                 "x":84,
+                 "y":424
                 }, 
                 {
                  "gid":23,
@@ -97,14 +102,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":438,
-                 "y":419
+                 "x":423,
+                 "y":424
                 }, 
                 {
                  "gid":23,
@@ -112,14 +118,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":457,
-                 "y":419
+                 "x":442,
+                 "y":424
                 }, 
                 {
                  "gid":23,
@@ -127,14 +134,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":473,
-                 "y":419
+                 "x":459,
+                 "y":424
                 }, 
                 {
                  "gid":23,
@@ -142,14 +150,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":493,
-                 "y":419
+                 "x":516,
+                 "y":424
                 }, 
                 {
                  "gid":23,
@@ -157,14 +166,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":528,
-                 "y":419
+                 "x":499,
+                 "y":424
                 }, 
                 {
                  "gid":23,
@@ -172,14 +182,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":512,
-                 "y":419
+                 "x":480,
+                 "y":424
                 }, 
                 {
                  "gid":23,
@@ -187,14 +198,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":409,
-                 "y":267
+                 "x":496,
+                 "y":266
                 }, 
                 {
                  "gid":23,
@@ -202,14 +214,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":444,
-                 "y":267
+                 "x":532,
+                 "y":266
                 }, 
                 {
                  "gid":23,
@@ -217,14 +230,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":428,
-                 "y":267
+                 "x":515,
+                 "y":266
                 }, 
                 {
                  "gid":23,
@@ -232,14 +246,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":136,
-                 "y":298
+                 "x":475,
+                 "y":266
                 }, 
                 {
                  "gid":23,
@@ -247,14 +262,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":171,
-                 "y":298
+                 "x":458,
+                 "y":266
                 }, 
                 {
                  "gid":23,
@@ -262,14 +278,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":155,
-                 "y":298
+                 "x":439,
+                 "y":266
                 }, 
                 {
                  "gid":23,
@@ -277,14 +294,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":191,
-                 "y":298
+                 "x":183,
+                 "y":300
                 }, 
                 {
                  "gid":23,
@@ -292,14 +310,15 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":226,
-                 "y":298
+                 "x":219,
+                 "y":300
                 }, 
                 {
                  "gid":23,
@@ -307,14 +326,159 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":210,
-                 "y":298
+                 "x":202,
+                 "y":300
+                }, 
+                {
+                 "gid":23,
+                 "height":0,
+                 "name":"coin",
+                 "properties":
+                    {
+                     "class":"Coin",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":162,
+                 "y":300
+                }, 
+                {
+                 "gid":23,
+                 "height":0,
+                 "name":"coin",
+                 "properties":
+                    {
+                     "class":"Coin",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":145,
+                 "y":300
+                }, 
+                {
+                 "gid":23,
+                 "height":0,
+                 "name":"coin",
+                 "properties":
+                    {
+                     "class":"Coin",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":126,
+                 "y":300
+                }, 
+                {
+                 "gid":23,
+                 "height":0,
+                 "name":"coin",
+                 "properties":
+                    {
+                     "class":"Coin",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":239,
+                 "y":425
+                }, 
+                {
+                 "gid":23,
+                 "height":0,
+                 "name":"coin",
+                 "properties":
+                    {
+                     "class":"Coin",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":275,
+                 "y":425
+                }, 
+                {
+                 "gid":23,
+                 "height":0,
+                 "name":"coin",
+                 "properties":
+                    {
+                     "class":"Coin",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":258,
+                 "y":425
+                }, 
+                {
+                 "gid":23,
+                 "height":0,
+                 "name":"coin",
+                 "properties":
+                    {
+                     "class":"Coin",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":218,
+                 "y":425
+                }, 
+                {
+                 "gid":23,
+                 "height":0,
+                 "name":"coin",
+                 "properties":
+                    {
+                     "class":"Coin",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":201,
+                 "y":425
+                }, 
+                {
+                 "gid":23,
+                 "height":0,
+                 "name":"coin",
+                 "properties":
+                    {
+                     "class":"Coin",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":182,
+                 "y":425
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -334,6 +498,7 @@
                  "name":"player",
                  "properties":
                     {
+                     "class":"Player",
                      "type":"player"
                     },
                  "rotation":0,
@@ -349,7 +514,8 @@
                  "name":"coin",
                  "properties":
                     {
-                     "type":"coin"
+                     "class":"Coin",
+                     "type":"collectable"
                     },
                  "rotation":0,
                  "type":"",
@@ -364,7 +530,8 @@
                  "name":"leader",
                  "properties":
                     {
-                     "type":"leader"
+                     "class":"Leader",
+                     "type":"interactable"
                     },
                  "rotation":0,
                  "type":"",
@@ -452,8 +619,8 @@
                  "type":"",
                  "visible":true,
                  "width":190,
-                 "x":401,
-                 "y":274
+                 "x":400,
+                 "y":275
                 }, 
                 {
                  "height":31,

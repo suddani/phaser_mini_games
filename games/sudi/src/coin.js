@@ -6,6 +6,7 @@ function Coin(state, group) {
   if (this.group) {
     this.group.add(this.sprite);
   }
+  this.sprite.entity = this;
   this.sprite.anchor.set(0.5, 1);
   this.sprite.animations.add("idle", [0,1,2,3,4,5], 5);
   this.sprite.play("idle", 5, true);
