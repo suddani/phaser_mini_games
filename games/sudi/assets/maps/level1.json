@@ -386,7 +386,7 @@
          "name":"collision",
          "objects":[
                 {
-                 "height":11,
+                 "height":12,
                  "name":"",
                  "properties":
                     {
@@ -395,7 +395,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":1430,
+                 "width":1544,
                  "x":57,
                  "y":434
                 }, 

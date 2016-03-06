@@ -17,7 +17,6 @@ function Coin(state, group) {
   // this.sprite.body.gravity.y = 300;
   this.sprite.body.bounce.set(1);
 
-
   this.x = 0;
   this.y = 0;
   this.up = true;
@@ -33,14 +32,6 @@ Coin.prototype.setPosition = function(x,y) {
 }
 
 Coin.prototype.update = function(dt) {
-  // if (this.y - this.sprite.y >= 16 || this.y - this.sprite.y < 0) {
-  //   this.up = !this.up;
-  // }
-  // this.sprite.y += (this.up ? -1 : 1 )*15*dt;
-}
-
-Coin.prototype.collide = function(player) {
-  return this.sprite.overlap(player.sprite);
 }
 
 return Coin;

@@ -79,7 +79,7 @@ function(Physics, Player, Coin, Map) {
   }
   Main.prototype.render = function() {
     game.debug.text(game.time.suggestedFps, 32, 32);
-    // this.game.debug.body(this.player.sprite);
+    this.game.debug.body(this.player.sprite);
     // this.coins.forEachAlive(function(member) {
     //   this.game.debug.body(member);
     // }, this);

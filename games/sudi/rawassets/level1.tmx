@@ -228,7 +228,7 @@
   </object>
  </objectgroup>
  <objectgroup name="collision">
-  <object x="57" y="434" width="1430" height="11"/>
+  <object x="57" y="434" width="1544" height="12"/>
   <object x="54" y="355" width="263" height="15"/>
   <object x="101" y="304" width="231" height="16"/>
   <object x="319" y="308" width="17" height="49"/>

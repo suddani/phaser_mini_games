@@ -7,7 +7,7 @@ require "pathname"
 require "erb"
 require "date"
 require "uglifier"
-require 'opal'
+# require 'opal'
 
 # piksel file handling
 require "./lib/piskel_layer"

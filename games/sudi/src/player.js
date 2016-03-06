@@ -36,10 +36,10 @@ Player.prototype.setPosition = function(x,y) {
 
 Player.prototype.reset_body_size = function() {
   if (this.duck) {
-    this.sprite.body.setSize(10,22,0,-8);
+    this.sprite.body.setSize(10,16);
   }
   else
-    this.sprite.body.setSize(10,30,0,0);
+    this.sprite.body.setSize(10,30);
 }
 
 Player.prototype.update_touching = function(touching) {
@@ -77,7 +77,7 @@ Player.prototype.controls = function() {
     this.sprite.body.velocity.y = -200;
     isMoved = true;
   }
-  if (Pad.isDown(Pad.DOWN) && this.onFloor()) {
+  if (Pad.isDown(Pad.DOWN)) {
     this.duck = true;
   } else {
     this.duck = false;
