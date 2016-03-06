@@ -149,3 +149,10 @@ function(Config, Weapon) {
 As you can see all dependencies before the function are injected as the parameters of the function. You can also randomly name them. It does not matter at all since those names are just local.
 
 I hope this explains the system enough. Have fun coding
+
+
+# Sound
+- http://www.leshylabs.com/apps/sfMaker/
+- http://www.bfxr.net/
+- http://audiojungle.net/
+- http://www.freesound.org/search/

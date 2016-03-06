@@ -1,4 +1,5 @@
-define("games/sudi/src/coin", [function() {
+define("games/sudi/src/coin", ["games/sudi/src/sound_system",
+function(SoundSystem) {
 function Coin(state, group) {
   this.state = state;
   this.group = group;
@@ -23,8 +24,20 @@ function Coin(state, group) {
   this.up = true;
 }
 
-Coin.prototype.set = function (property, value) {
+Coin.prototype.collect = function (entity) {
+  entity.set("coins", entity.get("coins")+1);
+  SoundSystem.play("pickup");
+  this.sprite.kill();
+};
 
+Coin.prototype.set = function (property, value) {
+  this.properties = this.properties||{};
+  this.properties[property]=value;
+};
+
+Coin.prototype.get = function (property, value) {
+  this.properties = this.properties||{};
+  return this.properties[property]||0;
 };
 
 Coin.prototype.setPosition = function(x,y) {

@@ -1,15 +1,13 @@
-define("games/sudi/src/player", [function() {
+define("games/sudi/src/player", ["games/sudi/src/sound_system",
+function(SoundSystem) {
 function Player(state, group) {
   this.state = state;
   this.group = group;
-  this.speed = 200;
-  this.speedY = 0;
 
   this.duck = false;
+  this.speed = 100;
 
-  this.ground = 450;
-
-  this.sprite = this.state.add.sprite(16,this.ground, "jack");
+  this.sprite = this.state.add.sprite(0,0, "jack");
   if (this.group) {
     this.group.add(this.sprite);
   }
@@ -35,7 +33,13 @@ function Player(state, group) {
 }
 
 Player.prototype.set = function (property, value) {
+  this.properties = this.properties||{};
+  this.properties[property]=value;
+};
 
+Player.prototype.get = function (property, value) {
+  this.properties = this.properties||{};
+  return this.properties[property]||0;
 };
 
 Player.prototype.setPosition = function(x,y) {

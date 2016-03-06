@@ -1,10 +1,11 @@
 define("games/sudi/src/entity_manager", [
   "games/sudi/src/player",
   "games/sudi/src/coin",
-function(Player, Coin) {
+  "games/sudi/src/flag",
+function(Player, Coin, Flag) {
 function EntityManager(state) {
   this.state = state;
-  this.entities = [];
+  // this.entities = [];
   this.groups = {
     "player": createGroup(state),
     "collectable": createGroup(state),
@@ -37,7 +38,7 @@ EntityManager.prototype.create_from_properties = function(element) {
       Object.keys(element.properties).forEach(function(key){
         entity.set(key, element.properties[key]);
       });
-      this.entities.push(entity);
+      // this.entities.push(entity);
     } catch(e) {
       console.warn(e);
     }
@@ -66,29 +67,35 @@ EntityManager.prototype.update = function(dt) {
   }, null, this);
   this.state.game.physics.arcade.collide(this.groups["player"], this.groups["collectable"], function(player, collectable) {
     // player.entity.update_touching(player.body.touching);
+    collectable.entity.collect(player.entity);
     return true;
   }, null, this);
-  this.state.game.physics.arcade.collide(this.groups["player"], this.groups["interactable"], function(player, collectable) {
-    // player.entity.update_touching(player.body.touching);
+  this.state.game.physics.arcade.collide(this.groups["player"], this.groups["interactable"], function(player, interactable) {
+    interactable.entity.interact(player.entity);
     return true;
   }, function(player, interactable) {
 
   }, this);
   // this.game.physics.arcade.collide(this.coins, this.map.collisionLayer);
-  for (var i in this.entities) {
-    this.entities[i].update(dt);
-  }
+  // for (var i in this.entities) {
+  //   this.entities[i].update(dt);
+  // }
+  this.groups["player"].forEachAlive(function(member) {
+    member.entity.update(dt);
+  }, this);
 }
 
 EntityManager.prototype.render = function() {
-  for (var g in this.groups) {
-    this.groups[g].forEachAlive(function(member) {
+  if (this.debug) {
+    for (var g in this.groups) {
+      this.groups[g].forEachAlive(function(member) {
+        this.state.game.debug.body(member);
+      }, this);
+    }
+    this.worldGeometry.forEachAlive(function(member) {
       this.state.game.debug.body(member);
     }, this);
   }
-  this.worldGeometry.forEachAlive(function(member) {
-    this.state.game.debug.body(member);
-  }, this);
 }
 
 return EntityManager;

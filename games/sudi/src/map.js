@@ -11,6 +11,7 @@ Map.prototype.load = function(level_name) {
   this.map.addTilesetImage('jack', 'jack');
   this.map.addTilesetImage('coin', 'coin');
   this.map.addTilesetImage('leader', 'leader');
+  this.map.addTilesetImage('bridge', 'bridge');
 
   this.groundlayer = this.map.createLayer('groundlayer');
   // this.groundlayer.collisionHeight = "16";
