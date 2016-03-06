@@ -18,7 +18,7 @@ function Player(state) {
   this.sprite.play("idle", 7, true);
 
   this.state.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
-  this.sprite.body.setSize(32,96);
+  this.reset_body_size();
   this.sprite.body.gravity.y = 600;
   // this.sprite.body.immovable = true;
   this.sprite.body.collideWorldBounds = true;
@@ -28,9 +28,9 @@ function Player(state) {
 
 Player.prototype.reset_body_size = function() {
   if (this.duck)
-    this.sprite.body.setSize(32,64);
+    this.sprite.body.setSize(10,22);
   else
-    this.sprite.body.setSize(32,90);
+    this.sprite.body.setSize(10,30);
 }
 
 Player.prototype.update_touching = function(touching) {
@@ -64,7 +64,7 @@ Player.prototype.controls = function() {
   }
   if (Pad.isDown(Pad.UP) && this.onFloor()) {
     console.log("Start jumping")
-    this.sprite.body.velocity.y = -250;
+    this.sprite.body.velocity.y = -200;
     isMoved = true;
   }
   if (Pad.isDown(Pad.DOWN) && this.onFloor()) {

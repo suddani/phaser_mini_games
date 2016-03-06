@@ -7,6 +7,9 @@ games/*/assets/
 release_*
 release
 
+# dev
+dev
+
 # ignore the example game
 games/mygame
 

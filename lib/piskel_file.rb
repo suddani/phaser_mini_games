@@ -11,6 +11,10 @@ class PiskelFile
   end
   attr_reader :json, :layers, :config
 
+  DEFAULT_PISKEL_CONFIG = {
+    "scale" => 1
+  }
+
   def initialize(_json)
     @json = _json
     @layers = nil
@@ -41,7 +45,7 @@ class PiskelFile
   end
 
   def load_config(path)
-    @config = JSON.parse(File.read(path))
+    @config = Pathname.new(path).file? ? JSON.parse(File.read(path)) : DEFAULT_PISKEL_CONFIG
   end
 
   # Used to access piskel file data

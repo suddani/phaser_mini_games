@@ -7,6 +7,7 @@ require "pathname"
 require "erb"
 require "date"
 require "uglifier"
+require 'opal'
 
 # piksel file handling
 require "./lib/piskel_layer"
@@ -96,6 +97,12 @@ end
 desc "Star browser"
 task :start do
   `xdg-open http://localhost:8080/`
+end
+
+desc "Build our app to build.js"
+task :opal do
+  Opal.append_path "games/sudi/app"
+  File.binwrite "games/sudi/app/build.js", Opal::Builder.build("app").to_s
 end
 
 task :default => :run

@@ -3,7 +3,8 @@ define("games/sudi/src/game", [
   "games/sudi/src/player",
   "games/sudi/src/coin",
   "games/sudi/src/enemy",
-function(Physics, Player, Coin, Enemy) {
+  "games/sudi/src/map",
+function(Physics, Player, Coin, Enemy, Map) {
   console.log("Load sudi game")
   function Main() {
   }
@@ -17,9 +18,16 @@ function(Physics, Player, Coin, Enemy) {
     this.load.path = 'games/' + currentGameData.id + '/assets/';
 
     //füge hie rein was du alles laden musst.
-    this.load.spritesheet("jack", "jack.png",   32*3,32*3,  8);
-    this.load.spritesheet("enemy", "enemy.png", 32*3,32*3,  5);
-    this.load.spritesheet("coin", "coin.png",   32*2,32*2,  7);
+    this.load.spritesheet("jack", "jack.png",   32*1,32*1,  8);
+    this.load.spritesheet("enemy", "enemy.png", 32*1,32*1,  5);
+    this.load.spritesheet("coin", "coin.png",   32*0.5,32*0.5,  7);
+    this.load.spritesheet("coin", "coin.png",   32*0.5,32*0.5,  7);
+    this.load.spritesheet("ground2", "ground2.png");
+    this.load.spritesheet("ground", "ground2.png");
+    this.load.spritesheet("leader", "leader.png");
+
+    //Maps
+    this.load.tilemap('level1', 'maps/level1.json', null, Phaser.Tilemap.TILED_JSON);
     // this.load.atlas("mygame");
   }
   Main.prototype.create = function() {
@@ -31,6 +39,9 @@ function(Physics, Player, Coin, Enemy) {
     this.coin = new Coin(this);
     this.player = new Player(this);
     this.enemy = new Enemy(this);
+
+    this.map = new Map(this);
+    this.map.load("level1");
 
     this.coin.set(400, 300);
 

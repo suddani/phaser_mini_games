@@ -7,7 +7,7 @@ function Coin(state) {
   this.sprite.play("idle", 5, true);
 
   this.state.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
-  this.sprite.body.setSize(32, 32, 0, 0);
+  this.sprite.body.setSize(16, 16, 0, 0);
   // this.sprite.body.immovable = true;
   this.sprite.body.collideWorldBounds = true;
   this.sprite.body.gravity.y = 300;
