@@ -24,6 +24,9 @@
  <tileset firstgid="15" name="jack" tilewidth="32" tileheight="32">
   <image source="../assets/jack.png" width="256" height="32"/>
   <tile id="0">
+   <properties>
+    <property name="type" value="player"/>
+   </properties>
    <animation>
     <frame tileid="0" duration="100"/>
     <frame tileid="1" duration="100"/>
@@ -54,11 +57,122 @@
   </data>
  </layer>
  <objectgroup name="entities">
-  <object name="Player" gid="15" x="296.5" y="429.5"/>
-  <object name="leader" gid="30" x="372" y="299"/>
-  <object name="leader" gid="30" x="372" y="326"/>
-  <object name="leader" gid="30" x="372" y="356"/>
-  <object name="leader" gid="30" x="372" y="384"/>
-  <object name="leader" gid="30" x="372" y="401"/>
+  <object name="leader" gid="30" x="366" y="401">
+   <properties>
+    <property name="type" value="leader"/>
+   </properties>
+  </object>
+  <object name="leader" gid="30" x="366" y="369">
+   <properties>
+    <property name="type" value="leader"/>
+   </properties>
+  </object>
+  <object name="leader" gid="30" x="366" y="339">
+   <properties>
+    <property name="type" value="leader"/>
+   </properties>
+  </object>
+  <object name="leader" gid="30" x="366" y="307">
+   <properties>
+    <property name="type" value="leader"/>
+   </properties>
+  </object>
+  <object name="player" gid="15" x="90" y="430">
+   <properties>
+    <property name="type" value="player"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="437" y="428">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="456" y="428">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="472" y="428">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="492" y="428">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="527" y="428">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="511" y="428">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="409" y="267">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="444" y="267">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="428" y="267">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="136" y="298">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="171" y="298">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="155" y="298">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="191" y="298">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="226" y="298">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="210" y="298">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="prefabs">
+  <object name="player" gid="15" x="1027" y="11">
+   <properties>
+    <property name="type" value="player"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="932" y="-51">
+   <properties>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object name="leader" gid="30" x="1129" y="12">
+   <properties>
+    <property name="type" value="leader"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
