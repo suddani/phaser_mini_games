@@ -1,7 +1,7 @@
 # game stuff
 games/*/*.min.js
 games/*/*.concat.js
-games/*/assets/
+games/*/assets/**/*.png
 
 # releases
 release_*
