@@ -5,7 +5,6 @@
 
 ## Install
 ```
-npm install
 bundle install
 ```
 Make sure you have python installed because we will be using the SimpleHTTPServer module in development
