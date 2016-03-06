@@ -89,6 +89,7 @@ Player.prototype.controls = function() {
     // this.sprite.body.position.y -= 1;
     this.sprite.body.velocity.y = -200;
     isMoved = true;
+    SoundSystem.play("jump")
   }
   if (Pad.isDown(Pad.DOWN)) {
     this.duck = true;
