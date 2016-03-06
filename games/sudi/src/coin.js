@@ -12,9 +12,10 @@ function Coin(state, group) {
 
   this.state.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
   this.sprite.body.setSize(16, 16, 0, 0);
-  this.sprite.body.immovable = true;
+  this.sprite.body.immovable = false;
   this.sprite.body.collideWorldBounds = true;
   // this.sprite.body.gravity.y = 300;
+  this.sprite.body.bounce.set(1);
 
 
   this.x = 0;

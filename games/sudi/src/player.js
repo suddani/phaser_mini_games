@@ -20,8 +20,11 @@ function Player(state) {
   this.state.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
   this.reset_body_size();
   this.sprite.body.gravity.y = 600;
-  // this.sprite.body.immovable = true;
+  this.sprite.body.immovable = false;
+  // this.sprite.body.bounce.set(0.3);
   this.sprite.body.collideWorldBounds = true;
+
+  this.state.camera.follow(this.sprite);
 
   this.touching = {};
 }
@@ -32,10 +35,11 @@ Player.prototype.setPosition = function(x,y) {
 }
 
 Player.prototype.reset_body_size = function() {
-  if (this.duck)
-    this.sprite.body.setSize(10,22);
+  if (this.duck) {
+    this.sprite.body.setSize(10,22,0,-8);
+  }
   else
-    this.sprite.body.setSize(10,30);
+    this.sprite.body.setSize(10,30,0,0);
 }
 
 Player.prototype.update_touching = function(touching) {
@@ -68,7 +72,8 @@ Player.prototype.controls = function() {
       this.sprite.scale.x = 1;
   }
   if (Pad.isDown(Pad.UP) && this.onFloor()) {
-    console.log("Start jumping")
+    // console.log("Start jumping")
+    this.sprite.body.position.y -= 1;
     this.sprite.body.velocity.y = -200;
     isMoved = true;
   }
