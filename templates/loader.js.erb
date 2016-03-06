@@ -1,0 +1,4 @@
+//THIS LOADS MY GAME
+require("games/<%= @game_id %>/src/game", function(Game) {
+  addMyGame("<%= @game_id %>", "Space Shooter", "Your name", "30 Sekunden ausweichen!", Game);
+});

@@ -1,0 +1,31 @@
+define("games/<%= @game_id %>/src/game", [
+function() {
+  console.log("Load <%= @game_id %> game")
+  function Main() {
+  }
+  Main.prototype.init = function() {
+    //make the currently running instance accessible
+    // Main.state = this;
+    console.log("init <%= @game_id %> game")
+    addLoadingScreen(this);
+  }
+  Main.prototype.preload = function() {
+    this.load.path = 'games/' + currentGameData.id + '/assets/';
+
+    //füge hie rein was du alles laden musst.
+    // this.load.spritesheet("jack", "jack.png",   32*3,32*3,  8);
+    // this.load.spritesheet("enemy", "enemy.png", 32*3,32*3,  5);
+    // this.load.spritesheet("coin", "coin.png",   32*2,32*2,  7);
+    // this.load.atlas("mygame");
+  }
+  Main.prototype.create = function() {
+    Pad.init(this.game);
+    removeLoadingScreen();
+
+    this.game.stage.backgroundColor = "#FF0000";
+  }
+  Main.prototype.update = function() {
+    var dt = this.time.physicsElapsedMS * 0.001;
+  }
+  return Main;
+}]);

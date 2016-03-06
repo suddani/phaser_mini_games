@@ -1,0 +1,20 @@
+# game stuff
+games/*/*.min.js
+games/*/*.concat.js
+games/*/assets/
+
+# releases
+release_*
+release
+
+# ignore the example game
+games/mygame
+
+# framework should probably ignored...ahhh wtf
+#framework
+framework/games
+
+# random
+node_modules
+piskel-0.6.0-64bits.zip
+npm-debug.log

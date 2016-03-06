@@ -1,0 +1,14 @@
+{
+  "modelVersion": 2,
+  "piskel": {
+    "name": "cloud",
+    "description": "",
+    "fps": 12,
+    "height": 32,
+    "width": 32,
+    "layers": [
+      "{\"name\":\"Layer 1\",\"frameCount\":1,\"base64PNG\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABC0lEQVRYR+2VMQ7DMAhFk3tkaqccxKf2QTK1U+7RikpU3wRs7FRKBzJGhv/4GDNPF3/zxfpTAIQD4UA40OVAzvmlPVwppa48mMMdaIlzslEIF0BL/AzE/wJ4q/Yss1p7VAdI/LYsRe7nvje1ZAwHUKwFcQDQxCkRA9REkFArQIMoAEbFsdJeiCYAVW5VLXuCZ7FlHK+1wgRoWW5dCAksQe7rWmhWAbyVI4zlGP83AXjs0K5fAxAo5USIjwNy5umQVok2igjZui8cj9OgAjCpvFQMVnsQvGPKECaAFOl5mKQrtQ36vYTa04tWPbZNXcWeF1ICHFrABxBidL1quRBA5nVtw+YSOHEgAMKBN4OtrCGG8CNvAAAAAElFTkSuQmCC\"}"
+    ],
+    "expanded": false
+  }
+}
