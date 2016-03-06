@@ -8,7 +8,7 @@ function Player(state) {
 
   this.ground = 450;
 
-  this.sprite = this.state.add.sprite(16,this.ground, "jack");
+  window.player = this.sprite = this.state.add.sprite(16,this.ground, "jack");
   this.sprite.anchor.set(0.5, 1);
   this.sprite.animations.add("idle", [0,1,2,1], 5);
   this.sprite.animations.add("walk", [0,3,4,3], 14);
@@ -16,50 +16,71 @@ function Player(state) {
   this.sprite.animations.add("duck", [5], 7);
   this.sprite.animations.add("duck_walk", [5,6,7,6], 7);
   this.sprite.play("idle", 7, true);
+
+  this.state.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
+  this.sprite.body.setSize(32,96);
+  this.sprite.body.gravity.y = 600;
+  // this.sprite.body.immovable = true;
+  this.sprite.body.collideWorldBounds = true;
+
+  this.touching = {};
+}
+
+Player.prototype.reset_body_size = function() {
+  if (this.duck)
+    this.sprite.body.setSize(32,64);
+  else
+    this.sprite.body.setSize(32,90);
+}
+
+Player.prototype.update_touching = function(touching) {
+  this.touching = JSON.parse(JSON.stringify(touching));
 }
 
 Player.prototype.update = function(dt) {
+  this.on_floor = (this.sprite.body.onFloor() || this.touching.down);
+  var isMoved = this.controls(dt);
+  this.touching = {};
+}
+
+Player.prototype.onFloor = function() {
+  return this.on_floor;
+}
+
+Player.prototype.controls = function() {
   var isMoved = false;
 
-  if (Pad.isDown(Pad.LEFT) && this.sprite.x > 0+16) {
-      this.sprite.x -= this.speed * dt * (this.duck ? 0.5:1);
+  if (Pad.isDown(Pad.LEFT)) {
+      this.sprite.body.velocity.x = -this.speed*(this.duck ? 0.5:1);
       isMoved = true;
       this.duck ? this.sprite.play("duck_walk") : this.sprite.play("walk");
       this.sprite.scale.x = -1;
   }
-
-  if (Pad.isDown(Pad.RIGHT) && this.sprite.x < 800-16) {
-      this.sprite.x += this.speed * dt * (this.duck ? 0.5:1);
+  if (Pad.isDown(Pad.RIGHT)) {
+      this.sprite.body.velocity.x = this.speed*(this.duck ? 0.5:1);
       isMoved = true;
       this.duck ? this.sprite.play("duck_walk") : this.sprite.play("walk");
       this.sprite.scale.x = 1;
   }
-
-  if (Pad.isDown(Pad.UP) && this.sprite.y == this.ground) {
+  if (Pad.isDown(Pad.UP) && this.onFloor()) {
     console.log("Start jumping")
-    this.speedY = -250;
+    this.sprite.body.velocity.y = -250;
     isMoved = true;
   }
-
-  if (Pad.isDown(Pad.DOWN) && this.sprite.y == this.ground) {
+  if (Pad.isDown(Pad.DOWN) && this.onFloor()) {
     this.duck = true;
   } else {
     this.duck = false;
   }
+  this.reset_body_size();
   if (!isMoved) {
     this.duck ? this.sprite.play("duck") : this.sprite.play("idle");
+    if (this.onFloor()) this.sprite.body.velocity.x = 0;
   }
-
-  this.sprite.y += this.speedY * dt;
-
-  if (this.sprite.y < this.ground) {
+  if (!this.onFloor()) {
     this.sprite.play("jump");
-    this.speedY += 600 * dt;
   }
-  if (this.speedY > 0 && this.sprite.y >= this.ground) {
-    this.speedY = 0;
-    this.sprite.y = this.ground;
-  }
+  return isMoved;
 }
 
 return Player;

@@ -93,4 +93,9 @@ task :run, [:game_id] => :image do |t, args|
   runner.run
 end
 
+desc "Star browser"
+task :start do
+  `xdg-open http://localhost:8080/`
+end
+
 task :default => :run

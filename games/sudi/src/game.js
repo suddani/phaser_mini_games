@@ -1,8 +1,9 @@
 define("games/sudi/src/game", [
+  "games/sudi/src/physics",
   "games/sudi/src/player",
   "games/sudi/src/coin",
   "games/sudi/src/enemy",
-function(Player, Coin, Enemy) {
+function(Physics, Player, Coin, Enemy) {
   console.log("Load sudi game")
   function Main() {
   }
@@ -25,11 +26,13 @@ function(Player, Coin, Enemy) {
     Pad.init(this.game);
     removeLoadingScreen();
 
+    Physics.init(this.game);
+
     this.coin = new Coin(this);
     this.player = new Player(this);
     this.enemy = new Enemy(this);
 
-    this.coin.set(400, 450);
+    this.coin.set(400, 300);
 
     this.game.stage.backgroundColor = "#4488AA";
   }
@@ -37,10 +40,17 @@ function(Player, Coin, Enemy) {
     var dt = this.time.physicsElapsedMS * 0.001;
     this.player.update(dt);
     this.coin.update(dt);
-    if (this.coin.collide(this.player)) {
-      // onVictory();
-      console.log("Hit star")
-    }
+
+    this.game.physics.arcade.collide(this.player.sprite, this.coin.sprite, function() {
+      this.player.update_touching(this.player.sprite.body.touching);
+      // return true;
+    }, null, this);
+
+  }
+  Main.prototype.render = function() {
+    game.debug.text(game.time.suggestedFps, 32, 32);
+    this.game.debug.body(this.player.sprite);
+    this.game.debug.body(this.coin.sprite);
   }
   return Main;
 }]);
