@@ -663,6 +663,22 @@
                  "width":0,
                  "x":884.25,
                  "y":273
+                }, 
+                {
+                 "gid":43,
+                 "height":0,
+                 "name":"mole",
+                 "properties":
+                    {
+                     "class":"Mole",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":353.333333333333,
+                 "y":403
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -727,7 +743,7 @@
                 {
                  "gid":32,
                  "height":0,
-                 "name":"",
+                 "name":"flag",
                  "properties":
                     {
                      "class":"Flag",
@@ -756,6 +772,53 @@
                  "width":0,
                  "x":320,
                  "y":-67
+                }, 
+                {
+                 "gid":38,
+                 "height":0,
+                 "name":"npc",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":362,
+                 "y":-65
+                }, 
+                {
+                 "gid":43,
+                 "height":0,
+                 "name":"mole",
+                 "properties":
+                    {
+                     "class":"Mole",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":406,
+                 "y":-63
+                }, 
+                {
+                 "gid":52,
+                 "height":0,
+                 "name":"worm",
+                 "properties":
+                    {
+                     "class":"Worm",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":449,
+                 "y":-62
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -910,7 +973,7 @@
                  "y":371
                 }, 
                 {
-                 "height":30.3333333333333,
+                 "height":30.3333,
                  "name":"",
                  "properties":
                     {
@@ -919,7 +982,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":133.666666666667,
+                 "width":133.667,
                  "x":752,
                  "y":340
                 }, 
@@ -933,7 +996,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":69.6666666666666,
+                 "width":69.6667,
                  "x":816,
                  "y":308
                 }, 
@@ -1612,6 +1675,125 @@
                         {
                          "duration":100,
                          "tileid":1
+                        }]
+                }
+            },
+         "tilewidth":32
+        }, 
+        {
+         "firstgid":38,
+         "image":"..\/enemy.png",
+         "imageheight":32,
+         "imagewidth":160,
+         "margin":0,
+         "name":"enemy",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tiles":
+            {
+             "0":
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":0
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":2
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1
+                        }]
+                }
+            },
+         "tilewidth":32
+        }, 
+        {
+         "firstgid":43,
+         "image":"..\/mole.png",
+         "imageheight":32,
+         "imagewidth":288,
+         "margin":0,
+         "name":"mole",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "firstgid":52,
+         "image":"..\/wormbullet.png",
+         "imageheight":32,
+         "imagewidth":288,
+         "margin":0,
+         "name":"wormbullet",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tiles":
+            {
+             "0":
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":0
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":2
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1
+                        }]
+                },
+             "3":
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":3
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":4
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":5
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":6
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":7
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":8
                         }]
                 }
             },

@@ -17,11 +17,12 @@ function(Physics, Map, EntityManager, SoundSystem) {
     this.load.path = 'games/' + currentGameData.id + '/assets/';
 
     //füge hie rein was du alles laden musst.
-    this.load.spritesheet("jack", "jack.png",   32*1,32*1,  8);
-    this.load.spritesheet("enemy", "enemy.png", 32*1,32*1,  5);
-    this.load.spritesheet("coin", "coin.png",   32*0.5,32*0.5,  7);
-    this.load.spritesheet("coin", "coin.png",   32*0.5,32*0.5,  7);
-    this.load.spritesheet("tourtle", "tourtle.png", 32*1,32*1,  5);
+    this.load.spritesheet("jack", "jack.png",             32*1,32*1,  8);
+    this.load.spritesheet("enemy", "enemy.png",           32*1,32*1,  5);
+    this.load.spritesheet("coin", "coin.png",         32*0.5,32*0.5,  7);
+    this.load.spritesheet("tourtle", "tourtle.png",       32*1,32*1,  5);
+    this.load.spritesheet("mole", "mole.png",             32*1,32*1,  9);
+    this.load.spritesheet("wormbullet", "wormbullet.png", 32*1,32*1,  9);
     this.load.spritesheet("flag", "flag.png");
     this.load.spritesheet("ground2", "ground2.png");
     this.load.spritesheet("ground", "ground2.png");

@@ -122,6 +122,41 @@
    </animation>
   </tile>
  </tileset>
+ <tileset firstgid="38" name="enemy" tilewidth="32" tileheight="32">
+  <image source="../assets/enemy.png" width="160" height="32"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="100"/>
+    <frame tileid="1" duration="100"/>
+    <frame tileid="2" duration="100"/>
+    <frame tileid="1" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="43" name="mole" tilewidth="32" tileheight="32">
+  <image source="../assets/mole.png" width="288" height="32"/>
+ </tileset>
+ <tileset firstgid="52" name="wormbullet" tilewidth="32" tileheight="32">
+  <image source="../assets/wormbullet.png" width="288" height="32"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="100"/>
+    <frame tileid="1" duration="100"/>
+    <frame tileid="2" duration="100"/>
+    <frame tileid="1" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="3">
+   <animation>
+    <frame tileid="3" duration="100"/>
+    <frame tileid="4" duration="100"/>
+    <frame tileid="5" duration="100"/>
+    <frame tileid="6" duration="100"/>
+    <frame tileid="7" duration="100"/>
+    <frame tileid="8" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
  <layer name="groundlayer" width="50" height="14">
   <data encoding="base64" compression="zlib">
    eJzt090KgCAMBtBlYv++Qu//lnnhYMiMKSkGuzh3Ob9t5gHAK6XUD5zBFF0D5KllAxOtA+SpZaCsD7o/CoTnWu2c9jFnMtL7l+QMuhm0B9x7q51zmTh4/xFsDG4fuIMebxfru0w+tBfU5PL36MMJckred5qfm03JPEr7ePsvkBV8m85fUvcrD1mCIJQ=
@@ -376,6 +411,12 @@
     <property name="type" value="interactable"/>
    </properties>
   </object>
+  <object name="mole" gid="43" x="353.333" y="403">
+   <properties>
+    <property name="class" value="Mole"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="prefabs">
   <object name="player" gid="15" x="204" y="-66">
@@ -396,7 +437,7 @@
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object gid="32" x="280" y="-66">
+  <object name="flag" gid="32" x="280" y="-66">
    <properties>
     <property name="class" value="Flag"/>
     <property name="type" value="interactable"/>
@@ -407,6 +448,19 @@
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="npc" gid="38" x="362" y="-65"/>
+  <object name="mole" gid="43" x="406" y="-63">
+   <properties>
+    <property name="class" value="Mole"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="worm" gid="52" x="449" y="-62">
+   <properties>
+    <property name="class" value="Worm"/>
+    <property name="type" value="collectable"/>
    </properties>
   </object>
  </objectgroup>
