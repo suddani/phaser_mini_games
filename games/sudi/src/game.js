@@ -9,8 +9,6 @@ function(Physics, Map, EntityManager, SoundSystem, HUD) {
   function Main() {
   }
   Main.prototype.init = function() {
-    //make the currently running instance accessible
-    // Main.state = this;
     console.log("init sudi game")
     addLoadingScreen(this);
   }
@@ -33,7 +31,7 @@ function(Physics, Map, EntityManager, SoundSystem, HUD) {
 
     //Maps
     this.load.tilemap('level1', 'maps/level1.json', null, Phaser.Tilemap.TILED_JSON);
-    // this.load.atlas("mygame");
+    // this.load.atlasJSONHash("atlas");
 
     //SoundSystem
     console.log(SoundSystem)
@@ -54,6 +52,10 @@ function(Physics, Map, EntityManager, SoundSystem, HUD) {
 
     this.map = new Map(this, this.entity_manager);
     this.map.load("level1");
+
+    // octopus = this.game.add.sprite(100,100, "atlas");
+    // octopus.animations.add('walk', Phaser.Animation.generateFrameNames('capguy/walk/', 1, 8, '', 4), 10, true, false);
+    // octopus.animations.play("walk")
 
     this.game.stage.backgroundColor = "#4488AA";
   }

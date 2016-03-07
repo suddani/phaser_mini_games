@@ -6,12 +6,11 @@ function Map(state, entity_manager) {
 
 Map.prototype.load = function(level_name) {
   this.map = this.state.game.add.tilemap(level_name);
-  // this.map.debug = true;
-  this.map.addTilesetImage('ground2', 'ground2');
-  this.map.addTilesetImage('jack', 'jack');
-  this.map.addTilesetImage('coin', 'coin');
-  this.map.addTilesetImage('leader', 'leader');
-  this.map.addTilesetImage('bridge', 'bridge');
+  console.log(this.map)
+
+  for (var idx in this.map.tilesets) {
+    this.map.addTilesetImage(this.map.tilesets[idx].name, this.map.tilesets[idx].name);
+  }
 
   this.groundlayer = this.map.createLayer('groundlayer');
   // this.groundlayer.collisionHeight = "16";
@@ -22,12 +21,12 @@ Map.prototype.load = function(level_name) {
   // this.map.setCollisionByExclusion([14,1], true, 'groundlayer')
   // this.map.calculateFaces("groundlayer");
   this.groundlayer.resizeWorld();
-  this.create_collsion();
+  this.createCollsionLayer();
   this.entity_manager.setWorldGeometry(this.collisionLayer);
   this.spawnEntities();
 }
 
-Map.prototype.create_collsion = function() {
+Map.prototype.createCollsionLayer = function() {
   var collisionLayer = this.collisionLayer = this.state.game.add.group();
   this.collisionLayer.enableBody = true;
   this.collisionLayer.physicsBodyType = Phaser.Physics.ARCADE;

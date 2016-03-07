@@ -15,8 +15,10 @@ require "./lib/piskel_layers"
 require "./lib/piskel_file"
 
 # util
+require "./lib/atlas"
 require "./lib/template_renderer.rb"
 require "./lib/js_compiler.rb"
+require "./lib/asset_compiler.rb"
 
 # game loader
 require "./lib/game_loader"
@@ -32,13 +34,8 @@ task :image do
   game_dirs = Pathname.new("games")
   game_dirs.children.each do |game|
     next unless game.directory?
-    assets = Pathname.new(game.join("rawassets"))
-    next unless assets.directory?
-    assets.children.each do |asset|
-      next unless /.piskel$/.match(asset.to_s)
-      piskel = PiskelFile.load_file(asset)
-      piskel.export(game.join("assets/#{piskel.name}.png"))
-    end
+    asset_compiler = AssetCompiler.new(game)
+    asset_compiler.compile
   end
 end
 
