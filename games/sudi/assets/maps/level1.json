@@ -17,70 +17,6 @@
          "name":"entities",
          "objects":[
                 {
-                 "gid":30,
-                 "height":0,
-                 "name":"leader",
-                 "properties":
-                    {
-                     "class":"Leader",
-                     "type":"interactable"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":367,
-                 "y":401
-                }, 
-                {
-                 "gid":30,
-                 "height":0,
-                 "name":"leader",
-                 "properties":
-                    {
-                     "class":"Leader",
-                     "type":"interactable"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":367,
-                 "y":371
-                }, 
-                {
-                 "gid":30,
-                 "height":0,
-                 "name":"leader",
-                 "properties":
-                    {
-                     "class":"Leader",
-                     "type":"interactable"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":367,
-                 "y":339
-                }, 
-                {
-                 "gid":30,
-                 "height":0,
-                 "name":"leader",
-                 "properties":
-                    {
-                     "class":"Leader",
-                     "type":"interactable"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":367,
-                 "y":309
-                }, 
-                {
                  "gid":15,
                  "height":0,
                  "name":"player",
@@ -579,7 +515,7 @@
                 {
                  "gid":32,
                  "height":0,
-                 "name":"",
+                 "name":"flag",
                  "properties":
                     {
                      "class":"Flag",
@@ -591,6 +527,142 @@
                  "width":0,
                  "x":1566,
                  "y":434
+                }, 
+                {
+                 "gid":33,
+                 "height":0,
+                 "name":"turtle",
+                 "properties":
+                    {
+                     "class":"Tourtle",
+                     "move":"50",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":227.5,
+                 "y":433.25
+                }, 
+                {
+                 "gid":33,
+                 "height":0,
+                 "name":"turtle",
+                 "properties":
+                    {
+                     "class":"Tourtle",
+                     "move":"60",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":492.75,
+                 "y":432.5
+                }, 
+                {
+                 "gid":33,
+                 "height":0,
+                 "name":"turtle",
+                 "properties":
+                    {
+                     "class":"Tourtle",
+                     "move":"60",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":188,
+                 "y":304
+                }, 
+                {
+                 "gid":33,
+                 "height":0,
+                 "name":"turtle",
+                 "properties":
+                    {
+                     "class":"Tourtle",
+                     "move":"60",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":474,
+                 "y":272
+                }, 
+                {
+                 "gid":33,
+                 "height":0,
+                 "name":"turtle",
+                 "properties":
+                    {
+                     "class":"Tourtle",
+                     "move":"60",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":827,
+                 "y":432
+                }, 
+                {
+                 "gid":33,
+                 "height":0,
+                 "name":"turtle",
+                 "properties":
+                    {
+                     "class":"Tourtle",
+                     "move":"60",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1232,
+                 "y":433
+                }, 
+                {
+                 "gid":33,
+                 "height":0,
+                 "name":"turtle",
+                 "properties":
+                    {
+                     "class":"Tourtle",
+                     "move":"60",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1461,
+                 "y":432
+                }, 
+                {
+                 "gid":33,
+                 "height":0,
+                 "name":"turtle",
+                 "properties":
+                    {
+                     "class":"Tourtle",
+                     "move":"10",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":884.25,
+                 "y":273
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -665,8 +737,25 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":282,
-                 "y":-62
+                 "x":280,
+                 "y":-66
+                }, 
+                {
+                 "gid":33,
+                 "height":0,
+                 "name":"turtle",
+                 "properties":
+                    {
+                     "class":"Tourtle",
+                     "move":"60",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":320,
+                 "y":-67
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1466,6 +1555,52 @@
             },
          "spacing":0,
          "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "firstgid":33,
+         "image":"..\/tourtle.png",
+         "imageheight":32,
+         "imagewidth":160,
+         "margin":0,
+         "name":"tourtle",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tiles":
+            {
+             "0":
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":0
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":2
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":3
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":2
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1
+                        }]
+                }
+            },
          "tilewidth":32
         }],
  "tilewidth":32,

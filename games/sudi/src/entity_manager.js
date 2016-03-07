@@ -2,7 +2,8 @@ define("games/sudi/src/entity_manager", [
   "games/sudi/src/player",
   "games/sudi/src/coin",
   "games/sudi/src/flag",
-function(Player, Coin, Flag) {
+  "games/sudi/src/tourtle",
+function(Player, Coin, Flag, Tourtle) {
 function EntityManager(state) {
   this.state = state;
   // this.entities = [];
@@ -43,30 +44,12 @@ EntityManager.prototype.create_from_properties = function(element) {
       console.warn(e);
     }
   }
-  // this.map.findObjectsByType("coin", "entities", function(map, element) {
-  //   var coin = new Coin(self, self.coins);
-  //   coin.setPosition(element.x, element.y);
-  //   Object.keys(element.properties).forEach(function(key){
-  //     coin.set(key, element.properties[key]);
-  //   });
-  // });
-  //
-  // this.map.findObjectsByType("player", "entities", function(map, element) {
-  //   self.player.setPosition(element.x, element.y);
-  // });
-
-  // this.coins = this.game.add.group();
-  // this.coins.enableBody = true;
-  // this.coins.physicsBodyType = Phaser.Physics.ARCADE;
-
 }
 
 EntityManager.prototype.update = function(dt) {
   this.state.physics.arcade.collide(this.groups["player"], this.worldGeometry, function(player, folliage) {
-    // player.entity.update_touching(player.body.touching);
   }, null, this);
   this.state.game.physics.arcade.collide(this.groups["player"], this.groups["collectable"], function(player, collectable) {
-    // player.entity.update_touching(player.body.touching);
     collectable.entity.collect(player.entity);
     return true;
   }, null, this);
@@ -74,13 +57,13 @@ EntityManager.prototype.update = function(dt) {
     interactable.entity.interact(player.entity);
     return true;
   }, function(player, interactable) {
-
+    //this is for ladders...
+    return interactable.entity.dead_timer == null;
   }, this);
-  // this.game.physics.arcade.collide(this.coins, this.map.collisionLayer);
-  // for (var i in this.entities) {
-  //   this.entities[i].update(dt);
-  // }
   this.groups["player"].forEachAlive(function(member) {
+    member.entity.update(dt);
+  }, this);
+  this.groups["interactable"].forEachAlive(function(member) {
     member.entity.update(dt);
   }, this);
 }

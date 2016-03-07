@@ -109,36 +109,25 @@
  <tileset firstgid="32" name="flag" tilewidth="32" tileheight="32">
   <image source="../assets/flag.png" width="32" height="32"/>
  </tileset>
+ <tileset firstgid="33" name="tourtle" tilewidth="32" tileheight="32">
+  <image source="../assets/tourtle.png" width="160" height="32"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="100"/>
+    <frame tileid="1" duration="100"/>
+    <frame tileid="2" duration="100"/>
+    <frame tileid="3" duration="100"/>
+    <frame tileid="2" duration="100"/>
+    <frame tileid="1" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
  <layer name="groundlayer" width="50" height="14">
   <data encoding="base64" compression="zlib">
    eJzt090KgCAMBtBlYv++Qu//lnnhYMiMKSkGuzh3Ob9t5gHAK6XUD5zBFF0D5KllAxOtA+SpZaCsD7o/CoTnWu2c9jFnMtL7l+QMuhm0B9x7q51zmTh4/xFsDG4fuIMebxfru0w+tBfU5PL36MMJckred5qfm03JPEr7ePsvkBV8m85fUvcrD1mCIJQ=
   </data>
  </layer>
  <objectgroup name="entities">
-  <object name="leader" gid="30" x="367" y="401">
-   <properties>
-    <property name="class" value="Leader"/>
-    <property name="type" value="interactable"/>
-   </properties>
-  </object>
-  <object name="leader" gid="30" x="367" y="371">
-   <properties>
-    <property name="class" value="Leader"/>
-    <property name="type" value="interactable"/>
-   </properties>
-  </object>
-  <object name="leader" gid="30" x="367" y="339">
-   <properties>
-    <property name="class" value="Leader"/>
-    <property name="type" value="interactable"/>
-   </properties>
-  </object>
-  <object name="leader" gid="30" x="367" y="309">
-   <properties>
-    <property name="class" value="Leader"/>
-    <property name="type" value="interactable"/>
-   </properties>
-  </object>
   <object name="player" gid="15" x="84" y="424">
    <properties>
     <property name="class" value="Player"/>
@@ -325,9 +314,65 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object gid="32" x="1566" y="434">
+  <object name="flag" gid="32" x="1566" y="434">
    <properties>
     <property name="class" value="Flag"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="33" x="227.5" y="433.25">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="50"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="33" x="492.75" y="432.5">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="60"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="33" x="188" y="304">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="60"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="33" x="474" y="272">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="60"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="33" x="827" y="432">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="60"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="33" x="1232" y="433">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="60"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="33" x="1461" y="432">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="60"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="33" x="884.25" y="273">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="10"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
@@ -351,9 +396,16 @@
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object gid="32" x="282" y="-62">
+  <object gid="32" x="280" y="-66">
    <properties>
     <property name="class" value="Flag"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="33" x="320" y="-67">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
