@@ -1,4 +1,5 @@
-define("games/sudi/src/flag", function() {
+define("games/sudi/src/flag", ["games/sudi/src/coin",
+function(Coin) {
 function Flag(state, group) {
   this.state = state;
   this.group = group;
@@ -35,12 +36,14 @@ Flag.prototype.update = function(dt) {
 }
 
 Flag.prototype.interact = function(entity) {
-  console.log("Coins: "+entity.get("coins"))
-  if (entity.get("coins") >= 30)
+  var coinsMissing = Coin.totalCount-entity.get("coins");
+  if (coinsMissing<=0)
     onVictory();
-  else
+  else {
+    console.log("You missed "+coinsMissing+" coins!");
     onLose();
+  }
 }
 
 return Flag;
-});
+}]);

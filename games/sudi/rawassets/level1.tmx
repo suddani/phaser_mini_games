@@ -357,7 +357,7 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="flag" gid="32" x="1566" y="434">
+  <object name="flag" gid="32" x="1559" y="433">
    <properties>
     <property name="class" value="Flag"/>
     <property name="type" value="interactable"/>
