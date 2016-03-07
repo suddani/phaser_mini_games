@@ -24,7 +24,7 @@ function Coin(state, group) {
   this.x = 0;
   this.y = 0;
   this.up = true;
-  
+
   Coin.totalCount+=1;
 }
 

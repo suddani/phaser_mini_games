@@ -1,6 +1,10 @@
 define("games/sudi/src/player", ["games/sudi/src/sound_system",
 function(SoundSystem) {
+
+Player.instance = {};
+
 function Player(state, group) {
+  Player.instance = this;
   this.state = state;
   this.group = group;
 

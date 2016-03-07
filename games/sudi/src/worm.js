@@ -25,7 +25,7 @@ function Worm(state, group) {
 }
 
 Worm.prototype.interact = function (entity) {
-  entity.set("worms", entity.get("worms")+1);
+  entity.set("worms", entity.get("worms")+4);
   SoundSystem.play("pickup");
   this.sprite.kill();
 };

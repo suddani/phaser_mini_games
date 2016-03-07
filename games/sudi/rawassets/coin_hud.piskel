@@ -1,0 +1,14 @@
+{
+  "modelVersion": 2,
+  "piskel": {
+    "name": "coin_hud",
+    "description": "",
+    "fps": 12,
+    "height": 32,
+    "width": 32,
+    "layers": [
+      "{\"name\":\"Layer 1\",\"frameCount\":7,\"base64PNG\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAAAgCAYAAAALxXRVAAADnElEQVR4Xu1by1LDMAxMj5z5GmbgwodzgRm+hjPHMk4rIytyLDu2lZlub6Qmkle7kvzoZcEHCAABNwQubpZhGAgAgQUCBAmAgCMCEKAj+DANBCBAcAAIOCIAATqCD9NAAAIEB4CAIwIQoCP4MA0EIEBwAAg4IgABOoIP00AAAgQHgIAjAhCgI/gwDQQgQHAACDgiAAE6gg/TQKBVgNcMdK3va4mE9GGmbfKXfPCwHXx4ZPue8e/G/1rirIY/P55Vwby9/9Dz2vfWCnDjx932aLvcT08CnCEBeM7/yjnoyTtOiBY/agibTHpPMYPFkIjv9eUm+q/v52WwXTnl6Mdku1oSqIljbbLLjV/50EK6gw6sdnncw/sm+LERPSWBYFtJCKaYmAaFVkdWPQKAwAwCULKB9f3WmKji4z5MFEPEZKLNM1Vgj/kn4pPcGyjCDf+ZrdUNqQ8rJywCSYxL4V2eluX6+88LLkSrE1b10ZqHJqslgQE2NfdiIgg+BAzuHwueFdPdHeraAgbPQtxZ5xEejZ5/IkDiHnFukAA3/Kd4E+/537X8twAWHdDER4HgVBGAWGxYSKlWPwnGpFY0EeAkm2oLzB72wtkUC2oDJwpwIz7OvYEiTPhPoueFRz6r4X8paNnqpzmitaMdK9IpBUj9f8d5WgSwck8MLMXS+l7LuLj+m7gO9BCgWv1C5dME2ML/UtDU6rdnPNOXl+yYgs57bWr9JBiTqlGyAUM+TGjBzrIGvNKcPQSoJf9BFTDLf1595TIsfGetgiVhZNvPuOgRa8CZAtR8gAAtuezwGFcB5uIenndeBxaXX+QL3weBAG/nkaXkcoSFqID3NsyjAp5FgNomTG0BKpEUFVCXKQQIAcbdf0NLnNUZBNhWB5Nd0LXc3o4iSni2WdtJAuyrqbYp+3vtghLm3I8ZLahlF7RnC7quNXPnbhKE2vJbycbsITxfBM9eA4bNoEk2JVzuu6Bi7qMT0OYQXsZ9gABV/mvngHwz0LoBYwVs9yBesqL2ILJVhPxMUu7KTqhEj34X1e0uptzs4Em/8wZM3F/ht1yId+zyRaQwXUygB5ajKWvbgqto20zhfRfUswLGyjCI9Lm8fKqraLm7oKwSF/VVHMCQwGXslBbeAlxFcHepJo6VTUd2+ENfxt4D0VL56P9rA4efI/0j712B3AUoSFjLpSOJwK0FDk73/DleK2jdfpB4IAqPLgBvAXrb94x/N/7/AUa2yT/1NaCbAAAAAElFTkSuQmCC\"}"
+    ],
+    "expanded": false
+  }
+}

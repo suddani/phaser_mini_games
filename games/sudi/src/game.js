@@ -3,7 +3,8 @@ define("games/sudi/src/game", [
   "games/sudi/src/map",
   "games/sudi/src/entity_manager",
   "games/sudi/src/sound_system",
-function(Physics, Map, EntityManager, SoundSystem) {
+  "games/sudi/src/hud",
+function(Physics, Map, EntityManager, SoundSystem, HUD) {
   console.log("Load sudi game")
   function Main() {
   }
@@ -20,6 +21,7 @@ function(Physics, Map, EntityManager, SoundSystem) {
     this.load.spritesheet("jack", "jack.png",             32*1,32*1,  8);
     this.load.spritesheet("enemy", "enemy.png",           32*1,32*1,  5);
     this.load.spritesheet("coin", "coin.png",         32*0.5,32*0.5,  7);
+    this.load.spritesheet("coin_hud", "coin_hud.png",     32*1,32*1,  7);
     this.load.spritesheet("tourtle", "tourtle.png",       32*1,32*1,  5);
     this.load.spritesheet("mole", "mole.png",             32*1,32*1,  9);
     this.load.spritesheet("wormbullet", "wormbullet.png", 32*1,32*1,  9);
@@ -46,6 +48,8 @@ function(Physics, Map, EntityManager, SoundSystem) {
 
     Physics.init(this.game);
     SoundSystem.init(this.game);
+    HUD.init(this);
+
     this.entity_manager = new EntityManager(this);
 
     this.map = new Map(this, this.entity_manager);
@@ -56,9 +60,10 @@ function(Physics, Map, EntityManager, SoundSystem) {
   Main.prototype.update = function() {
     var dt = this.time.physicsElapsedMS * 0.001;
     this.entity_manager.update(dt);
+    HUD.update();
   }
   Main.prototype.render = function() {
-    game.debug.text(game.time.suggestedFps, 32, 32);
+    // game.debug.text(game.time.suggestedFps, 32, 32);
     this.entity_manager.render();
   }
   return Main;
