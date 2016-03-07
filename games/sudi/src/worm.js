@@ -1,19 +1,19 @@
-define("games/sudi/src/coin", ["games/sudi/src/sound_system",
+define("games/sudi/src/worm", ["games/sudi/src/sound_system",
 function(SoundSystem) {
-function Coin(state, group) {
+function Worm(state, group) {
   this.state = state;
   this.group = group;
-  this.sprite = this.state.add.sprite(0,0, "coin");
+  this.sprite = this.state.add.sprite(0,0, "wormbullet");
   if (this.group) {
     this.group.add(this.sprite);
   }
   this.sprite.entity = this;
-  this.sprite.anchor.set(0.5, 1);
-  this.sprite.animations.add("idle", [0,1,2,3,4,5], 5);
-  this.sprite.play("idle", 5, true);
+  this.sprite.anchor.set(0.5,1);
+  this.sprite.animations.add("idle", [0,1,2,1], 5);
+  this.sprite.play("idle", 10, true);
 
   this.state.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
-  this.sprite.body.setSize(16, 16, 0, 0);
+  this.sprite.body.setSize(32, 16, 0, -8);
   this.sprite.body.immovable = false;
   this.sprite.body.collideWorldBounds = true;
   // this.sprite.body.gravity.y = 300;
@@ -24,29 +24,29 @@ function Coin(state, group) {
   this.up = true;
 }
 
-Coin.prototype.interact = function (entity) {
-  entity.set("coins", entity.get("coins")+1);
+Worm.prototype.interact = function (entity) {
+  entity.set("worms", entity.get("worms")+1);
   SoundSystem.play("pickup");
   this.sprite.kill();
 };
 
-Coin.prototype.set = function (property, value) {
+Worm.prototype.set = function (property, value) {
   this.properties = this.properties||{};
   this.properties[property]=value;
 };
 
-Coin.prototype.get = function (property, value) {
+Worm.prototype.get = function (property, value) {
   this.properties = this.properties||{};
   return this.properties[property]||0;
 };
 
-Coin.prototype.setPosition = function(x,y) {
+Worm.prototype.setPosition = function(x,y) {
   this.x = this.sprite.x = x;
   this.y = this.sprite.y = y;
 }
 
-Coin.prototype.update = function(dt) {
+Worm.prototype.update = function(dt) {
 }
 
-return Coin;
+return Worm;
 }]);

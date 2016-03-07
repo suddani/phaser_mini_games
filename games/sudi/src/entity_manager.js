@@ -3,7 +3,9 @@ define("games/sudi/src/entity_manager", [
   "games/sudi/src/coin",
   "games/sudi/src/flag",
   "games/sudi/src/tourtle",
-function(Player, Coin, Flag, Tourtle) {
+  "games/sudi/src/mole",
+  "games/sudi/src/worm",
+function(Player, Coin, Flag, Tourtle, Mole, Worm) {
 function EntityManager(state) {
   this.state = state;
   // this.entities = [];
@@ -11,6 +13,7 @@ function EntityManager(state) {
     "player": createGroup(state),
     "collectable": createGroup(state),
     "interactable": createGroup(state),
+    "bullet": createGroup(state)
   };
   function createGroup(state) {
     var group = state.add.group();
@@ -47,10 +50,10 @@ EntityManager.prototype.create_from_properties = function(element) {
 }
 
 EntityManager.prototype.update = function(dt) {
-  this.state.physics.arcade.collide(this.groups["player"], this.worldGeometry, function(player, folliage) {
+  this.state.game.physics.arcade.collide(this.groups["player"], this.worldGeometry, function(player, folliage) {
   }, null, this);
   this.state.game.physics.arcade.collide(this.groups["player"], this.groups["collectable"], function(player, collectable) {
-    collectable.entity.collect(player.entity);
+    collectable.entity.interact(player.entity);
     return true;
   }, null, this);
   this.state.game.physics.arcade.collide(this.groups["player"], this.groups["interactable"], function(player, interactable) {
@@ -60,6 +63,18 @@ EntityManager.prototype.update = function(dt) {
     //this is for ladders...
     return interactable.entity.dead_timer == null;
   }, this);
+  this.state.game.physics.arcade.collide(this.groups["bullet"], this.worldGeometry, function(bullet, folliage) {
+    bullet.entity.die();
+  }, null, this);
+  this.state.game.physics.arcade.collide(this.groups["bullet"], this.groups["interactable"], function(player, interactable) {
+    bullet.entity.interact(interactable.entity);
+  }, null, this);
+  this.state.game.physics.arcade.collide(this.groups["bullet"], this.groups["player"], function(player, interactable) {
+    interactable.entity.interact(player.entity);
+  }, function(bullet, player) {
+    return bullet.entity.owner != player.entity;
+  }, this);
+
   this.groups["player"].forEachAlive(function(member) {
     member.entity.update(dt);
   }, this);

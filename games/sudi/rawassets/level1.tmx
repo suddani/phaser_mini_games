@@ -135,6 +135,14 @@
  </tileset>
  <tileset firstgid="43" name="mole" tilewidth="32" tileheight="32">
   <image source="../assets/mole.png" width="288" height="32"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="100"/>
+    <frame tileid="1" duration="100"/>
+    <frame tileid="2" duration="100"/>
+    <frame tileid="1" duration="100"/>
+   </animation>
+  </tile>
  </tileset>
  <tileset firstgid="52" name="wormbullet" tilewidth="32" tileheight="32">
   <image source="../assets/wormbullet.png" width="288" height="32"/>
@@ -415,6 +423,12 @@
    <properties>
     <property name="class" value="Mole"/>
     <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="worm" gid="52" x="132" y="444">
+   <properties>
+    <property name="class" value="Worm"/>
+    <property name="type" value="collectable"/>
    </properties>
   </object>
  </objectgroup>
