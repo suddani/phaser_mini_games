@@ -94,7 +94,7 @@ Player.prototype.controls = function() {
       this.duck ? this.sprite.play("duck_walk") : this.sprite.play("walk");
       this.sprite.scale.x = 1;
   }
-  if (Pad.isDown(Pad.UP) && this.onFloor()) {
+  if ((Pad.isDown(Pad.UP) || Pad.isDown(Pad.JUMP)) && this.onFloor()) {
     // console.log("Start jumping")
     // this.sprite.body.position.y -= 1;
     this.sprite.body.velocity.y = -200;

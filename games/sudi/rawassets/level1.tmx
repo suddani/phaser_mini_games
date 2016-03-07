@@ -171,7 +171,7 @@
   </data>
  </layer>
  <objectgroup name="entities">
-  <object name="player" gid="15" x="268" y="300">
+  <object name="player" gid="15" x="90" y="428">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
@@ -680,6 +680,62 @@
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="54" x="326" y="113">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="20"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="54" x="753" y="113">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="60"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="54" x="1353" y="113">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="60"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="54" x="1347" y="305">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="60"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="54" x="1508" y="147">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="10"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="54" x="238" y="305">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="60"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="54" x="1008" y="177">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="20"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="54" x="1073" y="400">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="10"/>
+    <property name="type" value="interactable"/>
    </properties>
   </object>
  </objectgroup>
