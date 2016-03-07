@@ -1,5 +1,7 @@
-define("games/sudi/src/mole", ["games/sudi/src/sound_system",
-function(SoundSystem) {
+define("games/sudi/src/mole", [
+  "games/sudi/src/sound_system",
+  "games/sudi/src/hud",
+function(SoundSystem, HUD) {
 function Mole(state, group) {
   this.state = state;
   this.group = group;
@@ -50,10 +52,11 @@ Mole.prototype.interact = function(entity) {
     this.dead_timer = 1;
     this.sprite.play("hidden");
     SoundSystem.play("loss");
+    // HUD.hideBars();
   }
   else {
     this.sprite.play("hidden");
-
+    // HUD.showBars();
   }
     // onLose();
 }

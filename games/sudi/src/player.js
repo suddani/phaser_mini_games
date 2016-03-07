@@ -1,5 +1,7 @@
-define("games/sudi/src/player", ["games/sudi/src/sound_system",
-function(SoundSystem) {
+define("games/sudi/src/player", [
+  "games/sudi/src/sound_system",
+  "games/sudi/src/hud",
+function(SoundSystem, HUD) {
 
 Player.instance = {};
 
@@ -65,8 +67,12 @@ Player.prototype.reset_body_size = function() {
 
 Player.prototype.update = function(dt) {
   this.on_floor = (this.sprite.body.onFloor() || this.sprite.body.touching.down);
-  var isMoved = this.controls(dt);
+  if (!HUD.cinematic) {
+    var isMoved = this.controls(dt);
+  }
   // this.touching = {};
+  HUD.coins = this.get("coins");
+  HUD.worms = this.get("worms");
 }
 
 Player.prototype.onFloor = function() {

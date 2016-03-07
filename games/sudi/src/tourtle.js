@@ -63,11 +63,11 @@ Tourtle.prototype.update = function(dt) {
 
 Tourtle.prototype.interact = function(entity) {
   if (this.sprite.body.touching.up){
-    this.dead_timer = 1;
+    this.dead_timer = 0.8;
     this.sprite.play("dead");
     SoundSystem.play("loss");
     this.sprite.body.velocity.x = (!!parseInt(Math.random()*2) ? 1 : -1)*(parseInt(this.get("speed"))||20);
-    this.sprite.body.velocity.y = -150;
+    this.sprite.body.velocity.y = -60;
     this.sprite.body.gravity.y = 300;
   }
   else
