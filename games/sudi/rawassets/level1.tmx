@@ -348,7 +348,7 @@
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="33" x="827" y="432">
+  <object name="turtle" gid="33" x="881.5" y="432.625">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
