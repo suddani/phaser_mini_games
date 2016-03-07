@@ -420,9 +420,10 @@
   <object x="79" y="308" width="256" height="53"/>
   <object x="577" y="306" width="158" height="12"/>
   <object x="624" y="402" width="131" height="30"/>
-  <object x="687" y="371" width="227" height="31"/>
-  <object x="752" y="340" width="161" height="31"/>
-  <object x="816" y="308" width="97" height="30"/>
-  <object x="849" y="275" width="63" height="30"/>
+  <object x="687" y="371" width="198" height="30"/>
+  <object x="752" y="340" width="133.667" height="30.3333"/>
+  <object x="816" y="308" width="69.6667" height="32"/>
+  <object x="848" y="274" width="38.125" height="34"/>
+  <object x="886" y="274" width="26" height="120"/>
  </objectgroup>
 </map>
