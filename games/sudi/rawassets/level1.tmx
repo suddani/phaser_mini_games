@@ -167,11 +167,11 @@
  </tileset>
  <layer name="groundlayer" width="50" height="14">
   <data encoding="base64" compression="zlib">
-   eJztk0sOgCAMBasS/CH3P64sIGkI6IMgwaSL2UGZ9hVLRFYQBOEHGMfkuQbwqUU5Zs82gE8tM5X1wfPjvGVpwHMt+lgyjvz9NbqTu8t9Dcv9q8xTTinC+6djBzhYBj12N9TXgBdaM+Xfow8NeCL7HfunZlMyj9I+nv5FQAFn4/kjdVtxA43kIA8=
+   eJzdVUEOwzAIo23Wbkm7/z93mdRIyIuBTLt0B1/aQIzBZBaR+Y+wVjwuiBvUca94XhAb9CKTc3vFdOJwcuqzCC/221y6DtaLd6400DOdE7EM1IP3slxTgJ/O1byT5VMvzauIPb+t76j1Ad+S9H2LXvC0ivRhM/5p6Nqy9Pu2EP1x3kugFs0Jde15pxj/PLTYHqc1eK/Vn8jOYv6L7gBvDj1ddpVDxzP/MJ7Myxh7wN1tbqL7nemVzrtQt+g7yWaOQft5ZOf1YiKzE33PR3xgcbHqwP1icUI+3jtozbfHv8cD79F5I/uFwfMF7nTrLOr/q7wRvADnxBXL
   </data>
  </layer>
  <objectgroup name="entities">
-  <object name="player" gid="15" x="84" y="424">
+  <object name="player" gid="15" x="268" y="300">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
@@ -249,37 +249,37 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="183" y="300">
+  <object name="coin" gid="23" x="188.273" y="299.273">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="219" y="300">
+  <object name="coin" gid="23" x="238.818" y="299.455">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="202" y="300">
+  <object name="coin" gid="23" x="212.545" y="299.455">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="162" y="300">
+  <object name="coin" gid="23" x="164.182" y="294.545">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="145" y="300">
+  <object name="coin" gid="23" x="146" y="283.091">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="126" y="300">
+  <object name="coin" gid="23" x="125.545" y="266.091">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
@@ -377,13 +377,6 @@
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="188" y="304">
-   <properties>
-    <property name="class" value="Tourtle"/>
-    <property name="move" value="60"/>
-    <property name="type" value="interactable"/>
-   </properties>
-  </object>
   <object name="turtle" gid="54" x="474" y="272">
    <properties>
     <property name="class" value="Tourtle"/>
@@ -428,6 +421,264 @@
   <object name="worm" gid="73" x="132" y="444">
    <properties>
     <property name="class" value="Worm"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="409" y="144">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="537" y="173">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="563.5" y="161.5">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="589.5" y="150.5">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="679" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="700" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="662" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="736" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="643" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="719" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="902" y="135">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="926" y="126">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="885" y="135">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="949" y="170">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="866" y="135">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="942" y="149">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1328" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1349" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1311" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1385" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1292" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1368" y="106">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1318" y="290">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1339" y="290">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1301" y="290">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1375" y="290">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1282" y="290">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1358" y="290">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1341" y="426">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1362" y="426">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1324" y="426">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1398" y="426">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1305" y="426">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1381" y="426">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1503" y="139">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1524" y="139">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1486" y="139">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1467" y="139">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1123" y="167">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1106" y="167">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1030" y="167">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1049" y="167">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="coin" gid="23" x="1081" y="199">
+   <properties>
+    <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
@@ -482,7 +733,7 @@
   <object x="57" y="434" width="1544" height="12"/>
   <object x="400" y="275" width="192.273" height="54.8182"/>
   <object x="333" y="403" width="67" height="31"/>
-  <object x="18" y="210" width="94" height="95"/>
+  <object x="19.2727" y="216.727" width="94.3636" height="90.6364"/>
   <object x="36" y="345" width="18" height="101"/>
   <object x="56" y="371" width="21" height="25"/>
   <object x="79" y="308" width="256" height="53"/>
@@ -494,5 +745,25 @@
   <object x="848" y="274" width="38.125" height="34"/>
   <object x="886" y="274" width="26" height="120"/>
   <object x="592.727" y="320.909" width="117.636" height="14.5455"/>
+  <object x="176" y="211" width="46" height="18"/>
+  <object x="208" y="180" width="63" height="30"/>
+  <object x="240" y="147" width="52" height="32"/>
+  <object x="272" y="114" width="97" height="33"/>
+  <object x="464" y="180" width="65" height="46"/>
+  <object x="624" y="114" width="222" height="61"/>
+  <object x="845" y="145" width="66" height="22"/>
+  <object x="945" y="178" width="126" height="35"/>
+  <object x="1058" y="212" width="49" height="22"/>
+  <object x="1102" y="178" width="99" height="35"/>
+  <object x="1200" y="148" width="64" height="29"/>
+  <object x="1230" y="115" width="224" height="32"/>
+  <object x="1042" y="402" width="59" height="33"/>
+  <object x="1447" y="145" width="102" height="33"/>
+  <object x="1549" y="43" width="26" height="119"/>
+  <object x="29" y="107" width="18" height="119"/>
+  <object x="1138" y="372" width="124" height="18"/>
+  <object x="1169" y="339" width="103" height="32"/>
+  <object x="1234" y="308" width="255" height="32"/>
+  <object x="1426" y="274" width="28" height="34"/>
  </objectgroup>
 </map>
