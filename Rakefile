@@ -91,6 +91,12 @@ task :run, [:game_id] => :image do |t, args|
   runner.run
 end
 
+desc "Run the test server and open in browser"
+task :run_start, [:game_id] => [:image, :start] do |t, args|
+  runner = GamePackeger.new(args.game_id)
+  runner.run
+end
+
 desc "Star browser"
 task :start do
   `xdg-open http://localhost:8080/`
