@@ -42,7 +42,7 @@ class Atlas
           :h => frame_height
         }
       }
-    end
+    end if frameCount > 1
   end
 
   def save(path)
