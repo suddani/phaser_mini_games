@@ -8,7 +8,7 @@ function Map(state, entity_manager) {
 
 Map.prototype.load = function(level_name, atlas) {
   this.map = this.state.game.add.tilemap(level_name);
-  console.log(this.map);
+  // console.log(this.map);
 
   for (var idx in this.map.tilesets) {
     SpritesheetGenerator.createSpriteSheet(atlas, this.map.tilesets[idx].name);

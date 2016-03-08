@@ -6,11 +6,11 @@ define("games/sudi/src/game", [
   "games/sudi/src/hud",
   "games/sudi/src/spritesheet_generator",
 function(Physics, Map, EntityManager, SoundSystem, HUD, SpritesheetGenerator) {
-  console.log("Load sudi game")
+  // console.log("Load sudi game")
   function Main() {
   }
   Main.prototype.init = function() {
-    console.log("init sudi game")
+    console.log("init sudi game");
     addLoadingScreen(this);
   }
   Main.prototype.preload = function() {
@@ -21,10 +21,9 @@ function(Physics, Map, EntityManager, SoundSystem, HUD, SpritesheetGenerator) {
 
     //Maps
     this.load.tilemap('level1', 'maps/level1.json', null, Phaser.Tilemap.TILED_JSON);
-    this.atlas = this.load.atlasJSONHash("atlas");
+    this.load.atlasJSONHash("atlas");
 
     //SoundSystem
-    console.log(SoundSystem)
     SoundSystem.preload(this.game);
   }
   Main.prototype.create = function() {
@@ -44,10 +43,6 @@ function(Physics, Map, EntityManager, SoundSystem, HUD, SpritesheetGenerator) {
 
     this.map = new Map(this, this.entity_manager);
     this.map.load("level1", "atlas");
-
-    octopus = this.game.add.sprite(100,100, "atlas", "jack");
-    // octopus.animations.add('walk', Phaser.Animation.generateFrameNames('capguy/walk/', 1, 8, '', 4), 10, true, false);
-    // octopus.animations.play("walk")
 
     this.game.stage.backgroundColor = "#4488AA";
   }
