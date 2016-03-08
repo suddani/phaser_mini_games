@@ -42,6 +42,7 @@ Tourtle.prototype.update = function(dt) {
   if (this.dead_timer!= null) {
     this.dead_timer-=dt;
     if (this.dead_timer <= 0) {
+      this.manager = null;
       this.sprite.kill();
     }
     return;
@@ -60,15 +61,18 @@ Tourtle.prototype.update = function(dt) {
   else
     this.sprite.scale.x = 1;
 }
+Tourtle.prototype.kill = function() {
+  this.dead_timer = 0.8;
+  this.sprite.play("dead");
+  SoundSystem.play("loss");
+  this.sprite.body.velocity.x = (!!parseInt(Math.random()*2) ? 1 : -1)*(parseInt(this.get("speed"))||20);
+  this.sprite.body.velocity.y = -60;
+  this.sprite.body.gravity.y = 300;
+}
 
 Tourtle.prototype.interact = function(entity) {
   if (this.sprite.body.touching.up){
-    this.dead_timer = 0.8;
-    this.sprite.play("dead");
-    SoundSystem.play("loss");
-    this.sprite.body.velocity.x = (!!parseInt(Math.random()*2) ? 1 : -1)*(parseInt(this.get("speed"))||20);
-    this.sprite.body.velocity.y = -60;
-    this.sprite.body.gravity.y = 300;
+    this.kill();
   }
   else
     onLose();

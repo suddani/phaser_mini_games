@@ -17,7 +17,7 @@ function Mole(state, group) {
   this.sprite.play("idle", 5, true);
 
   this.state.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
-  this.sprite.body.setSize(32, 32, 0, 0);
+  this.sprite.body.setSize(28, 20, 0, 0);
   this.sprite.body.immovable = true;
   this.sprite.body.collideWorldBounds = true;
 }
@@ -41,17 +41,22 @@ Mole.prototype.update = function(dt) {
   if (this.dead_timer!= null) {
     this.dead_timer-=dt;
     if (this.dead_timer <= 0) {
+      this.manager = null;
       this.sprite.kill();
     }
     return;
   }
 }
 
+Mole.prototype.kill = function() {
+  this.dead_timer = 1;
+  this.sprite.play("hidden");
+  SoundSystem.play("loss");
+}
+
 Mole.prototype.interact = function(entity) {
   if (this.sprite.body.touching.up){
-    this.dead_timer = 1;
-    this.sprite.play("hidden");
-    SoundSystem.play("loss");
+    this.kill();
     // HUD.hideBars();
   }
   else {

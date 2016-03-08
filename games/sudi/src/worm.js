@@ -11,9 +11,10 @@ function Worm(state, group) {
   this.sprite.anchor.set(0.5,1);
   this.sprite.animations.add("idle", [0,1,2,1], 5);
   this.sprite.play("idle", 10, true);
+  this.sprite.scale.set(0.8);
 
   this.state.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
-  this.sprite.body.setSize(32, 16, 0, -8);
+  this.sprite.body.setSize(22, 8, 0, -10);
   this.sprite.body.immovable = false;
   this.sprite.body.collideWorldBounds = true;
   // this.sprite.body.gravity.y = 300;

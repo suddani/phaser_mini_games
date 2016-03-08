@@ -5,7 +5,8 @@ define("games/sudi/src/entity_manager", [
   "games/sudi/src/tourtle",
   "games/sudi/src/mole",
   "games/sudi/src/worm",
-function(Player, Coin, Flag, Tourtle, Mole, Worm) {
+  "games/sudi/src/bullet",
+function(Player, Coin, Flag, Tourtle, Mole, Worm, Bullet) {
 function EntityManager(state) {
   this.state = state;
   // this.entities = [];
@@ -33,11 +34,24 @@ EntityManager.prototype.setWorldGeometry = function(worldGeometry) {
   this.worldGeometry = worldGeometry;
 }
 
+EntityManager.prototype.fireBullet = function(owner, target) {
+  var bullet = new Bullet(this.state, this.getGroup("bullet"));
+  bullet.owner = owner;
+  bullet.setPosition(owner.sprite.x+10*owner.sprite.scale.x, owner.sprite.y-(owner.duck ? 0 : 8));
+  if (target) {
+    bullet.sprite.body.velocity.x = target.x-bullet.sprite.x;
+    bullet.sprite.body.velocity.y = target.y-bullet.sprite.y;
+  }
+  else
+    bullet.sprite.body.velocity.x = 150*owner.sprite.scale.x;
+}
+
 EntityManager.prototype.create_from_properties = function(element) {
   if (element.properties["class"]) {
     try {
       var constructor = eval(element.properties["class"]);
       var entity = new constructor(this.state, this.getGroup(element.properties["type"]));
+      entity.manager = this;
       entity.setPosition(element.x, element.y);
       Object.keys(element.properties).forEach(function(key){
         entity.set(key, element.properties[key]);
@@ -64,13 +78,15 @@ EntityManager.prototype.update = function(dt) {
     return interactable.entity.dead_timer == null;
   }, this);
   this.state.game.physics.arcade.collide(this.groups["bullet"], this.worldGeometry, function(bullet, folliage) {
-    bullet.entity.die();
+    bullet.entity.kill();
   }, null, this);
-  this.state.game.physics.arcade.collide(this.groups["bullet"], this.groups["interactable"], function(player, interactable) {
+  this.state.game.physics.arcade.collide(this.groups["bullet"], this.groups["interactable"], function(bullet, interactable) {
     bullet.entity.interact(interactable.entity);
-  }, null, this);
-  this.state.game.physics.arcade.collide(this.groups["bullet"], this.groups["player"], function(player, interactable) {
-    interactable.entity.interact(player.entity);
+  }, function(bullet, interactable) {
+    return bullet.entity.owner != interactable.entity;
+  }, this);
+  this.state.game.physics.arcade.collide(this.groups["bullet"], this.groups["player"], function(bullet, player) {
+    bullet.entity.interact(player.entity);
   }, function(bullet, player) {
     return bullet.entity.owner != player.entity;
   }, this);
@@ -79,6 +95,9 @@ EntityManager.prototype.update = function(dt) {
     member.entity.update(dt);
   }, this);
   this.groups["interactable"].forEachAlive(function(member) {
+    member.entity.update(dt);
+  }, this);
+  this.groups["bullet"].forEachAlive(function(member) {
     member.entity.update(dt);
   }, this);
 }

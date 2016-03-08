@@ -6,12 +6,12 @@ function(SoundSystem, HUD) {
 Player.instance = {};
 
 function Player(state, group) {
-  Player.instance = this;
   this.state = state;
   this.group = group;
 
   this.duck = false;
   this.speed = 100;
+  this.shoot = 0;
 
   this.sprite = this.state.add.sprite(0,0, "jack");
   if (this.group) {
@@ -70,6 +70,9 @@ Player.prototype.update = function(dt) {
   if (!HUD.cinematic) {
     var isMoved = this.controls(dt);
   }
+  if (this.shoot > 0) {
+    this.shoot-=dt;
+  }
   // this.touching = {};
   HUD.coins = this.get("coins");
   HUD.worms = this.get("worms");
@@ -100,6 +103,11 @@ Player.prototype.controls = function() {
     this.sprite.body.velocity.y = -200;
     isMoved = true;
     SoundSystem.play("jump")
+  }
+  if (Pad.isDown(Pad.SHOOT) && this.get("worms") > 0 && this.shoot <= 0) {
+    this.manager.fireBullet(this);
+    this.set("worms", this.get("worms")-1);
+    this.shoot = 0.5;
   }
   if (Pad.isDown(Pad.DOWN)) {
     this.duck = true;
