@@ -31,7 +31,10 @@ function Coin(state, group) {
 Coin.prototype.interact = function (entity) {
   entity.set("coins", entity.get("coins")+1);
   SoundSystem.play("pickup");
-  this.sprite.kill();
+  this.owner = null;
+  this.manager = null;
+  this.sprite.entity = null;
+  this.sprite.destroy();
 };
 
 Coin.prototype.set = function (property, value) {

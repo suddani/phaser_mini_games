@@ -55,7 +55,7 @@ Bullet.prototype.update = function(dt) {
       this.owner = null;
       this.manager = null;
       this.sprite.entity = null;
-      this.sprite.kill();
+      this.sprite.destroy();
     }
     return;
   }

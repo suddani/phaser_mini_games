@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="14" tilewidth="32" tileheight="32" nextobjectid="141">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="14" tilewidth="32" tileheight="32" nextobjectid="143">
  <tileset firstgid="1" name="ground2" tilewidth="32" tileheight="32" tilecount="14" columns="14">
   <image source="tmp/ground2.png" width="448" height="32"/>
   <terraintypes>
@@ -184,7 +184,7 @@
 </data>
  </layer>
  <objectgroup name="trigger">
-  <object id="1" x="185" y="327" width="500" height="105"/>
+  <object id="1" name="trigger" x="184" y="327" width="500" height="105"/>
  </objectgroup>
  <objectgroup name="entities">
   <object id="2" name="player" gid="15" x="90" y="428" width="32" height="32">
@@ -692,7 +692,7 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="85" name="coin" gid="23" x="1081" y="199" width="16" height="16">
+  <object id="85" name="coin" gid="23" x="1072" y="201" width="16" height="16">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
@@ -798,6 +798,13 @@
    <properties>
     <property name="class" value="Worm"/>
     <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object id="141" name="trigger" x="561" y="-148" width="86" height="91">
+   <properties>
+    <property name="behaviour" value=""/>
+    <property name="target" value=""/>
+    <property name="trigger_once" type="bool" value="false"/>
    </properties>
   </object>
  </objectgroup>

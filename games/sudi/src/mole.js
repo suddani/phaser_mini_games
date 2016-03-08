@@ -45,8 +45,10 @@ Mole.prototype.update = function(dt) {
   if (this.dead_timer!= null) {
     this.dead_timer-=dt;
     if (this.dead_timer <= 0) {
+      this.owner = null;
       this.manager = null;
-      this.sprite.kill();
+      this.sprite.entity = null;
+      this.sprite.destroy();
     }
     return;
   }

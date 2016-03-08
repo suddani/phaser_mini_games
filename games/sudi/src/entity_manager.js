@@ -1,4 +1,5 @@
 define("games/sudi/src/entity_manager", [
+  "games/sudi/src/trigger",
   "games/sudi/src/player",
   "games/sudi/src/coin",
   "games/sudi/src/flag",
@@ -6,7 +7,7 @@ define("games/sudi/src/entity_manager", [
   "games/sudi/src/mole",
   "games/sudi/src/worm",
   "games/sudi/src/bullet",
-function(Player, Coin, Flag, Tourtle, Mole, Worm, Bullet) {
+function(Trigger, Player, Coin, Flag, Tourtle, Mole, Worm, Bullet) {
 function EntityManager(state) {
   this.state = state;
   // this.entities = [];
@@ -14,7 +15,8 @@ function EntityManager(state) {
     "player": createGroup(state),
     "collectable": createGroup(state),
     "interactable": createGroup(state),
-    "bullet": createGroup(state)
+    "bullet": createGroup(state),
+    "trigger": createGroup(state)
   };
   function createGroup(state) {
     var group = state.add.group();
@@ -47,6 +49,9 @@ EntityManager.prototype.fireBullet = function(owner, target) {
 }
 
 EntityManager.prototype.create_trigger_from_element = function(element) {
+  var trigger = new Trigger(this.state, this.getGroup("trigger"));
+  trigger.setPosition(element.x, element.y);
+  trigger.setSize(element.width,element.height);
 }
 
 EntityManager.prototype.create_entity_from_element = function(element) {
@@ -93,6 +98,10 @@ EntityManager.prototype.update = function(dt) {
   }, function(bullet, player) {
     return bullet.entity.owner != player.entity;
   }, this);
+  this.state.game.physics.arcade.overlap(this.groups["player"], this.groups["trigger"], function(player, trigger) {
+    console.log("Touch Trigger: ");
+    console.log(trigger.entity);
+  }, null, this);
 
   this.groups["player"].forEachAlive(function(member) {
     member.entity.update(dt);
@@ -106,7 +115,7 @@ EntityManager.prototype.update = function(dt) {
 }
 
 EntityManager.prototype.render = function() {
-  if (this.debug) {
+  if (this.debug=true) {
     for (var g in this.groups) {
       this.groups[g].forEachAlive(function(member) {
         this.state.game.debug.body(member);
