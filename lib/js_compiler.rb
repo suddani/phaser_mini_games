@@ -39,6 +39,7 @@ class JsCompiler
       )
       game_dir.join("jackdanger-minigame.concat.js").write(concat)
       ugly = Uglifier.compile(concat)
+      puts "Render file: #{game_dir.join("jackdanger-minigame.min.js").to_s}"
       game_dir.join("jackdanger-minigame.min.js").write(ugly)
     end
   end
@@ -49,9 +50,11 @@ class JsCompiler
     return [] unless game_dir.join("helper/loader.js").file?
     _files = [Pathname.new('templates/require.js')]
     game_dir.join("lib").children.each do |file|
+      puts "Add #{file}"
       _files << file
     end
     game_dir.join("src").children.each do |file|
+      puts "Add #{file}"
       _files << file
     end
     _files << game_dir.join("helper/loader.js")

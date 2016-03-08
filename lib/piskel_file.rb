@@ -77,6 +77,7 @@ private
       convert.scale "#{use_scale*100}%"
       convert << target
     end
+    puts "Rendered Piskel to: #{target}"
     target
   end
 end

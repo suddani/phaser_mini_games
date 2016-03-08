@@ -45,6 +45,7 @@ class AssetCompiler
       end
       convert << target
     end
+    puts "Compiled atlas image: #{target}"
     atlas
   end
 end

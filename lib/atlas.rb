@@ -1,6 +1,7 @@
 class Atlas
 
   def addFrames(x, y, frame_height, frameCount, frame_name)
+    puts "Add image frame to atlas: #{frame_name}"
     frames[frame_name] = {
       :frame => {
         :x => x,
@@ -22,6 +23,7 @@ class Atlas
       }
     }
     frameCount.times do |id|
+      puts "Add sprite frame to atlas: #{expand_name(frame_name, id)}"
       frames[expand_name(frame_name, id)] = {
         :frame => {
           :x => x+id*frame_height,
@@ -47,6 +49,7 @@ class Atlas
 
   def save(path)
     path.write(to_json.to_s)
+    puts "Saved atlas json: #{path}"
   end
 
   def to_json
