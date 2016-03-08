@@ -4,7 +4,8 @@ define("games/sudi/src/game", [
   "games/sudi/src/entity_manager",
   "games/sudi/src/sound_system",
   "games/sudi/src/hud",
-function(Physics, Map, EntityManager, SoundSystem, HUD) {
+  "games/sudi/src/spritesheet_generator",
+function(Physics, Map, EntityManager, SoundSystem, HUD, SpritesheetGenerator) {
   console.log("Load sudi game")
   function Main() {
   }
@@ -24,14 +25,14 @@ function(Physics, Map, EntityManager, SoundSystem, HUD) {
     this.load.spritesheet("mole", "mole.png",             32*1,32*1,  9);
     this.load.spritesheet("wormbullet", "wormbullet.png", 32*1,32*1,  9);
     this.load.spritesheet("flag", "flag.png");
-    this.load.spritesheet("ground2", "ground2.png");
+    // this.load.spritesheet("ground2", "ground2.png");
     this.load.spritesheet("ground", "ground2.png");
     this.load.spritesheet("leader", "leader.png");
     this.load.spritesheet("bridge", "bridge.png");
 
     //Maps
     this.load.tilemap('level1', 'maps/level1.json', null, Phaser.Tilemap.TILED_JSON);
-    // this.load.atlasJSONHash("atlas");
+    this.atlas = this.load.atlasJSONHash("atlas");
 
     //SoundSystem
     console.log(SoundSystem)
@@ -41,6 +42,9 @@ function(Physics, Map, EntityManager, SoundSystem, HUD) {
     var self = this;
     Pad.init(this.game);
     removeLoadingScreen();
+    // window.game = this.game
+    // console.log(this.game
+    SpritesheetGenerator.init(this.game);
 
     this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 
@@ -51,9 +55,9 @@ function(Physics, Map, EntityManager, SoundSystem, HUD) {
     this.entity_manager = new EntityManager(this);
 
     this.map = new Map(this, this.entity_manager);
-    this.map.load("level1");
+    this.map.load("level1", "atlas");
 
-    // octopus = this.game.add.sprite(100,100, "atlas");
+    octopus = this.game.add.sprite(100,100, "atlas", "jack");
     // octopus.animations.add('walk', Phaser.Animation.generateFrameNames('capguy/walk/', 1, 8, '', 4), 10, true, false);
     // octopus.animations.play("walk")
 

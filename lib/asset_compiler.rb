@@ -13,11 +13,11 @@ class AssetCompiler
       piskel = PiskelFile.load_file(asset)
       files << {
         :piskel => piskel,
-        :export => piskel.export(game.join("assets"))
+        :export => piskel.export(game.join("rawassets").join("tmp"))
       }
     end
-    # atlas = createAtlas(game.join("assets").join("atlas.png"), files)
-    # atlas.save(game.join("assets").join("atlas.json"))
+    atlas = createAtlas(game.join("assets").join("atlas.png"), files)
+    atlas.save(game.join("assets").join("atlas.json"))
   end
 
   def createAtlas(target, layers)

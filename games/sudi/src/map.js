@@ -1,14 +1,17 @@
-define("games/sudi/src/map", function() {
+define("games/sudi/src/map", [
+  "games/sudi/src/spritesheet_generator",
+function(SpritesheetGenerator) {
 function Map(state, entity_manager) {
   this.state = state;
   this.entity_manager = entity_manager;
 }
 
-Map.prototype.load = function(level_name) {
+Map.prototype.load = function(level_name, atlas) {
   this.map = this.state.game.add.tilemap(level_name);
-  console.log(this.map)
+  console.log(this.map);
 
   for (var idx in this.map.tilesets) {
+    SpritesheetGenerator.createSpriteSheet(atlas, this.map.tilesets[idx].name);
     this.map.addTilesetImage(this.map.tilesets[idx].name, this.map.tilesets[idx].name);
   }
 
@@ -60,4 +63,4 @@ Map.prototype.findObjectsByType = function(type, layer, callback) {
 }
 
 return Map;
-});
+}]);

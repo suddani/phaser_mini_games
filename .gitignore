@@ -2,6 +2,8 @@
 games/*/*.min.js
 games/*/*.concat.js
 games/*/assets/**/*.png
+games/*/assets/atlas*
+games/*/rawassets/tmp/*.png
 
 # releases
 release_*

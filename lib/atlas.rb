@@ -1,6 +1,26 @@
 class Atlas
 
   def addFrames(x, y, frame_height, frameCount, frame_name)
+    frames[frame_name] = {
+      :frame => {
+        :x => x,
+        :y => y,
+        :w => frame_height*frameCount,
+        :h => frame_height
+      },
+      :rotated => false,
+      :trimmed => false,
+      :spriteSourceSize =>  {
+        :x => 0,
+        :y => 0,
+        :w => frame_height,
+        :h => 32
+      },
+      :sourceSize =>  {
+        :w => frame_height,
+        :h => frame_height
+      }
+    }
     frameCount.times do |id|
       frames[expand_name(frame_name, id)] = {
         :frame => {

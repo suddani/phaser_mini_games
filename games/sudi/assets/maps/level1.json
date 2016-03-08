@@ -237,8 +237,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":188.272727272727,
-                 "y":299.272727272727
+                 "x":188.273,
+                 "y":299.273
                 }, 
                 {
                  "gid":23,
@@ -253,8 +253,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":238.818181818182,
-                 "y":299.454545454545
+                 "x":238.818,
+                 "y":299.455
                 }, 
                 {
                  "gid":23,
@@ -269,8 +269,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":212.545454545455,
-                 "y":299.454545454545
+                 "x":212.545,
+                 "y":299.455
                 }, 
                 {
                  "gid":23,
@@ -285,8 +285,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":164.181818181818,
-                 "y":294.545454545455
+                 "x":164.182,
+                 "y":294.545
                 }, 
                 {
                  "gid":23,
@@ -302,7 +302,7 @@
                  "visible":true,
                  "width":0,
                  "x":146,
-                 "y":283.090909090909
+                 "y":283.091
                 }, 
                 {
                  "gid":23,
@@ -317,8 +317,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":125.545454545455,
-                 "y":266.090909090909
+                 "x":125.545,
+                 "y":266.091
                 }, 
                 {
                  "gid":23,
@@ -513,7 +513,7 @@
                  "y":426
                 }, 
                 {
-                 "gid":53,
+                 "gid":32,
                  "height":0,
                  "name":"flag",
                  "properties":
@@ -529,7 +529,7 @@
                  "y":433
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -546,7 +546,7 @@
                  "y":433.25
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -563,7 +563,7 @@
                  "y":432.5
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -580,7 +580,7 @@
                  "y":272
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -597,7 +597,7 @@
                  "y":432.625
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -614,7 +614,7 @@
                  "y":433
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -631,7 +631,7 @@
                  "y":432
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -648,7 +648,7 @@
                  "y":273
                 }, 
                 {
-                 "gid":64,
+                 "gid":43,
                  "height":0,
                  "name":"mole",
                  "properties":
@@ -660,11 +660,11 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":353.333333333333,
+                 "x":353.333,
                  "y":403
                 }, 
                 {
-                 "gid":73,
+                 "gid":52,
                  "height":0,
                  "name":"worm",
                  "properties":
@@ -1368,7 +1368,7 @@
                  "y":199
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -1385,7 +1385,7 @@
                  "y":113
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -1402,7 +1402,7 @@
                  "y":113
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -1419,7 +1419,7 @@
                  "y":113
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -1436,7 +1436,7 @@
                  "y":305
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -1453,7 +1453,7 @@
                  "y":147
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -1470,7 +1470,7 @@
                  "y":305
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -1487,7 +1487,7 @@
                  "y":177
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -1548,7 +1548,7 @@
                  "y":-69
                 }, 
                 {
-                 "gid":51,
+                 "gid":30,
                  "height":0,
                  "name":"leader",
                  "properties":
@@ -1564,7 +1564,7 @@
                  "y":-66
                 }, 
                 {
-                 "gid":53,
+                 "gid":32,
                  "height":0,
                  "name":"flag",
                  "properties":
@@ -1580,7 +1580,7 @@
                  "y":-66
                 }, 
                 {
-                 "gid":54,
+                 "gid":33,
                  "height":0,
                  "name":"turtle",
                  "properties":
@@ -1597,7 +1597,7 @@
                  "y":-67
                 }, 
                 {
-                 "gid":59,
+                 "gid":38,
                  "height":0,
                  "name":"npc",
                  "properties":
@@ -1612,7 +1612,7 @@
                  "y":-65
                 }, 
                 {
-                 "gid":64,
+                 "gid":43,
                  "height":0,
                  "name":"mole",
                  "properties":
@@ -1628,7 +1628,7 @@
                  "y":-63
                 }, 
                 {
-                 "gid":73,
+                 "gid":52,
                  "height":0,
                  "name":"worm",
                  "properties":
@@ -1670,7 +1670,7 @@
                  "y":434
                 }, 
                 {
-                 "height":54.8181818181818,
+                 "height":54.8182,
                  "name":"",
                  "properties":
                     {
@@ -1679,7 +1679,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":192.272727272727,
+                 "width":192.273,
                  "x":400,
                  "y":275
                 }, 
@@ -1698,7 +1698,7 @@
                  "y":403
                 }, 
                 {
-                 "height":90.6363636363636,
+                 "height":90.6364,
                  "name":"",
                  "properties":
                     {
@@ -1707,9 +1707,9 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":94.3636363636364,
-                 "x":19.2727272727273,
-                 "y":216.727272727273
+                 "width":94.3636,
+                 "x":19.2727,
+                 "y":216.727
                 }, 
                 {
                  "height":101,
@@ -1754,7 +1754,7 @@
                  "y":308
                 }, 
                 {
-                 "height":15.0909090909091,
+                 "height":15.0909,
                  "name":"",
                  "properties":
                     {
@@ -1763,9 +1763,9 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":128.545454545455,
-                 "x":592.272727272727,
-                 "y":305.636363636364
+                 "width":128.545,
+                 "x":592.273,
+                 "y":305.636
                 }, 
                 {
                  "height":30,
@@ -1852,7 +1852,7 @@
                  "y":274
                 }, 
                 {
-                 "height":14.5454545454545,
+                 "height":14.5455,
                  "name":"",
                  "properties":
                     {
@@ -1861,9 +1861,9 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":117.636363636364,
-                 "x":592.727272727273,
-                 "y":320.909090909091
+                 "width":117.636,
+                 "x":592.727,
+                 "y":320.909
                 }, 
                 {
                  "height":18,
@@ -2162,7 +2162,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "image":"..\/ground2.png",
+         "image":"..\/..\/rawassets\/tmp\/ground2.png",
          "imageheight":32,
          "imagewidth":448,
          "margin":0,
@@ -2617,7 +2617,7 @@
         }, 
         {
          "firstgid":15,
-         "image":"..\/jack.png",
+         "image":"..\/..\/rawassets\/tmp\/jack.png",
          "imageheight":32,
          "imagewidth":256,
          "margin":0,
@@ -2662,7 +2662,7 @@
         }, 
         {
          "firstgid":23,
-         "image":"..\/coin.png",
+         "image":"..\/..\/rawassets\/tmp\/coin.png",
          "imageheight":16,
          "imagewidth":112,
          "margin":0,
@@ -2707,8 +2707,8 @@
          "tilewidth":16
         }, 
         {
-         "firstgid":51,
-         "image":"..\/leader.png",
+         "firstgid":30,
+         "image":"..\/..\/rawassets\/tmp\/leader.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -2722,8 +2722,8 @@
          "tilewidth":32
         }, 
         {
-         "firstgid":52,
-         "image":"..\/bridge.png",
+         "firstgid":31,
+         "image":"..\/..\/rawassets\/tmp\/bridge.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -2737,8 +2737,8 @@
          "tilewidth":32
         }, 
         {
-         "firstgid":53,
-         "image":"..\/flag.png",
+         "firstgid":32,
+         "image":"..\/..\/rawassets\/tmp\/flag.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -2752,8 +2752,8 @@
          "tilewidth":32
         }, 
         {
-         "firstgid":54,
-         "image":"..\/tourtle.png",
+         "firstgid":33,
+         "image":"..\/..\/rawassets\/tmp\/tourtle.png",
          "imageheight":32,
          "imagewidth":160,
          "margin":0,
@@ -2798,8 +2798,8 @@
          "tilewidth":32
         }, 
         {
-         "firstgid":59,
-         "image":"..\/enemy.png",
+         "firstgid":38,
+         "image":"..\/..\/rawassets\/tmp\/enemy.png",
          "imageheight":32,
          "imagewidth":160,
          "margin":0,
@@ -2836,8 +2836,8 @@
          "tilewidth":32
         }, 
         {
-         "firstgid":64,
-         "image":"..\/mole.png",
+         "firstgid":43,
+         "image":"..\/..\/rawassets\/tmp\/mole.png",
          "imageheight":32,
          "imagewidth":288,
          "margin":0,
@@ -2874,8 +2874,8 @@
          "tilewidth":32
         }, 
         {
-         "firstgid":73,
-         "image":"..\/wormbullet.png",
+         "firstgid":52,
+         "image":"..\/..\/rawassets\/tmp\/wormbullet.png",
          "imageheight":32,
          "imagewidth":288,
          "margin":0,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="14" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="ground2" tilewidth="32" tileheight="32">
-  <image source="../assets/ground2.png" width="448" height="32"/>
+  <image source="tmp/ground2.png" width="448" height="32"/>
   <terraintypes>
    <terrain name="Dirt" tile="1"/>
    <terrain name="Air" tile="13"/>
@@ -74,7 +74,7 @@
   <tile id="13" terrain="1,1,1,1"/>
  </tileset>
  <tileset firstgid="15" name="jack" tilewidth="32" tileheight="32">
-  <image source="../assets/jack.png" width="256" height="32"/>
+  <image source="tmp/jack.png" width="256" height="32"/>
   <tile id="0">
    <properties>
     <property name="type" value="player"/>
@@ -88,7 +88,7 @@
   </tile>
  </tileset>
  <tileset firstgid="23" name="coin" tilewidth="16" tileheight="16">
-  <image source="../assets/coin.png" width="112" height="16"/>
+  <image source="tmp/coin.png" width="112" height="16"/>
   <tile id="0">
    <animation>
     <frame tileid="0" duration="100"/>
@@ -101,16 +101,16 @@
   </tile>
  </tileset>
  <tileset firstgid="51" name="leader" tilewidth="32" tileheight="32">
-  <image source="../assets/leader.png" width="32" height="32"/>
+  <image source="tmp/leader.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="52" name="bridge" tilewidth="32" tileheight="32">
-  <image source="../assets/bridge.png" width="32" height="32"/>
+  <image source="tmp/bridge.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="53" name="flag" tilewidth="32" tileheight="32">
-  <image source="../assets/flag.png" width="32" height="32"/>
+  <image source="tmp/flag.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="54" name="tourtle" tilewidth="32" tileheight="32">
-  <image source="../assets/tourtle.png" width="160" height="32"/>
+  <image source="tmp/tourtle.png" width="160" height="32"/>
   <tile id="0">
    <animation>
     <frame tileid="0" duration="100"/>
@@ -123,7 +123,7 @@
   </tile>
  </tileset>
  <tileset firstgid="59" name="enemy" tilewidth="32" tileheight="32">
-  <image source="../assets/enemy.png" width="160" height="32"/>
+  <image source="tmp/enemy.png" width="160" height="32"/>
   <tile id="0">
    <animation>
     <frame tileid="0" duration="100"/>
@@ -134,7 +134,7 @@
   </tile>
  </tileset>
  <tileset firstgid="64" name="mole" tilewidth="32" tileheight="32">
-  <image source="../assets/mole.png" width="288" height="32"/>
+  <image source="tmp/mole.png" width="288" height="32"/>
   <tile id="0">
    <animation>
     <frame tileid="0" duration="100"/>
@@ -145,7 +145,7 @@
   </tile>
  </tileset>
  <tileset firstgid="73" name="wormbullet" tilewidth="32" tileheight="32">
-  <image source="../assets/wormbullet.png" width="288" height="32"/>
+  <image source="tmp/wormbullet.png" width="288" height="32"/>
   <tile id="0">
    <animation>
     <frame tileid="0" duration="100"/>
