@@ -100,16 +100,16 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="51" name="leader" tilewidth="32" tileheight="32">
+ <tileset firstgid="30" name="leader" tilewidth="32" tileheight="32">
   <image source="tmp/leader.png" width="32" height="32"/>
  </tileset>
- <tileset firstgid="52" name="bridge" tilewidth="32" tileheight="32">
+ <tileset firstgid="31" name="bridge" tilewidth="32" tileheight="32">
   <image source="tmp/bridge.png" width="32" height="32"/>
  </tileset>
- <tileset firstgid="53" name="flag" tilewidth="32" tileheight="32">
+ <tileset firstgid="32" name="flag" tilewidth="32" tileheight="32">
   <image source="tmp/flag.png" width="32" height="32"/>
  </tileset>
- <tileset firstgid="54" name="tourtle" tilewidth="32" tileheight="32">
+ <tileset firstgid="33" name="tourtle" tilewidth="32" tileheight="32">
   <image source="tmp/tourtle.png" width="160" height="32"/>
   <tile id="0">
    <animation>
@@ -122,7 +122,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="59" name="enemy" tilewidth="32" tileheight="32">
+ <tileset firstgid="38" name="enemy" tilewidth="32" tileheight="32">
   <image source="tmp/enemy.png" width="160" height="32"/>
   <tile id="0">
    <animation>
@@ -133,7 +133,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="64" name="mole" tilewidth="32" tileheight="32">
+ <tileset firstgid="43" name="mole" tilewidth="32" tileheight="32">
   <image source="tmp/mole.png" width="288" height="32"/>
   <tile id="0">
    <animation>
@@ -144,7 +144,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="73" name="wormbullet" tilewidth="32" tileheight="32">
+ <tileset firstgid="52" name="wormbullet" tilewidth="32" tileheight="32">
   <image source="tmp/wormbullet.png" width="288" height="32"/>
   <tile id="0">
    <animation>
@@ -167,9 +167,12 @@
  </tileset>
  <layer name="groundlayer" width="50" height="14">
   <data encoding="base64" compression="zlib">
-   eJzdVUEOwzAIo23Wbkm7/z93mdRIyIuBTLt0B1/aQIzBZBaR+Y+wVjwuiBvUca94XhAb9CKTc3vFdOJwcuqzCC/221y6DtaLd6400DOdE7EM1IP3slxTgJ/O1byT5VMvzauIPb+t76j1Ad+S9H2LXvC0ivRhM/5p6Nqy9Pu2EP1x3kugFs0Jde15pxj/PLTYHqc1eK/Vn8jOYv6L7gBvDj1ddpVDxzP/MJ7Myxh7wN1tbqL7nemVzrtQt+g7yWaOQft5ZOf1YiKzE33PR3xgcbHqwP1icUI+3jtozbfHv8cD79F5I/uFwfMF7nTrLOr/q7wRvADnxBXL
+   eJzVVcsOgzAMy2gHDCj//7krEpEyL48WceFg7UHjxkkcdiLaKl4PRjk/c8VY8Xkg3hVzxXDi+L4/EJPQcfRiMc7JmSsBpzefUexVLqnD6sXBlTt6NomziNShB++1uNgTng7Jxd5Z6L9eMq+V9Pkd6LfvWOsC/2WI0bgkWAfWqqUPk/NMQmpbSO9bMuqP874aWmblt1ZXzTur8ywCx2o5jY33ynhLxxX/te6AaA6jumyCg/uTlP5GO8LyMsYWuJvnpnW/W/XK511RPhasmbMg/dyz87QYLx/UEb3Pe3zg5eLpwP3i5aTtDO896M13lL+WB94jeVv2i+Z79rvnC9zp3lms/128LRxf0twVnA==
   </data>
  </layer>
+ <objectgroup name="trigger">
+  <object x="185" y="327" width="500" height="105"/>
+ </objectgroup>
  <objectgroup name="entities">
   <object name="player" gid="15" x="90" y="428">
    <properties>
@@ -357,68 +360,68 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="flag" gid="53" x="1559" y="433">
+  <object name="flag" gid="32" x="1553" y="434">
    <properties>
     <property name="class" value="Flag"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="227.5" y="433.25">
+  <object name="turtle" gid="33" x="227.5" y="433.25">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="50"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="492.75" y="432.5">
+  <object name="turtle" gid="33" x="492.75" y="432.5">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="474" y="272">
+  <object name="turtle" gid="33" x="474" y="272">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="881.5" y="432.625">
+  <object name="turtle" gid="33" x="863.5" y="432.625">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="1232" y="433">
+  <object name="turtle" gid="33" x="1232" y="433">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="1461" y="432">
+  <object name="turtle" gid="33" x="1461" y="432">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="884.25" y="273">
+  <object name="turtle" gid="33" x="869.25" y="273">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="10"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="mole" gid="64" x="353.333" y="403">
+  <object name="mole" gid="43" x="353.333" y="403">
    <properties>
     <property name="class" value="Mole"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="worm" gid="73" x="132" y="444">
+  <object name="worm" gid="52" x="132" y="444">
    <properties>
     <property name="class" value="Worm"/>
     <property name="type" value="collectable"/>
@@ -556,37 +559,37 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="1318" y="290">
+  <object name="coin" gid="23" x="1318" y="298">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="1339" y="290">
+  <object name="coin" gid="23" x="1339" y="298">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="1301" y="290">
+  <object name="coin" gid="23" x="1301" y="298">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="1375" y="290">
+  <object name="coin" gid="23" x="1375" y="298">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="1282" y="290">
+  <object name="coin" gid="23" x="1282" y="298">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="coin" gid="23" x="1358" y="290">
+  <object name="coin" gid="23" x="1358" y="298">
    <properties>
     <property name="class" value="Coin"/>
     <property name="type" value="collectable"/>
@@ -682,56 +685,56 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="326" y="113">
+  <object name="turtle" gid="33" x="306" y="114">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="20"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="753" y="113">
+  <object name="turtle" gid="33" x="683" y="113">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="1353" y="113">
+  <object name="turtle" gid="33" x="1329" y="112">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="1347" y="305">
+  <object name="turtle" gid="33" x="1323" y="306">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="1508" y="147">
+  <object name="turtle" gid="33" x="1487" y="146">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="10"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="238" y="305">
+  <object name="turtle" gid="33" x="238" y="305">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="1008" y="177">
+  <object name="turtle" gid="33" x="990" y="177">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="20"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="1073" y="400">
+  <object name="turtle" gid="33" x="1056" y="401">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="10"/>
@@ -752,33 +755,33 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="leader" gid="51" x="246" y="-66">
+  <object name="leader" gid="30" x="246" y="-66">
    <properties>
     <property name="class" value="Leader"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="flag" gid="53" x="280" y="-66">
+  <object name="flag" gid="32" x="280" y="-66">
    <properties>
     <property name="class" value="Flag"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="turtle" gid="54" x="320" y="-67">
+  <object name="turtle" gid="33" x="320" y="-67">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="npc" gid="59" x="362" y="-65"/>
-  <object name="mole" gid="64" x="406" y="-63">
+  <object name="npc" gid="38" x="362" y="-65"/>
+  <object name="mole" gid="43" x="406" y="-63">
    <properties>
     <property name="class" value="Mole"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object name="worm" gid="73" x="449" y="-62">
+  <object name="worm" gid="52" x="449" y="-62">
    <properties>
     <property name="class" value="Worm"/>
     <property name="type" value="collectable"/>
@@ -786,7 +789,7 @@
   </object>
  </objectgroup>
  <objectgroup name="collision">
-  <object x="57" y="434" width="1544" height="12"/>
+  <object x="57" y="434" width="1531" height="11"/>
   <object x="400" y="275" width="192.273" height="54.8182"/>
   <object x="333" y="403" width="67" height="31"/>
   <object x="19.2727" y="216.727" width="94.3636" height="90.6364"/>
@@ -805,7 +808,7 @@
   <object x="208" y="180" width="63" height="30"/>
   <object x="240" y="147" width="52" height="32"/>
   <object x="272" y="114" width="97" height="33"/>
-  <object x="464" y="180" width="65" height="46"/>
+  <object x="464" y="180" width="63" height="59"/>
   <object x="624" y="114" width="222" height="61"/>
   <object x="845" y="145" width="66" height="22"/>
   <object x="945" y="178" width="126" height="35"/>
@@ -817,9 +820,13 @@
   <object x="1447" y="145" width="102" height="33"/>
   <object x="1549" y="43" width="26" height="119"/>
   <object x="29" y="107" width="18" height="119"/>
-  <object x="1138" y="372" width="124" height="18"/>
+  <object x="1138" y="372" width="123" height="27"/>
   <object x="1169" y="339" width="103" height="32"/>
   <object x="1234" y="308" width="255" height="32"/>
-  <object x="1426" y="274" width="28" height="34"/>
+  <object x="1423" y="274" width="33" height="34"/>
+  <object x="1552" y="274" width="26" height="116"/>
+  <object x="1579" y="390" width="17" height="43"/>
+  <object x="1435" y="228" width="149" height="14"/>
+  <object x="1529" y="242" width="55" height="32"/>
  </objectgroup>
 </map>

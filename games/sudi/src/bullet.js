@@ -30,7 +30,7 @@ Bullet.prototype.kill = function () {
 
 Bullet.prototype.interact = function (entity) {
   this.kill();
-  if (entity.kill) entity.kill();
+  if (entity.damage) entity.damage(1);
 };
 
 Bullet.prototype.set = function (property, value) {

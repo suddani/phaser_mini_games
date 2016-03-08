@@ -53,6 +53,10 @@ Player.prototype.setPosition = function(x,y) {
   this.y = this.sprite.y = y;
 }
 
+Player.prototype.damage = function(ammount) {
+  this.kill();
+}
+
 Player.prototype.reset_body_size = function() {
   if (this.duck) {
     this.sprite.body.setSize(10,16);

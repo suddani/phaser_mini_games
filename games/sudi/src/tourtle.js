@@ -38,6 +38,10 @@ Tourtle.prototype.setPosition = function(x,y) {
   this.y = this.sprite.y = y;
 }
 
+Tourtle.prototype.damage = function(ammount) {
+  this.kill();
+}
+
 Tourtle.prototype.update = function(dt) {
   if (this.dead_timer!= null) {
     this.dead_timer-=dt;

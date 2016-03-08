@@ -46,13 +46,16 @@ EntityManager.prototype.fireBullet = function(owner, target) {
     bullet.sprite.body.velocity.x = 150*owner.sprite.scale.x;
 }
 
-EntityManager.prototype.create_from_properties = function(element) {
+EntityManager.prototype.create_trigger_from_element = function(element) {
+}
+
+EntityManager.prototype.create_entity_from_element = function(element) {
   if (element.properties["class"]) {
     try {
       var constructor = eval(element.properties["class"]);
       var entity = new constructor(this.state, this.getGroup(element.properties["type"]));
       entity.manager = this;
-      entity.setPosition(element.x, element.y);
+      entity.setPosition(element.x+16, element.y);
       Object.keys(element.properties).forEach(function(key){
         entity.set(key, element.properties[key]);
       });

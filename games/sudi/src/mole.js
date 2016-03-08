@@ -37,6 +37,10 @@ Mole.prototype.setPosition = function(x,y) {
   this.y = this.sprite.y = y;
 }
 
+Mole.prototype.damage = function(ammount) {
+  this.kill();
+}
+
 Mole.prototype.update = function(dt) {
   if (this.dead_timer!= null) {
     this.dead_timer-=dt;

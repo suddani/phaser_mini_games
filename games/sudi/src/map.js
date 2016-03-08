@@ -25,37 +25,43 @@ Map.prototype.load = function(level_name, atlas) {
   // this.map.calculateFaces("groundlayer");
   this.groundlayer.resizeWorld();
   this.createCollsionLayer();
+  this.createTrigger();
   this.entity_manager.setWorldGeometry(this.collisionLayer);
   this.spawnEntities();
 }
 
+Map.prototype.createTrigger = function() {
+  this.findObjectsByType(null, "trigger", function(element) {
+    this.entity_manager.create_trigger_from_element(element);
+  }, this);
+}
+
 Map.prototype.createCollsionLayer = function() {
-  var collisionLayer = this.collisionLayer = this.state.game.add.group();
+  this.collisionLayer = this.state.game.add.group();
   this.collisionLayer.enableBody = true;
   this.collisionLayer.physicsBodyType = Phaser.Physics.ARCADE;
   this.collisionLayer.debug = true;
 
-  this.findObjectsByType(null, "collision", function(map, element) {
-    var collision = collisionLayer.create(element.x, element.y);
+  this.findObjectsByType(null, "collision", function(element) {
+    var collision = this.collisionLayer.create(element.x, element.y);
     collision.body.setSize(element.width,element.height);
     collision.body.immovable = true;
-  });
+  }, this);
 }
 
 Map.prototype.spawnEntities = function() {
   var entities = this.findObjectsByType(null, "entities");
   for (var i in entities) {
-    this.entity_manager.create_from_properties(entities[i]);
+    this.entity_manager.create_entity_from_element(entities[i]);
   }
 }
 
 //find objects in a Tiled layer that containt a property called "type" equal to a certain value
-Map.prototype.findObjectsByType = function(type, layer, callback) {
+Map.prototype.findObjectsByType = function(type, layer, callback, context) {
   var result = new Array();
-  var self = this;
   this.map.objects[layer].forEach(function(element){
     if(!type || element.properties.type === type) {
-      if (callback) callback(self, element);
+      if (callback) callback.call(context, element);
       result.push(element);
     }
   });
