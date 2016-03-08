@@ -17,18 +17,7 @@ function(Physics, Map, EntityManager, SoundSystem, HUD, SpritesheetGenerator) {
     this.load.path = 'games/' + currentGameData.id + '/assets/';
 
     //füge hie rein was du alles laden musst.
-    this.load.spritesheet("jack", "jack.png",             32*1,32*1,  8);
-    this.load.spritesheet("enemy", "enemy.png",           32*1,32*1,  5);
-    this.load.spritesheet("coin", "coin.png",         32*0.5,32*0.5,  7);
-    this.load.spritesheet("coin_hud", "coin_hud.png",     32*1,32*1,  7);
-    this.load.spritesheet("tourtle", "tourtle.png",       32*1,32*1,  5);
-    this.load.spritesheet("mole", "mole.png",             32*1,32*1,  9);
-    this.load.spritesheet("wormbullet", "wormbullet.png", 32*1,32*1,  9);
-    this.load.spritesheet("flag", "flag.png");
-    // this.load.spritesheet("ground2", "ground2.png");
-    this.load.spritesheet("ground", "ground2.png");
-    this.load.spritesheet("leader", "leader.png");
-    this.load.spritesheet("bridge", "bridge.png");
+    // this.load.spritesheet("jack", "jack.png",             32*1,32*1,  8);
 
     //Maps
     this.load.tilemap('level1', 'maps/level1.json', null, Phaser.Tilemap.TILED_JSON);
@@ -42,8 +31,7 @@ function(Physics, Map, EntityManager, SoundSystem, HUD, SpritesheetGenerator) {
     var self = this;
     Pad.init(this.game);
     removeLoadingScreen();
-    // window.game = this.game
-    // console.log(this.game
+
     SpritesheetGenerator.init(this.game);
 
     this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;

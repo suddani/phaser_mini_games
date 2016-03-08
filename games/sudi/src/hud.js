@@ -16,13 +16,13 @@ HUD.prototype.init = function(state) {
 
   this.generateBars();
 
-  this.coin = this.hud_elements.create(5,0, "coin_hud");
-  this.coin.animations.add("idle", [0,1,2,3,4,5], 5);
+  this.coin = this.hud_elements.create(5,0, "atlas", "coin_hud_0000");
+  this.coin.animations.add("idle", Phaser.Animation.generateFrameNames('coin_hud_', 0, 5, '', 4), 5);
   this.coin.play("idle", 5, true);
   // this.coin.fixedToCamera = true;
 
-  this.worm = this.hud_elements.create(5,40, "wormbullet");
-  this.worm.animations.add("idle", [0,1,2,1], 5);
+  this.worm = this.hud_elements.create(5,40, "atlas", "wormbullet");
+  this.worm.animations.add("idle", Phaser.Animation.generateFrameNames('wormbullet_', 0, 2, '', 4), 5);
   this.worm.play("idle", 5, true);
   // this.worm.fixedToCamera = true;
 
