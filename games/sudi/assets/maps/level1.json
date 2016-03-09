@@ -900,7 +900,7 @@
                  "y":426
                 }, 
                 {
-                 "gid":90,
+                 "gid":89,
                  "height":32,
                  "id":33,
                  "name":"flag",
@@ -922,7 +922,7 @@
                  "y":434
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":34,
                  "name":"turtle",
@@ -946,7 +946,7 @@
                  "y":433.25
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":35,
                  "name":"turtle",
@@ -970,7 +970,7 @@
                  "y":432.5
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":36,
                  "name":"turtle",
@@ -994,7 +994,7 @@
                  "y":272
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":37,
                  "name":"turtle",
@@ -1018,7 +1018,7 @@
                  "y":432.625
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":38,
                  "name":"turtle",
@@ -1042,7 +1042,7 @@
                  "y":433
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":39,
                  "name":"turtle",
@@ -1066,7 +1066,7 @@
                  "y":432
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":40,
                  "name":"turtle",
@@ -1090,7 +1090,7 @@
                  "y":273
                 }, 
                 {
-                 "gid":101,
+                 "gid":100,
                  "height":32,
                  "id":41,
                  "name":"mole",
@@ -1114,7 +1114,7 @@
                  "y":432.667
                 }, 
                 {
-                 "gid":110,
+                 "gid":109,
                  "height":32,
                  "id":42,
                  "name":"worm",
@@ -2082,7 +2082,7 @@
                  "y":201
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":86,
                  "name":"turtle",
@@ -2106,7 +2106,7 @@
                  "y":114
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":87,
                  "name":"turtle",
@@ -2130,7 +2130,7 @@
                  "y":113
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":88,
                  "name":"turtle",
@@ -2154,7 +2154,7 @@
                  "y":112
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":89,
                  "name":"turtle",
@@ -2178,7 +2178,7 @@
                  "y":306
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":90,
                  "name":"turtle",
@@ -2202,7 +2202,7 @@
                  "y":146
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":91,
                  "name":"turtle",
@@ -2226,7 +2226,7 @@
                  "y":305
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":92,
                  "name":"turtle",
@@ -2250,7 +2250,7 @@
                  "y":177
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":93,
                  "name":"turtle",
@@ -2274,7 +2274,7 @@
                  "y":401
                 }, 
                 {
-                 "gid":101,
+                 "gid":100,
                  "height":32,
                  "id":144,
                  "name":"mole",
@@ -2298,7 +2298,7 @@
                  "y":113
                 }, 
                 {
-                 "gid":101,
+                 "gid":100,
                  "height":32,
                  "id":146,
                  "name":"mole",
@@ -2322,7 +2322,7 @@
                  "y":433
                 }, 
                 {
-                 "gid":110,
+                 "gid":109,
                  "height":32,
                  "id":148,
                  "name":"worm",
@@ -2344,7 +2344,7 @@
                  "y":206
                 }, 
                 {
-                 "gid":101,
+                 "gid":100,
                  "height":32,
                  "id":149,
                  "name":"mole",
@@ -2368,7 +2368,7 @@
                  "y":211.5
                 }, 
                 {
-                 "gid":101,
+                 "gid":100,
                  "height":32,
                  "id":152,
                  "name":"mole",
@@ -2612,7 +2612,7 @@
                  "y":269
                 }, 
                 {
-                 "gid":101,
+                 "gid":100,
                  "height":32,
                  "id":169,
                  "name":"mole",
@@ -2636,7 +2636,7 @@
                  "y":243.333
                 }, 
                 {
-                 "gid":101,
+                 "gid":100,
                  "height":32,
                  "id":174,
                  "name":"mole",
@@ -2738,7 +2738,7 @@
                  "y":-66
                 }, 
                 {
-                 "gid":90,
+                 "gid":89,
                  "height":32,
                  "id":97,
                  "name":"flag",
@@ -2760,7 +2760,7 @@
                  "y":-66
                 }, 
                 {
-                 "gid":91,
+                 "gid":90,
                  "height":32,
                  "id":98,
                  "name":"turtle",
@@ -2784,7 +2784,7 @@
                  "y":-67
                 }, 
                 {
-                 "gid":96,
+                 "gid":95,
                  "height":32,
                  "id":99,
                  "name":"npc",
@@ -2796,7 +2796,7 @@
                  "y":-65
                 }, 
                 {
-                 "gid":101,
+                 "gid":100,
                  "height":32,
                  "id":100,
                  "name":"mole",
@@ -2820,7 +2820,7 @@
                  "y":-66
                 }, 
                 {
-                 "gid":110,
+                 "gid":109,
                  "height":32,
                  "id":101,
                  "name":"worm",
@@ -2869,7 +2869,7 @@
                  "y":-159
                 }, 
                 {
-                 "gid":101,
+                 "gid":100,
                  "height":32,
                  "id":151,
                  "name":"mole",
@@ -4105,19 +4105,6 @@
         {
          "columns":1,
          "firstgid":89,
-         "image":"..\/..\/rawassets\/tmp\/bridge.png",
-         "imageheight":32,
-         "imagewidth":32,
-         "margin":0,
-         "name":"bridge",
-         "spacing":0,
-         "tilecount":1,
-         "tileheight":32,
-         "tilewidth":32
-        }, 
-        {
-         "columns":1,
-         "firstgid":90,
          "image":"..\/..\/rawassets\/tmp\/flag.png",
          "imageheight":32,
          "imagewidth":32,
@@ -4130,7 +4117,7 @@
         }, 
         {
          "columns":5,
-         "firstgid":91,
+         "firstgid":90,
          "image":"..\/..\/rawassets\/tmp\/tourtle.png",
          "imageheight":32,
          "imagewidth":160,
@@ -4174,7 +4161,7 @@
         }, 
         {
          "columns":5,
-         "firstgid":96,
+         "firstgid":95,
          "image":"..\/..\/rawassets\/tmp\/enemy.png",
          "imageheight":32,
          "imagewidth":160,
@@ -4210,7 +4197,7 @@
         }, 
         {
          "columns":9,
-         "firstgid":101,
+         "firstgid":100,
          "image":"..\/..\/rawassets\/tmp\/mole.png",
          "imageheight":32,
          "imagewidth":288,
@@ -4246,7 +4233,7 @@
         }, 
         {
          "columns":9,
-         "firstgid":110,
+         "firstgid":109,
          "image":"..\/..\/rawassets\/tmp\/wormbullet.png",
          "imageheight":32,
          "imagewidth":288,

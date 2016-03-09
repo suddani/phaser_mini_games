@@ -7,10 +7,22 @@ class AssetCompiler
   def compile
     assets = Pathname.new(game.join("rawassets"))
     return unless assets.directory?
+    compile_piskel_files(assets)
+  end
+
+  def compile_piskel_files(assets)
     files = []
     assets.children.each_with_index.map do |asset, idx|
       next unless /.piskel$/.match(asset.to_s)
       piskel = PiskelFile.load_file(asset)
+      files << {
+        :piskel => piskel,
+        :export => piskel.export(game.join("rawassets").join("tmp"))
+      }
+    end
+    assets.children.each_with_index.map do |asset, idx|
+      next unless /.png$/.match(asset.to_s)
+      piskel = PiskelFile.make_piskel(asset)
       files << {
         :piskel => piskel,
         :export => piskel.export(game.join("rawassets").join("tmp"))

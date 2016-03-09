@@ -22,6 +22,10 @@ class PiskelLayers
   def []=(name_or_id, value)
   end
 
+  def to_json
+    to_ary.to_json
+  end
+
   def to_ary
     layers
   end

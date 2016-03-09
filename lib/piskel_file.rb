@@ -8,6 +8,36 @@ class PiskelFile
     def load_json(json)
       PiskelFile.new JSON.parse(json)
     end
+    def make_piskel(img_path)
+      load_json(make_piskel_hash(img_path))
+    end
+    def make_piskel_hash(img_path_)
+      img_path = Pathname.new(img_path_)
+      image = MiniMagick::Image.open(img_path.to_s)
+      width = image.width
+      height= image.height
+      config_path = Pathname.new img_path.to_s+".config"
+      puts "Config File? #{config_path} : #{config_path.file?}"
+      config = config_path.file? ? JSON.parse(config_path.read) : {"spritesheet": true}
+      frameCount = config["spritesheet"] ? width/height : 1
+      {
+        modelVersion: 2,
+        piskel: {
+          name: img_path.basename.to_s.split(".")[0],
+          description: "",
+          fps: 12,
+          height: height,
+          width: width,
+          layers: [
+            {
+              name: "Layer 1",
+              frameCount: frameCount,
+              base64PNG: "data:image/png;base64,#{Base64.encode64(img_path.read()).gsub("\n","")}"
+            }.to_json
+          ]
+        }
+      }.to_json
+    end
   end
   attr_reader :json, :layers, :config
 
@@ -28,7 +58,7 @@ class PiskelFile
 
   def export(target, custom_scale=nil)
     config.each_with_index.map do |cfg,idx|
-      save(target.join("#{name(idx)}.png"), custom_scale||(scale(idx)||1))
+      save_image(target.join("#{name(idx)}.png"), custom_scale||(scale(idx)||1))
     end
   end
 
@@ -52,12 +82,21 @@ class PiskelFile
     end
     super(m, *args, &block)
   end
+
+  def to_json
+    {
+      modelVersion: 2
+    }
+  end
+
+  def save(path)
+  end
 private
   def file_name(idx)
 
   end
 
-  def save(target, use_scale)
+  def save_image(target, use_scale)
     MiniMagick::Tool::Convert.new do |convert|
       if layers.length > 1
         layers.each_with_index do |layer,idx|

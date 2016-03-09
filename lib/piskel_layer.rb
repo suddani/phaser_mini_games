@@ -16,6 +16,14 @@ class PiskelLayer
     "Layer: #{name} at #{frameCount}"
   end
 
+  def to_json
+    {
+      name: name,
+      frameCount: frameCount,
+      base64PNG: base64PNG
+    }
+  end
+
   def export(file_name, scale=1)
     image_tempfile do |file|
       image = MiniMagick::Image.new(file.path)
