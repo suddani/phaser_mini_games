@@ -72,7 +72,13 @@ class GamePackeger
   end
 
   def link_games
-    `ln -s ../games dev/games`
+    game_dirs = Pathname.new("games")
+    target = "dev/games"
+    game_dirs.children.each do |game|
+      next unless game.directory?
+      puts "Link Game: ln -s ../#{game.to_s} dev/games/#{game.basename}"
+      `ln -s ../../#{game.to_s} dev/games/#{game.basename}`
+    end
   end
 
   def unlink_games
