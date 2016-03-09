@@ -9,11 +9,11 @@ define("games/sudi/src/game", [
 function(Physics, Map, EntityManager, Coin, SoundSystem, HUD, SpritesheetGenerator) {
   // console.log("Load sudi game")
   function Main() {
-  }
+  };
   Main.prototype.init = function() {
     console.log("init sudi game");
     addLoadingScreen(this);
-  }
+  };
   Main.prototype.preload = function() {
     this.load.path = 'games/' + currentGameData.id + '/assets/';
 
@@ -26,7 +26,7 @@ function(Physics, Map, EntityManager, Coin, SoundSystem, HUD, SpritesheetGenerat
 
     //SoundSystem
     SoundSystem.preload(this.game);
-  }
+  };
   Main.prototype.create = function() {
     var self = this;
     Pad.init(this.game);
@@ -47,15 +47,15 @@ function(Physics, Map, EntityManager, Coin, SoundSystem, HUD, SpritesheetGenerat
     this.map.load("level1", "atlas");
 
     this.game.stage.backgroundColor = "#4488AA";
-  }
+  };
   Main.prototype.update = function() {
     var dt = this.time.physicsElapsedMS * 0.001;
     this.entity_manager.update(dt);
     HUD.update();
-  }
+  };
   Main.prototype.render = function() {
     // game.debug.text(game.time.suggestedFps, 32, 32);
     this.entity_manager.render();
-  }
+  };
   return Main;
 }]);

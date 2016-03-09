@@ -8,7 +8,7 @@ function Enemy(state) {
   this.sprite.animations.add("idle", [0,1,2,1], 7);
   this.sprite.animations.add("walk", [0,3,4,3], 7);
   this.sprite.play("idle", 7, true)
-}
+};
 
 return Enemy;
 });

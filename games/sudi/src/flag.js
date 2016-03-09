@@ -15,7 +15,7 @@ function Flag(state, group) {
   this.state.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
   this.sprite.body.setSize(16, 32, 0, 0);
   this.sprite.body.immovable = true;
-}
+};
 
 Flag.prototype.set = function (property, value) {
   this.properties = this.properties||{};
@@ -30,10 +30,10 @@ Flag.prototype.get = function (property, value) {
 Flag.prototype.setPosition = function(x,y) {
   this.x = this.sprite.x = x;
   this.y = this.sprite.y = y;
-}
+};
 
 Flag.prototype.update = function(dt) {
-}
+};
 
 Flag.prototype.interact = function(entity) {
   var coinsMissing = Coin.totalCount-entity.get("coins");
@@ -43,7 +43,7 @@ Flag.prototype.interact = function(entity) {
     console.log("You missed "+coinsMissing+" coins!");
     onLose();
   }
-}
+};
 
 return Flag;
 }]);

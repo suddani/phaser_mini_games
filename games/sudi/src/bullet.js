@@ -18,7 +18,7 @@ function Bullet(state, group) {
   this.sprite.body.immovable = false;
   this.sprite.body.collideWorldBounds = true;
   this.sprite.body.bounce.set(0);
-}
+};
 
 Bullet.prototype.kill = function () {
   this.dead_timer = 0.5;
@@ -47,7 +47,7 @@ Bullet.prototype.get = function (property, value) {
 Bullet.prototype.setPosition = function(x,y) {
   this.x = this.sprite.x = x;
   this.y = this.sprite.y = y;
-}
+};
 
 Bullet.prototype.update = function(dt) {
   if (this.dead_timer!= null) {
@@ -60,6 +60,6 @@ Bullet.prototype.update = function(dt) {
     }
     return;
   }
-}
+};
 return Bullet;
 });

@@ -4,7 +4,7 @@ function(SpritesheetGenerator) {
 function Map(state, entity_manager) {
   this.state = state;
   this.entity_manager = entity_manager;
-}
+};
 
 Map.prototype.load = function(level_name, atlas) {
   this.map = this.state.game.add.tilemap(level_name);
@@ -28,13 +28,13 @@ Map.prototype.load = function(level_name, atlas) {
   this.createTrigger();
   this.entity_manager.setWorldGeometry(this.collisionLayer);
   this.spawnEntities();
-}
+};
 
 Map.prototype.createTrigger = function() {
   this.findObjectsByType(null, "trigger", function(element) {
     this.entity_manager.create_trigger_from_element(element);
   }, this);
-}
+};
 
 Map.prototype.createCollsionLayer = function() {
   this.collisionLayer = this.state.game.add.group();
@@ -47,14 +47,14 @@ Map.prototype.createCollsionLayer = function() {
     collision.body.setSize(element.width,element.height);
     collision.body.immovable = true;
   }, this);
-}
+};
 
 Map.prototype.spawnEntities = function() {
   var entities = this.findObjectsByType(null, "entities");
   for (var i in entities) {
     this.entity_manager.create_entity_from_element(entities[i]);
   }
-}
+};
 
 //find objects in a Tiled layer that containt a property called "type" equal to a certain value
 Map.prototype.findObjectsByType = function(type, layer, callback, context) {
@@ -66,7 +66,7 @@ Map.prototype.findObjectsByType = function(type, layer, callback, context) {
     }
   });
   return result;
-}
+};
 
 return Map;
 }]);

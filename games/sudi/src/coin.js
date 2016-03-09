@@ -26,7 +26,7 @@ function Coin(state, group) {
   this.up = true;
 
   Coin.totalCount+=1;
-}
+};
 
 Coin.prototype.interact = function (entity) {
   entity.set("coins", entity.get("coins")+1);
@@ -50,10 +50,10 @@ Coin.prototype.get = function (property, value) {
 Coin.prototype.setPosition = function(x,y) {
   this.x = this.sprite.x = x;
   this.y = this.sprite.y = y;
-}
+};
 
 Coin.prototype.update = function(dt) {
-}
+};
 
 return Coin;
 }]);

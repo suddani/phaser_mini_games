@@ -20,7 +20,7 @@ function Trigger(state, group) {
   this.y = 0;
 
   this.interactions = {};
-}
+};
 
 Trigger.prototype.interact = function (entity) {
   if (!this.interactions.hasOwnProperty(entity))
@@ -41,11 +41,11 @@ Trigger.prototype.get = function (property, value) {
 Trigger.prototype.setPosition = function(x,y) {
   this.x = this.sprite.x = x;
   this.y = this.sprite.y = y;
-}
+};
 
 Trigger.prototype.setSize = function(width,height) {
   this.sprite.body.setSize(width,height);
-}
+};
 
 Trigger.prototype.update = function(dt) {
   var interactions_ending = [];
@@ -58,20 +58,21 @@ Trigger.prototype.update = function(dt) {
     this.endInteraction(interactions_ending[i]);
     delete this.interactions[interactions_ending[i]];
   }
-}
+};
+
 Trigger.prototype.beginInteraction = function(entity) {
   // console.log("Begin touch")
   var target = this.manager.getById(parseInt(this.get("target")));
   // crash like hell here otherwise we dont know whats wrong
   if (target) target.trigger(this, entity);
-}
+};
 
 Trigger.prototype.endInteraction = function(entity) {
   // console.log("End touch")
   var target = this.manager.getById(parseInt(this.get("target")));
   // crash like hell here otherwise we dont know whats wrong
   if (target) target.trigger_end(this, entity);
-}
+};
 
 return Trigger;
 }]);

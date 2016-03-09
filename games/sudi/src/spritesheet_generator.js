@@ -2,11 +2,11 @@ define("games/sudi/src/spritesheet_generator", function() {
 function SpritesheetGenerator() {
   this.standard_width = 32;
   this.standard_height = 32;
-}
+};
 
 SpritesheetGenerator.prototype.init = function(game) {
   this.game = game;
-}
+};
 
 SpritesheetGenerator.prototype.getFrames = function(atlas_key) {
   if (!this.game) console.error("SpritesheetGenerator not initialized");
@@ -17,7 +17,7 @@ SpritesheetGenerator.prototype.getFrames = function(atlas_key) {
     if (!frame.name.match(/_\d+/)) frames.push(frame);
   }
   return frames;
-}
+};
 
 SpritesheetGenerator.prototype.createSpriteSheet = function(atlas_key, frame_name) {
   if (!this.game) console.error("SpritesheetGenerator not initialized");
@@ -43,7 +43,7 @@ SpritesheetGenerator.prototype.createSpriteSheet = function(atlas_key, frame_nam
     // We could also just add an image but spritesheets are more convinient
     // this.game.cache.addImage(frame.name, '', bmd.canvas);
   }
-}
+};
 
 return new SpritesheetGenerator();
 });

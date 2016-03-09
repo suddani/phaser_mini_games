@@ -23,7 +23,7 @@ function Worm(state, group) {
   this.x = 0;
   this.y = 0;
   this.up = true;
-}
+};
 
 Worm.prototype.interact = function (entity) {
   entity.set("worms", entity.get("worms")+2);
@@ -47,10 +47,10 @@ Worm.prototype.get = function (property, value) {
 Worm.prototype.setPosition = function(x,y) {
   this.x = this.sprite.x = x;
   this.y = this.sprite.y = y;
-}
+};
 
 Worm.prototype.update = function(dt) {
-}
+};
 
 return Worm;
 }]);

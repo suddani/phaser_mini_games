@@ -23,7 +23,7 @@ function Mole(state, group) {
   this.sprite.body.collideWorldBounds = true;
 
   this.shootTimer = 0;
-}
+};
 
 Mole.prototype.trigger = function (t, player) {
   this.sprite.play("idle", 5, true);
@@ -50,11 +50,11 @@ Mole.prototype.get = function (property, value) {
 Mole.prototype.setPosition = function(x,y) {
   this.x = this.sprite.x = x;
   this.y = this.sprite.y = y;
-}
+};
 
 Mole.prototype.damage = function(ammount) {
   this.kill();
-}
+};
 
 Mole.prototype.update = function(dt) {
   if (this.dead_timer!= null) {
@@ -84,13 +84,13 @@ Mole.prototype.update = function(dt) {
   } else if (!this.shooting && this.shootTimer <= 0) {
     this.sprite.play("hidden", 5, true);
   }
-}
+};
 
 Mole.prototype.shoot = function() {
   this.manager.fireBullet(this, this.target, this.target_x, this.target_y);
   this.shootTimer=1;
   this.sprite.play("idle", 5, true)
-}
+};
 
 Mole.prototype.kill = function() {
   // you cant touch this
@@ -98,7 +98,7 @@ Mole.prototype.kill = function() {
   this.dead_timer = 1;
   this.sprite.play("hidden", 5, true);
   SoundSystem.play("loss");
-}
+};
 
 Mole.prototype.interact = function(entity) {
   if (this.sprite.body.touching.up){
@@ -110,7 +110,7 @@ Mole.prototype.interact = function(entity) {
   //   // HUD.showBars();
   // }
     // onLose();
-}
+};
 
 return Mole;
 }]);

@@ -80,8 +80,8 @@ Tourtle.prototype.interact = function(entity) {
   if (this.sprite.body.touching.up){
     this.kill();
   }
-  else
-    entity.kill();//onLose();
+  else if (entity.damage)
+    entity.damage();//onLose();
 }
 
 return Tourtle;

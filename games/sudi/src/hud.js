@@ -5,7 +5,7 @@ function HUD() {
   this.worms = 0;
   this.cinematic = false;
   this.hud_elements = null;
-}
+};
 HUD.prototype.init = function(state) {
   this.state = state;
 
@@ -31,26 +31,26 @@ HUD.prototype.init = function(state) {
   this.wormText = this.state.add.bitmapText(40, 40, "testfont", "GESCHAFFT", 20, this.hud_elements);
   // this.wormText.fixedToCamera = true;
 
-}
+};
 
 HUD.prototype.showBars = function() {
   game.add.tween(this.topbar).to( { y: 0 }, 1000, Phaser.Easing.Bounce.Out, true);
   game.add.tween(this.bottombar).to( { y: 430 }, 1000, Phaser.Easing.Bounce.Out, true);
   this.cinematic = true;
-}
+};
 
 HUD.prototype.hideBars = function() {
   game.add.tween(this.topbar).to( { y: -20 }, 1000, Phaser.Easing.Bounce.Out, true);
   game.add.tween(this.bottombar).to( { y: 450 }, 1000, Phaser.Easing.Bounce.Out, true);
   this.cinematic = false;
-}
+};
 
 HUD.prototype.update = function() {
   this.coinText.text = "Coins     "+this.coins;
   this.wormText.text = "Worms  "+this.worms;
   this.state.game.world.bringToTop(this.hud_elements);
   // this.state.game.world.bringToTop(this.wormText);
-}
+};
 
 HUD.prototype.generateBars = function() {
   var graphics = this.state.add.graphics(0, 0);
@@ -64,7 +64,7 @@ HUD.prototype.generateBars = function() {
   this.bottombar = this.hud_elements.create(0, 450, texture);
   // this.bottombar.fixedToCamera = true;
   graphics.destroy();
-}
+};
 
 return new HUD();
 }]);
