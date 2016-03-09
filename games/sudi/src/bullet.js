@@ -29,6 +29,7 @@ Bullet.prototype.kill = function () {
 };
 
 Bullet.prototype.interact = function (entity) {
+  if (!this.sprite.alive) return;
   this.kill();
   if (entity.damage) entity.damage(1);
 };

@@ -86,6 +86,10 @@ Player.prototype.onFloor = function() {
   return this.on_floor;
 }
 
+Player.prototype.kill = function() {
+  onLose();
+}
+
 Player.prototype.controls = function() {
   var isMoved = false;
 

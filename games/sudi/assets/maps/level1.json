@@ -17,15 +17,139 @@
          "name":"trigger",
          "objects":[
                 {
-                 "height":105,
-                 "id":1,
+                 "height":95,
+                 "id":143,
                  "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":0,
+                     "target_name":"",
+                     "trigger_frame":false,
+                     "trigger_once":false
+                    },
+                 "propertytypes":
+                    {
+                     "behaviour":"string",
+                     "target":"int",
+                     "target_name":"string",
+                     "trigger_frame":"bool",
+                     "trigger_once":"bool"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":500,
-                 "x":184,
-                 "y":327
+                 "width":431,
+                 "x":191,
+                 "y":337
+                }, 
+                {
+                 "height":125,
+                 "id":145,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":1,
+                     "target_name":"",
+                     "trigger_frame":false,
+                     "trigger_once":false
+                    },
+                 "propertytypes":
+                    {
+                     "behaviour":"string",
+                     "target":"int",
+                     "target_name":"string",
+                     "trigger_frame":"bool",
+                     "trigger_once":"bool"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":473,
+                 "x":643,
+                 "y":49
+                }, 
+                {
+                 "height":70,
+                 "id":150,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":3,
+                     "target_name":"",
+                     "trigger_frame":false,
+                     "trigger_once":false
+                    },
+                 "propertytypes":
+                    {
+                     "behaviour":"string",
+                     "target":"int",
+                     "target_name":"string",
+                     "trigger_frame":"bool",
+                     "trigger_once":"bool"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":225,
+                 "x":50,
+                 "y":117
+                }, 
+                {
+                 "height":53,
+                 "id":147,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":2,
+                     "target_name":"",
+                     "trigger_frame":false,
+                     "trigger_once":false
+                    },
+                 "propertytypes":
+                    {
+                     "behaviour":"string",
+                     "target":"int",
+                     "target_name":"string",
+                     "trigger_frame":"bool",
+                     "trigger_once":"bool"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":406,
+                 "x":1144,
+                 "y":377
+                }, 
+                {
+                 "height":91,
+                 "id":153,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":4,
+                     "target_name":"",
+                     "trigger_frame":false,
+                     "trigger_once":false
+                    },
+                 "propertytypes":
+                    {
+                     "behaviour":"string",
+                     "target":"int",
+                     "target_name":"string",
+                     "trigger_frame":"bool",
+                     "trigger_once":"bool"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":292,
+                 "x":1235,
+                 "y":211
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -919,19 +1043,21 @@
                  "properties":
                     {
                      "class":"Mole",
+                     "id":0,
                      "type":"interactable"
                     },
                  "propertytypes":
                     {
                      "class":"string",
+                     "id":"int",
                      "type":"string"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":338.333,
-                 "y":401
+                 "x":351.333,
+                 "y":400
                 }, 
                 {
                  "gid":52,
@@ -2092,6 +2218,124 @@
                  "width":32,
                  "x":1056,
                  "y":401
+                }, 
+                {
+                 "gid":43,
+                 "height":32,
+                 "id":144,
+                 "name":"mole",
+                 "properties":
+                    {
+                     "class":"Mole",
+                     "id":1,
+                     "type":"interactable"
+                    },
+                 "propertytypes":
+                    {
+                     "class":"string",
+                     "id":"int",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":799,
+                 "y":113
+                }, 
+                {
+                 "gid":43,
+                 "height":32,
+                 "id":146,
+                 "name":"mole",
+                 "properties":
+                    {
+                     "class":"Mole",
+                     "id":2,
+                     "type":"interactable"
+                    },
+                 "propertytypes":
+                    {
+                     "class":"string",
+                     "id":"int",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1126,
+                 "y":433
+                }, 
+                {
+                 "gid":52,
+                 "height":32,
+                 "id":148,
+                 "name":"worm",
+                 "properties":
+                    {
+                     "class":"Worm",
+                     "type":"collectable"
+                    },
+                 "propertytypes":
+                    {
+                     "class":"string",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":903,
+                 "y":206
+                }, 
+                {
+                 "gid":43,
+                 "height":32,
+                 "id":149,
+                 "name":"mole",
+                 "properties":
+                    {
+                     "class":"Mole",
+                     "id":3,
+                     "type":"interactable"
+                    },
+                 "propertytypes":
+                    {
+                     "class":"string",
+                     "id":"int",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":67,
+                 "y":208
+                }, 
+                {
+                 "gid":43,
+                 "height":32,
+                 "id":152,
+                 "name":"mole",
+                 "properties":
+                    {
+                     "class":"Mole",
+                     "id":4,
+                     "type":"interactable"
+                    },
+                 "propertytypes":
+                    {
+                     "class":"string",
+                     "id":"int",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1424,
+                 "y":277
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -2237,19 +2481,21 @@
                  "properties":
                     {
                      "class":"Mole",
+                     "id":-1,
                      "type":"interactable"
                     },
                  "propertytypes":
                     {
                      "class":"string",
+                     "id":"int",
                      "type":"string"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":406,
-                 "y":-63
+                 "x":398,
+                 "y":-66
                 }, 
                 {
                  "gid":52,
@@ -2280,21 +2526,49 @@
                  "properties":
                     {
                      "behaviour":"",
-                     "target":"",
+                     "target":-1,
+                     "target_name":"",
+                     "trigger_frame":false,
                      "trigger_once":false
                     },
                  "propertytypes":
                     {
                      "behaviour":"string",
-                     "target":"string",
+                     "target":"int",
+                     "target_name":"string",
+                     "trigger_frame":"bool",
                      "trigger_once":"bool"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":86,
-                 "x":561,
-                 "y":-148
+                 "x":552,
+                 "y":-159
+                }, 
+                {
+                 "gid":43,
+                 "height":32,
+                 "id":151,
+                 "name":"mole",
+                 "properties":
+                    {
+                     "class":"Mole",
+                     "id":-1,
+                     "type":"interactable"
+                    },
+                 "propertytypes":
+                    {
+                     "class":"string",
+                     "id":"int",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":398,
+                 "y":-66
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -2744,7 +3018,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":143,
+ "nextobjectid":154,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tileheight":32,

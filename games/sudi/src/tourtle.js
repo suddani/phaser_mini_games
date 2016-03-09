@@ -81,7 +81,7 @@ Tourtle.prototype.interact = function(entity) {
     this.kill();
   }
   else
-    onLose();
+    entity.kill();//onLose();
 }
 
 return Tourtle;

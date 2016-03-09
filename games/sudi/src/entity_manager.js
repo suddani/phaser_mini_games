@@ -36,22 +36,33 @@ EntityManager.prototype.setWorldGeometry = function(worldGeometry) {
   this.worldGeometry = worldGeometry;
 }
 
-EntityManager.prototype.fireBullet = function(owner, target) {
+EntityManager.prototype.fireBullet = function(owner, target, x, y) {
   var bullet = new Bullet(this.state, this.getGroup("bullet"));
   bullet.owner = owner;
   bullet.setPosition(owner.sprite.x+10*owner.sprite.scale.x, owner.sprite.y-(owner.duck ? 0 : 8));
   if (target) {
-    bullet.sprite.body.velocity.x = target.x-bullet.sprite.x;
-    bullet.sprite.body.velocity.y = target.y-bullet.sprite.y;
+    bullet.sprite.body.velocity.x = target.sprite.x-bullet.sprite.x;
+    bullet.sprite.body.velocity.y = target.sprite.y-bullet.sprite.y;
+  }
+  else if (x && y) {
+    bullet.sprite.body.velocity.x = x-bullet.sprite.x;
+    bullet.sprite.body.velocity.y = y-bullet.sprite.y;
   }
   else
-    bullet.sprite.body.velocity.x = 150*owner.sprite.scale.x;
+    bullet.sprite.body.velocity.x = owner.sprite.scale.x;
+
+  bullet.sprite.body.velocity.setMagnitude(150);
 }
 
 EntityManager.prototype.create_trigger_from_element = function(element) {
   var trigger = new Trigger(this.state, this.getGroup("trigger"));
+  trigger.manager = this;
+  trigger.id = element.properties.id;
   trigger.setPosition(element.x, element.y);
   trigger.setSize(element.width,element.height);
+  Object.keys(element.properties).forEach(function(key){
+    trigger.set(key, element.properties[key]);
+  });
 }
 
 EntityManager.prototype.create_entity_from_element = function(element) {
@@ -60,6 +71,7 @@ EntityManager.prototype.create_entity_from_element = function(element) {
       var constructor = eval(element.properties["class"]);
       var entity = new constructor(this.state, this.getGroup(element.properties["type"]));
       entity.manager = this;
+      entity.id = element.properties.id;
       entity.setPosition(element.x+16, element.y);
       Object.keys(element.properties).forEach(function(key){
         entity.set(key, element.properties[key]);
@@ -69,6 +81,18 @@ EntityManager.prototype.create_entity_from_element = function(element) {
       console.warn(e);
     }
   }
+}
+
+EntityManager.prototype.getById = function(id) {
+  // console.log("Find entity: "+id)
+  var entity = null;
+  for (var g in this.groups) {
+    this.groups[g].forEachAlive(function(member) {
+      if (!entity && member.entity && member.entity.id == id) entity = member.entity;
+    }, this);
+    if (entity) break;
+  }
+  return entity;
 }
 
 EntityManager.prototype.update = function(dt) {
@@ -91,7 +115,7 @@ EntityManager.prototype.update = function(dt) {
   this.state.game.physics.arcade.collide(this.groups["bullet"], this.groups["interactable"], function(bullet, interactable) {
     bullet.entity.interact(interactable.entity);
   }, function(bullet, interactable) {
-    return bullet.entity.owner != interactable.entity;
+    return bullet.entity.owner.group != interactable.entity.group;
   }, this);
   this.state.game.physics.arcade.collide(this.groups["bullet"], this.groups["player"], function(bullet, player) {
     bullet.entity.interact(player.entity);
@@ -99,29 +123,34 @@ EntityManager.prototype.update = function(dt) {
     return bullet.entity.owner != player.entity;
   }, this);
   this.state.game.physics.arcade.overlap(this.groups["player"], this.groups["trigger"], function(player, trigger) {
-    console.log("Touch Trigger: ");
-    console.log(trigger.entity);
-  }, null, this);
 
-  this.groups["player"].forEachAlive(function(member) {
+  }, function(player, trigger) {
+    trigger.entity.interact(player.entity);
+    return false;
+  }, this);
+
+  this.groups["player"].forEach(function(member) {
     member.entity.update(dt);
   }, this);
-  this.groups["interactable"].forEachAlive(function(member) {
+  this.groups["interactable"].forEach(function(member) {
     member.entity.update(dt);
   }, this);
-  this.groups["bullet"].forEachAlive(function(member) {
+  this.groups["bullet"].forEach(function(member) {
+    member.entity.update(dt);
+  }, this);
+  this.groups["trigger"].forEach(function(member) {
     member.entity.update(dt);
   }, this);
 }
 
 EntityManager.prototype.render = function() {
-  if (this.debug=true) {
+  if (this.debug) {
     for (var g in this.groups) {
-      this.groups[g].forEachAlive(function(member) {
+      this.groups[g].forEach(function(member) {
         this.state.game.debug.body(member);
       }, this);
     }
-    this.worldGeometry.forEachAlive(function(member) {
+    this.worldGeometry.forEach(function(member) {
       this.state.game.debug.body(member);
     }, this);
   }
