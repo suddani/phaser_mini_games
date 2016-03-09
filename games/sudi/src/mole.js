@@ -28,7 +28,7 @@ function Mole(state, group) {
 Mole.prototype.trigger = function (t, player) {
   this.sprite.play("idle", 5, true);
   this.target = player;
-  this.shootTimer = 0.5;
+  this.shootTimer = 0.2;
 };
 
 Mole.prototype.trigger_end = function (t, player) {
@@ -88,7 +88,7 @@ Mole.prototype.update = function(dt) {
 
 Mole.prototype.shoot = function() {
   this.manager.fireBullet(this, this.target, this.target_x, this.target_y);
-  this.shootTimer=2;
+  this.shootTimer=1;
   this.sprite.play("idle", 5, true)
 }
 
