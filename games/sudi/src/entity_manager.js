@@ -7,7 +7,8 @@ define("games/sudi/src/entity_manager", [
   "games/sudi/src/mole",
   "games/sudi/src/worm",
   "games/sudi/src/bullet",
-function(Trigger, Player, Coin, Flag, Tourtle, Mole, Worm, Bullet) {
+  "games/sudi/src/trapdoor",
+function(Trigger, Player, Coin, Flag, Tourtle, Mole, Worm, Bullet, TrapDoor) {
 function EntityManager(state) {
   this.state = state;
   // this.entities = [];
