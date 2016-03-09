@@ -42,11 +42,25 @@ bundle exec rake image
 ```
 You can add a piskel config file with same name and just adding **.config** with the following content
 ```
+[
+  {
+    "name" : "NAME" <--Optional
+    "scale": 3
+  }
+]
+```
+This scales the asset during compilation in case you need that. As you can see its an array so you can add more entries to compile the image in different scales.
+
+### Raw png
+Since it became obvious that not all my assets will be in piskel format it also supports png images that are compiled. This uses the piskel compiler in relality and produces the same output. The config files are named the same but work a little different.
+```
 {
-  "scale": 3
+  "spritesheet" : true
+  "config" : PISKEL_CONFIG
 }
 ```
-This scales the asset during compilation in case you need that.
+PISKEL_CONFIG is the same format used for the piskel config file. So hashes in an array. If you define the config key make sure to add one hash with scale 1. Otherwise it wont compile anything.
+The spritesheet option tells the compiler if this image is a horizontal spritesheet(all frames in one line). If you set this to false the compiler assumes its just a big image. Otherwise it will add each frame to the atlas.
 
 ## Release
 Builiding the release versions
@@ -158,3 +172,7 @@ I hope this explains the system enough. Have fun coding
 - http://www.bfxr.net/
 - http://audiojungle.net/
 - http://www.freesound.org/search/
+
+# TODO
+- Replace Coin and Worm with a generic Collectable that can be configured
+- Support rectangular spritesheets for atlas compilation. Currently only horizontal

@@ -1,6 +1,7 @@
 define("games/sudi/src/spritesheet_generator", function() {
 function SpritesheetGenerator() {
-
+  this.standard_width = 32;
+  this.standard_height = 32;
 }
 
 SpritesheetGenerator.prototype.init = function(game) {
@@ -29,12 +30,18 @@ SpritesheetGenerator.prototype.createSpriteSheet = function(atlas_key, frame_nam
   var orb = this.game.make.sprite(0, 0, atlas_key, frame.name);
   var bmd = this.game.add.bitmapData(frame.width, frame.height);
   bmd.draw(orb, 0, 0);
-  //Check if there is actually more than one frame. otherwise just create this one image
-  if (this.game.cache.getFrameData(atlas_key).getFrameByName(frame_name+"_0000"))
-    this.game.cache.addSpriteSheet(frame.name, '', bmd.canvas, frame.height, frame.height);//, frame.width/frame.height, 0, 0);
-  else
-    this.game.cache.addSpriteSheet(frame.name, '', bmd.canvas, 32, 32);
+  this.game.cache.addImage(frame.name, '', bmd.canvas);
+  // Check if there is actually more than one frame. then use the first frames info
+  // to create the sprite sheet. Otherwise assume standard tile size
+  var first_frame = this.game.cache.getFrameData(atlas_key).getFrameByName(frame_name+"_0000")
+  if (first_frame) {
+    console.log(first_frame)
+    this.game.cache.addSpriteSheet(frame.name, '', bmd.canvas, first_frame.width, first_frame.height);//, frame.width/frame.height, 0, 0);
+  } else {
+    this.game.cache.addSpriteSheet(frame.name, '', bmd.canvas, this.standard_width, this.standard_height);
+    // We could also just add an image but spritesheets are more convinient
     // this.game.cache.addImage(frame.name, '', bmd.canvas);
+  }
 }
 
 return new SpritesheetGenerator();

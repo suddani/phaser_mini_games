@@ -18,7 +18,7 @@ class PiskelFile
       height= image.height
       config_path = Pathname.new img_path.to_s+".config"
       puts "Config File? #{config_path} : #{config_path.file?}"
-      config = config_path.file? ? JSON.parse(config_path.read) : {"spritesheet": true}
+      config = config_path.file? ? JSON.parse(config_path.read) : {"spritesheet": true, config: nil}
       frameCount = config["spritesheet"] ? width/height : 1
       {
         modelVersion: 2,
@@ -35,7 +35,8 @@ class PiskelFile
               base64PNG: "data:image/png;base64,#{Base64.encode64(img_path.read()).gsub("\n","")}"
             }.to_json
           ]
-        }
+        },
+        config: config["config"]
       }.to_json
     end
   end
@@ -49,6 +50,7 @@ class PiskelFile
 
   def initialize(_json)
     @json = _json
+    set_config(_json["config"])
     @layers = nil
   end
 
@@ -68,6 +70,10 @@ class PiskelFile
 
   def load_config(path)
     @config = Pathname.new(path).file? ? JSON.parse(File.read(path)) : DEFAULT_PISKEL_CONFIG
+  end
+
+  def set_config(config_)
+    @config = config_ ? config_ : DEFAULT_PISKEL_CONFIG
   end
 
   # Used to access piskel file data
