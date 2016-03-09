@@ -31,9 +31,10 @@ class AssetCompiler
             # puts "Add Spritesheet: #{path}"
             convert << "-page" << "+0+#{offset}" << "#{path}"
             frame_height = layer[:piskel].height*layer[:piskel].scale(image_index)
+            frame_width = layer[:piskel].width*layer[:piskel].scale(image_index)
             frame_name = layer[:piskel].name(image_index)
             frameCount = layer[:piskel].layers[0].frameCount
-            atlas.addFrames(0,offset, frame_height, frameCount, frame_name)
+            atlas.addFrames(0,offset, frame_width, frame_height, frameCount, frame_name)
             offset+=frame_height
           end
         end

@@ -31,9 +31,10 @@ SpritesheetGenerator.prototype.createSpriteSheet = function(atlas_key, frame_nam
   bmd.draw(orb, 0, 0);
   //Check if there is actually more than one frame. otherwise just create this one image
   if (this.game.cache.getFrameData(atlas_key).getFrameByName(frame_name+"_0000"))
-    this.game.cache.addSpriteSheet(frame.name, '', bmd.canvas, frame.height, frame.height, frame.width/frame.height, 0, 0);
+    this.game.cache.addSpriteSheet(frame.name, '', bmd.canvas, frame.height, frame.height);//, frame.width/frame.height, 0, 0);
   else
-    this.game.cache.addImage(frame.name, '', bmd.canvas);
+    this.game.cache.addSpriteSheet(frame.name, '', bmd.canvas, 32, 32);
+    // this.game.cache.addImage(frame.name, '', bmd.canvas);
 }
 
 return new SpritesheetGenerator();

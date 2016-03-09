@@ -1,12 +1,12 @@
 class Atlas
 
-  def addFrames(x, y, frame_height, frameCount, frame_name)
+  def addFrames(x, y, frame_width, frame_height, frameCount, frame_name)
     puts "Add image frame to atlas: #{frame_name}"
     frames[frame_name] = {
       :frame => {
         :x => x,
         :y => y,
-        :w => frame_height*frameCount,
+        :w => frame_width*frameCount,
         :h => frame_height
       },
       :rotated => false,
@@ -14,11 +14,11 @@ class Atlas
       :spriteSourceSize =>  {
         :x => 0,
         :y => 0,
-        :w => frame_height,
-        :h => 32
+        :w => frame_width*frameCount,
+        :h => frame_height
       },
       :sourceSize =>  {
-        :w => frame_height,
+        :w => frame_width*frameCount,
         :h => frame_height
       }
     }
@@ -37,7 +37,7 @@ class Atlas
           :x => 0,
           :y => 0,
           :w => frame_height,
-          :h => 32
+          :h => frame_height
         },
         :sourceSize =>  {
           :w => frame_height,
