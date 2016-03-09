@@ -33,7 +33,7 @@ function Player(state, group) {
   // this.sprite.body.bounce.set(0.3);
   this.sprite.body.collideWorldBounds = true;
 
-  this.state.camera.follow(this.sprite);
+  this.state.camera.follow(this.sprite, Phaser.Camera.FOLLOW_PLATFORMER);
 
   // this.touching = {};
 }

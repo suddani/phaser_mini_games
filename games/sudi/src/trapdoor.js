@@ -8,12 +8,13 @@ function TrapDoor(state, group) {
   }
   this.sprite.entity = this;
   this.sprite.anchor.set(0.5, 1);
+  this.sprite.scale.set(1);
   // this.sprite.animations.add("walk", [0,1,2,3,2,1], 5);
   // this.sprite.animations.add("dead", [4], 5);
   // this.sprite.play("walk", 5, true);
 
   this.state.game.physics.enable(this.sprite, Phaser.Physics.ARCADE);
-  // this.sprite.body.setSize(32, 13, 0, 0);
+  this.sprite.body.setSize(32, 8, 0, 0);
   this.sprite.body.immovable = true;
   this.sprite.body.collideWorldBounds = true;
 };
