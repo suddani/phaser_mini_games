@@ -30,6 +30,7 @@ SpritesheetGenerator.prototype.createSpriteSheet = function(atlas_key, frame_nam
   var orb = this.game.make.sprite(0, 0, atlas_key, frame.name);
   var bmd = this.game.add.bitmapData(frame.width, frame.height);
   bmd.draw(orb, 0, 0);
+  orb.destroy();
   this.game.cache.addImage(frame.name, '', bmd.canvas);
   // Check if there is actually more than one frame. then use the first frames info
   // to create the sprite sheet. Otherwise assume standard tile size
