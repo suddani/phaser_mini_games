@@ -36,7 +36,7 @@ SpritesheetGenerator.prototype.createSpriteSheet = function(atlas_key, frame_nam
   // to create the sprite sheet. Otherwise assume standard tile size
   var first_frame = this.game.cache.getFrameData(atlas_key).getFrameByName(frame_name+"_0000")
   if (first_frame) {
-    console.log(first_frame)
+    // console.log(first_frame)
     this.game.cache.addSpriteSheet(frame.name, '', bmd.canvas, first_frame.width, first_frame.height);//, frame.width/frame.height, 0, 0);
   } else {
     this.game.cache.addSpriteSheet(frame.name, '', bmd.canvas, this.standard_width, this.standard_height);

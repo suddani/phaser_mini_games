@@ -204,33 +204,6 @@
                  "width":343.333,
                  "x":141.333,
                  "y":27.6667
-                }, 
-                {
-                 "height":59.3333666666666,
-                 "id":226,
-                 "name":"trigger",
-                 "properties":
-                    {
-                     "behaviour":"",
-                     "target":7,
-                     "target_name":"",
-                     "trigger_frame":false,
-                     "trigger_once":false
-                    },
-                 "propertytypes":
-                    {
-                     "behaviour":"string",
-                     "target":"int",
-                     "target_name":"string",
-                     "trigger_frame":"bool",
-                     "trigger_once":"bool"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":178.666666666667,
-                 "x":261.333333333333,
-                 "y":826.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -263,8 +236,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":54,
-                 "y":432
+                 "x":193,
+                 "y":814
                 }, 
                 {
                  "gid":93,

@@ -20,6 +20,7 @@ class PiskelFile
       puts "Config File? #{config_path} : #{config_path.file?}"
       config = config_path.file? ? JSON.parse(config_path.read) : {"spritesheet": true, config: nil}
       frameCount = config["spritesheet"] ? width/height : 1
+      frameWidth = config["spritesheet"] ? width/frameCount : width
       {
         modelVersion: 2,
         piskel: {
@@ -27,7 +28,7 @@ class PiskelFile
           description: "",
           fps: 12,
           height: height,
-          width: width,
+          width: frameWidth,
           layers: [
             {
               name: "Layer 1",

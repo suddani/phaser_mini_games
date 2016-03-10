@@ -1,7 +1,7 @@
 class Atlas
 
   def addFrames(x, y, frame_width, frame_height, frameCount, frame_name)
-    puts "Add image frame to atlas: #{frame_name}"
+    puts "Add image frame to atlas: #{frame_name} #{frame_width} #{frame_height} #{frameCount}"
     frames[frame_name] = {
       :frame => {
         :x => x,
