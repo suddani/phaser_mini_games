@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="28" tilewidth="32" tileheight="32" nextobjectid="181">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="28" tilewidth="32" tileheight="32" nextobjectid="190">
  <tileset firstgid="1" name="ground2" tilewidth="32" tileheight="32" tilecount="84" columns="12">
   <image source="tmp/ground2.png" width="384" height="224"/>
   <terraintypes>
@@ -218,8 +218,8 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="130" name="trapdoor" tilewidth="32" tileheight="32" tilecount="1" columns="1">
-  <image source="tmp/trapdoor.png" width="32" height="32"/>
+ <tileset firstgid="130" name="trapdoor" tilewidth="64" tileheight="32" tilecount="1" columns="1">
+  <image source="tmp/trapdoor.png" width="64" height="32"/>
  </tileset>
  <layer name="groundlayer" width="50" height="28">
   <data encoding="csv">
@@ -253,7 +253,7 @@
 52,38,38,53,50,50,50,20,28,2,2,2,2,29,56,50,54,14,14,14,56,20,56,50,50,50,50,40,62,62,63,5,31,31,32,28,2,2,2,2,2,2,2,2,2,2,2,2,2,29
 </data>
  </layer>
- <objectgroup name="trigger" visible="0">
+ <objectgroup name="trigger">
   <object id="143" name="trigger" x="191" y="337" width="431" height="95">
    <properties>
     <property name="behaviour" value=""/>
@@ -996,16 +996,48 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="prefabs" visible="0">
-  <object id="178" gid="130" x="96.7727" y="443.5" width="32" height="32">
+ <objectgroup name="prefabs">
+  <object id="181" name="Trapdoor" gid="130" x="508" y="-66.6667" width="64" height="32"/>
+  <object id="183" name="player" gid="85" x="424.667" y="-66.6667" width="32" height="32">
    <properties>
-    <property name="class" value="TrapDoor"/>
-    <property name="id" type="int" value="-1"/>
+    <property name="class" value="Player"/>
+    <property name="type" value="player"/>
+   </properties>
+  </object>
+  <object id="184" name="mole" gid="112" x="463" y="-65.6667" width="32" height="32">
+   <properties>
+    <property name="class" value="Mole"/>
+    <property name="id" type="int" value="1"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object id="185" name="turtle" gid="102" x="386" y="-65.6667" width="32" height="32">
+   <properties>
+    <property name="class" value="Tourtle"/>
+    <property name="move" value="20"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object id="186" name="coin" gid="93" x="363.663" y="-67" width="16" height="16">
+   <properties>
+    <property name="class" value="Coin"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object id="187" name="worm" gid="121" x="324" y="-66" width="32" height="32">
+   <properties>
+    <property name="class" value="Worm"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object id="188" name="flag" gid="101" x="582.333" y="-66" width="32" height="32">
+   <properties>
+    <property name="class" value="Flag"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="collision" visible="0">
+ <objectgroup name="collision">
   <object id="102" x="128" y="434" width="1460" height="11"/>
   <object id="103" x="400" y="275" width="192.273" height="54.8182"/>
   <object id="105" x="19.2727" y="216.727" width="94.3636" height="90.6364"/>
