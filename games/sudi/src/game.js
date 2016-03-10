@@ -28,6 +28,7 @@ function(Physics, Map, EntityManager, Coin, SoundSystem, HUD, SpritesheetGenerat
     SoundSystem.preload(this.game);
   };
   Main.prototype.create = function() {
+    this.game.time.advancedTiming = true;
     var self = this;
     Pad.init(this.game);
     removeLoadingScreen();
@@ -55,6 +56,7 @@ function(Physics, Map, EntityManager, Coin, SoundSystem, HUD, SpritesheetGenerat
   };
   Main.prototype.render = function() {
     // game.debug.text(game.time.suggestedFps, 32, 32);
+    this.game.debug.text(game.time.fps, 2, 14, "#00ff00");
     this.entity_manager.render();
   };
   return Main;

@@ -18,6 +18,7 @@ function TrapDoor(state, group) {
   this.sprite.body.setSize(64, 10, 0, 0);
   this.sprite.body.immovable = true;
   this.sprite.body.collideWorldBounds = true;
+  // this.sprite.exists = false
 
   this.opened = false;
 };
