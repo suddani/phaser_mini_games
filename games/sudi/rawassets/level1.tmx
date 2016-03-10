@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="28" tilewidth="32" tileheight="32" nextobjectid="190">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="28" tilewidth="32" tileheight="32" nextobjectid="191">
  <tileset firstgid="1" name="ground2" tilewidth="32" tileheight="32" tilecount="84" columns="12">
   <image source="tmp/ground2.png" width="384" height="224"/>
   <terraintypes>
@@ -218,8 +218,8 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="130" name="trapdoor" tilewidth="64" tileheight="32" tilecount="1" columns="1">
-  <image source="tmp/trapdoor.png" width="64" height="32"/>
+ <tileset firstgid="130" name="trapdoor" tilewidth="64" tileheight="32" tilecount="2" columns="2">
+  <image source="tmp/trapdoor.png" width="128" height="32"/>
  </tileset>
  <layer name="groundlayer" width="50" height="28">
   <data encoding="csv">
@@ -995,9 +995,22 @@
     <property name="type" value="interactable"/>
    </properties>
   </object>
+  <object id="190" name="Trapdoor" gid="130" x="65.1667" y="445.417" width="64" height="32">
+   <properties>
+    <property name="class" value="TrapDoor"/>
+    <property name="id" type="int" value="-1"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="prefabs">
-  <object id="181" name="Trapdoor" gid="130" x="508" y="-66.6667" width="64" height="32"/>
+  <object id="181" name="Trapdoor" gid="130" x="508" y="-66.6667" width="64" height="32">
+   <properties>
+    <property name="class" value="TrapDoor"/>
+    <property name="id" type="int" value="-1"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
   <object id="183" name="player" gid="85" x="424.667" y="-66.6667" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
@@ -1038,7 +1051,7 @@
   </object>
  </objectgroup>
  <objectgroup name="collision">
-  <object id="102" x="128" y="434" width="1460" height="11"/>
+  <object id="102" x="143.333" y="434" width="1444.67" height="11"/>
   <object id="103" x="400" y="275" width="192.273" height="54.8182"/>
   <object id="105" x="19.2727" y="216.727" width="94.3636" height="90.6364"/>
   <object id="106" x="36" y="345" width="18" height="101"/>
@@ -1078,6 +1091,6 @@
   <object id="167" x="1108.67" y="213.333" width="23.3333" height="58.6667"/>
   <object id="168" x="1298" y="241.333" width="118.667" height="24.6667"/>
   <object id="171" x="1578" y="180.5" width="22" height="125"/>
-  <object id="179" x="54.2727" y="434.818" width="41.2273" height="12"/>
+  <object id="179" x="54.2727" y="434.818" width="20.3939" height="12"/>
  </objectgroup>
 </map>

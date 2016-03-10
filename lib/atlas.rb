@@ -26,9 +26,9 @@ class Atlas
       puts "Add sprite frame to atlas: #{expand_name(frame_name, id)}"
       frames[expand_name(frame_name, id)] = {
         :frame => {
-          :x => x+id*frame_height,
+          :x => x+id*frame_width,
           :y => y,
-          :w => frame_height,
+          :w => frame_width,
           :h => frame_height
         },
         :rotated => false,
@@ -36,11 +36,11 @@ class Atlas
         :spriteSourceSize =>  {
           :x => 0,
           :y => 0,
-          :w => frame_height,
+          :w => frame_width,
           :h => frame_height
         },
         :sourceSize =>  {
-          :w => frame_height,
+          :w => frame_width,
           :h => frame_height
         }
       }

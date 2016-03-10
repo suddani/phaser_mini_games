@@ -2658,6 +2658,30 @@
                  "width":32,
                  "x":79.3333,
                  "y":84
+                }, 
+                {
+                 "gid":130,
+                 "height":32,
+                 "id":190,
+                 "name":"Trapdoor",
+                 "properties":
+                    {
+                     "class":"TrapDoor",
+                     "id":-1,
+                     "type":"interactable"
+                    },
+                 "propertytypes":
+                    {
+                     "class":"string",
+                     "id":"int",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":64,
+                 "x":65.1666666666667,
+                 "y":445.416666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -2676,6 +2700,18 @@
                  "height":32,
                  "id":181,
                  "name":"Trapdoor",
+                 "properties":
+                    {
+                     "class":"TrapDoor",
+                     "id":-1,
+                     "type":"interactable"
+                    },
+                 "propertytypes":
+                    {
+                     "class":"string",
+                     "id":"int",
+                     "type":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -2838,8 +2874,8 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":1460,
-                 "x":128,
+                 "width":1444.66666666667,
+                 "x":143.333333333333,
                  "y":434
                 }, 
                 {
@@ -3278,7 +3314,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":41.2272727272727,
+                 "width":20.3939393939394,
                  "x":54.2727272727273,
                  "y":434.818181818182
                 }],
@@ -3289,7 +3325,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":190,
+ "nextobjectid":191,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tileheight":32,
@@ -4242,15 +4278,15 @@
          "tilewidth":32
         }, 
         {
-         "columns":1,
+         "columns":2,
          "firstgid":130,
          "image":"..\/..\/rawassets\/tmp\/trapdoor.png",
          "imageheight":32,
-         "imagewidth":64,
+         "imagewidth":128,
          "margin":0,
          "name":"trapdoor",
          "spacing":0,
-         "tilecount":1,
+         "tilecount":2,
          "tileheight":32,
          "tilewidth":64
         }],
