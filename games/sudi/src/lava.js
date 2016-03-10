@@ -13,6 +13,7 @@ function Lava(state, group) {
   // this.sprite.exists = false
 
   this.sparks = this.state.add.emitter(0, 0, 50);
+  this.sprite.addChild(this.sparks);
   this.sparks.makeParticles(["atlas"], ["smoke_0000", "smoke_0001", "smoke_0002"]);
   this.sparks.maxParticleScale = 1;
   this.sparks.minParticleScale = 1;
@@ -23,6 +24,7 @@ function Lava(state, group) {
   this.sparks.minRotation = 0;
   this.sparks.maxRotation = 0;
   this.sparks.start(false, 800, 100);
+  this.sparks.y = -64;
   // this.sprite.animations.add("walk", [0,1,2,3,2,1], 5);
   // this.sprite.animations.add("dead", [4], 5);
   // this.sprite.play("walk", 5, true);
@@ -36,9 +38,9 @@ function Lava(state, group) {
 
 Lava.prototype.set = function (property, value) {
   if (property == "width") {
-    this.sparks.width = value*16;
+    this.sparks.width = value*28;
     this.sprite.width = value*32;
-    this.sparks.x = this.sparks.x+this.sprite.width/2.5;
+    this.sparks.x = this.sprite.width/2-this.sprite.width*0.04;
     console.log("SparksY: "+this.sparks.y);
     this.sprite.body.setSize(value*32, 64, 0, 0);
   }
@@ -52,9 +54,9 @@ Lava.prototype.get = function (property, value) {
 };
 
 Lava.prototype.setPosition = function(x,y) {
-  this.sparks.x = x+this.sprite.width/2.5;
-  this.sparks.y = y-64;
-  console.log("SparksY: "+this.sparks.y);
+  // this.sparks.x = x+this.sparks.width/2;
+  // this.sparks.y = y-64;
+  // console.log("SparksY: "+this.sparks.y);
   this.x = this.sprite.x = x;
   this.y = this.sprite.y = y;
 };
