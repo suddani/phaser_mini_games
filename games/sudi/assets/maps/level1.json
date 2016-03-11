@@ -380,7 +380,7 @@
                  "y":-66.6667
                 }, 
                 {
-                 "height":66.5454545454546,
+                 "height":66.5455,
                  "id":229,
                  "name":"trigger",
                  "properties":
@@ -402,9 +402,9 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":54.8181818181819,
-                 "x":665.666666666667,
-                 "y":-134.545454545455
+                 "width":54.8182,
+                 "x":665.667,
+                 "y":-134.545
                 }, 
                 {
                  "height":48,
@@ -428,8 +428,8 @@
                  "type":"",
                  "visible":true,
                  "width":44,
-                 "x":734.666666666667,
-                 "y":-114.666666666667
+                 "x":734.667,
+                 "y":-114.667
                 }, 
                 {
                  "gid":121,
@@ -466,7 +466,7 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":322.583333333333,
+                 "x":322.583,
                  "y":-66.75
                 }, 
                 {
@@ -504,8 +504,8 @@
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":363.178151515152,
-                 "y":-67.3030303030304
+                 "x":363.178,
+                 "y":-67.303
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1309,8 +1309,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":62.3333333333333,
-                 "y":430
+                 "x":1198.3333,
+                 "y":336
                 }, 
                 {
                  "gid":93,
@@ -1319,12 +1319,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1341,12 +1357,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1363,12 +1395,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1385,12 +1433,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1407,12 +1471,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1429,12 +1509,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1451,12 +1547,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1473,12 +1585,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1495,12 +1623,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1517,12 +1661,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1539,12 +1699,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1561,12 +1737,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1583,12 +1775,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1605,12 +1813,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1627,12 +1851,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1649,12 +1889,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1671,12 +1927,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1693,12 +1965,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1715,12 +2003,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1737,12 +2041,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1759,12 +2079,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1781,12 +2117,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1803,12 +2155,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1825,12 +2193,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1847,12 +2231,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1869,12 +2269,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1891,12 +2307,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1913,12 +2345,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1935,12 +2383,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -1957,12 +2421,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2215,12 +2695,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":0,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2237,12 +2733,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":0,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2259,12 +2771,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":0,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2281,12 +2809,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":0,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2303,12 +2847,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2325,12 +2885,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2347,12 +2923,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2369,12 +2961,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2391,12 +2999,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2413,12 +3037,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2435,12 +3075,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2457,12 +3113,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2479,12 +3151,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2501,19 +3189,35 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":949,
+                 "x":962,
                  "y":170
                 }, 
                 {
@@ -2523,12 +3227,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2545,12 +3265,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2567,12 +3303,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2589,12 +3341,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2611,12 +3379,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2633,12 +3417,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2677,12 +3477,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2699,12 +3515,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2721,12 +3553,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2743,12 +3591,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2765,12 +3629,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2787,12 +3667,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2809,12 +3705,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2831,12 +3743,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2853,12 +3781,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2875,12 +3819,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2897,12 +3857,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2919,12 +3895,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2941,12 +3933,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2963,12 +3971,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -2985,12 +4009,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3007,12 +4047,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3029,12 +4085,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3051,12 +4123,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3073,12 +4161,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3095,12 +4199,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3117,12 +4237,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3139,20 +4275,36 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":1072,
-                 "y":201
+                 "x":1080,
+                 "y":200
                 }, 
                 {
                  "gid":102,
@@ -3471,20 +4623,36 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":0,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":1255.67,
-                 "y":261
+                 "x":1268.67,
+                 "y":263
                 }, 
                 {
                  "gid":93,
@@ -3493,12 +4661,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3515,12 +4699,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3537,12 +4737,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3559,12 +4775,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3581,12 +4813,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3603,12 +4851,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3625,12 +4889,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3647,12 +4927,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -3669,12 +4965,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
