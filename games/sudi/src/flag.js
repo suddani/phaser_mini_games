@@ -1,5 +1,5 @@
-define("games/sudi/src/flag", ["games/sudi/src/coin",
-function(Coin) {
+define("games/sudi/src/flag", ["games/sudi/src/collectable",
+function(Collectable) {
 function Flag(state, group) {
   this.state = state;
   this.group = group;
@@ -36,7 +36,7 @@ Flag.prototype.update = function(dt) {
 };
 
 Flag.prototype.interact = function(entity) {
-  var coinsMissing = Coin.totalCount-entity.get("coins");
+  var coinsMissing = Collectable.totalCount["coins"]-entity.get("coins");
   if (coinsMissing<=0)
     onVictory();
   else {

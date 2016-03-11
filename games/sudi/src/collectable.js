@@ -1,7 +1,7 @@
 define("games/sudi/src/collectable", ["games/sudi/src/sound_system",
 function(SoundSystem) {
 
-Collectable.count = {};
+Collectable.totalCount = {};
 
 function Collectable(state, group) {
   this.state = state;
@@ -74,8 +74,8 @@ Collectable.prototype.set = function (property, value) {
     this.sprite.body.gravity.y = parseFloat(value);
   }
   if (property=="name") {
-    Collectable.count[value] = Collectable.count[value]||0;
-    Collectable.count[value] += 1;
+    Collectable.totalCount[value] = Collectable.totalCount[value]||0;
+    Collectable.totalCount[value] += 1;
   }
   if (property=="bounce") {
     values = value.split(",");

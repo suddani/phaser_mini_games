@@ -2,11 +2,11 @@ define("games/sudi/src/game", [
   "games/sudi/src/physics",
   "games/sudi/src/map",
   "games/sudi/src/entity_manager",
-  "games/sudi/src/coin",
+  "games/sudi/src/collectable",
   "games/sudi/src/sound_system",
   "games/sudi/src/hud",
   "games/sudi/src/spritesheet_generator",
-function(Physics, Map, EntityManager, Coin, SoundSystem, HUD, SpritesheetGenerator) {
+function(Physics, Map, EntityManager, Collectable, SoundSystem, HUD, SpritesheetGenerator) {
   // console.log("Load sudi game")
   function Main() {
   };
@@ -40,7 +40,7 @@ function(Physics, Map, EntityManager, Coin, SoundSystem, HUD, SpritesheetGenerat
     Physics.init(this.game);
     SoundSystem.init(this);
     HUD.init(this);
-    Coin.totalCount = 0;
+    Collectable.totalCount = {};
 
     SoundSystem.theme("cave");
 

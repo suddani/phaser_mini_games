@@ -1,11 +1,9 @@
 define("games/sudi/src/entity_manager", [
   "games/sudi/src/trigger",
   "games/sudi/src/player",
-  "games/sudi/src/coin",
   "games/sudi/src/flag",
   "games/sudi/src/tourtle",
   "games/sudi/src/mole",
-  "games/sudi/src/worm",
   "games/sudi/src/bullet",
   "games/sudi/src/trapdoor",
   "games/sudi/src/lava",
@@ -13,9 +11,9 @@ define("games/sudi/src/entity_manager", [
   "games/sudi/src/cloud",
   "games/sudi/src/music",
   "games/sudi/src/collectable",
-function(Trigger, Player, Coin,
+function(Trigger, Player,
          Flag, Tourtle, Mole,
-         Worm, Bullet, TrapDoor,
+         Bullet, TrapDoor,
          Lava, Lever, Cloud,
          Music, Collectable) {
 function EntityManager(state) {
