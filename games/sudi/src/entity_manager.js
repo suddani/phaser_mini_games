@@ -12,11 +12,12 @@ define("games/sudi/src/entity_manager", [
   "games/sudi/src/lever",
   "games/sudi/src/cloud",
   "games/sudi/src/music",
+  "games/sudi/src/collectable",
 function(Trigger, Player, Coin,
          Flag, Tourtle, Mole,
          Worm, Bullet, TrapDoor,
          Lava, Lever, Cloud,
-         Music) {
+         Music, Collectable) {
 function EntityManager(state) {
   this.state = state;
   // this.entities = [];
@@ -107,6 +108,8 @@ EntityManager.prototype.getById = function(id) {
 
 EntityManager.prototype.update = function(dt) {
   this.state.game.physics.arcade.collide(this.groups["player"], this.worldGeometry, function(player, folliage) {
+  }, null, this);
+  this.state.game.physics.arcade.collide(this.groups["collectable"], this.worldGeometry, function(collectable, folliage) {
   }, null, this);
   this.state.game.physics.arcade.collide(this.groups["player"], this.groups["collectable"], function(player, collectable) {
     collectable.entity.interact(player.entity);

@@ -312,50 +312,6 @@
                  "y":-65.6667
                 }, 
                 {
-                 "gid":93,
-                 "height":16,
-                 "id":186,
-                 "name":"coin",
-                 "properties":
-                    {
-                     "class":"Coin",
-                     "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "type":"string"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":363.663,
-                 "y":-67
-                }, 
-                {
-                 "gid":121,
-                 "height":32,
-                 "id":187,
-                 "name":"worm",
-                 "properties":
-                    {
-                     "class":"Worm",
-                     "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "type":"string"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":324,
-                 "y":-66
-                }, 
-                {
                  "gid":101,
                  "height":32,
                  "id":188,
@@ -474,6 +430,82 @@
                  "width":44,
                  "x":734.666666666667,
                  "y":-114.666666666667
+                }, 
+                {
+                 "gid":121,
+                 "height":32,
+                 "id":239,
+                 "name":"worm",
+                 "properties":
+                    {
+                     "anchor":"0.5,1",
+                     "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"worms",
+                     "size":"22,8,0,-10",
+                     "sound":"pickup",
+                     "sprite":"atlas,wormbullet_0000",
+                     "type":"collectable"
+                    },
+                 "propertytypes":
+                    {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
+                     "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":322.583333333333,
+                 "y":-66.75
+                }, 
+                {
+                 "gid":93,
+                 "height":16,
+                 "id":235,
+                 "name":"coin",
+                 "properties":
+                    {
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
+                     "type":"collectable"
+                    },
+                 "propertytypes":
+                    {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
+                     "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":363.178151515152,
+                 "y":-67.3030303030304
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1277,8 +1309,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":193,
-                 "y":814
+                 "x":62.3333333333333,
+                 "y":430
                 }, 
                 {
                  "gid":93,
@@ -3757,7 +3789,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":235,
+ "nextobjectid":240,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tileheight":32,
