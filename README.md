@@ -175,4 +175,5 @@ I hope this explains the system enough. Have fun coding
 
 # TODO
 - Replace Coin and Worm with a generic Collectable that can be configured
+- Create a particle entity
 - Support rectangular spritesheets for atlas compilation. Currently only horizontal

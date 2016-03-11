@@ -422,6 +422,58 @@
                  "width":32,
                  "x":622.667,
                  "y":-66.6667
+                }, 
+                {
+                 "height":66.5454545454546,
+                 "id":229,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":-1,
+                     "target_name":"",
+                     "trigger_frame":false,
+                     "trigger_once":false
+                    },
+                 "propertytypes":
+                    {
+                     "behaviour":"string",
+                     "target":"int",
+                     "target_name":"string",
+                     "trigger_frame":"bool",
+                     "trigger_once":"bool"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":54.8181818181819,
+                 "x":665.666666666667,
+                 "y":-134.545454545455
+                }, 
+                {
+                 "height":48,
+                 "id":230,
+                 "name":"music",
+                 "properties":
+                    {
+                     "class":"Music",
+                     "id":-1,
+                     "music":"",
+                     "type":"none"
+                    },
+                 "propertytypes":
+                    {
+                     "class":"string",
+                     "id":"int",
+                     "music":"string",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":44,
+                 "x":734.666666666667,
+                 "y":-114.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3695,8 +3747,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":244.333333333333,
-                 "y":890.666666666667
+                 "x":244.333,
+                 "y":890.667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3705,7 +3757,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":229,
+ "nextobjectid":235,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tileheight":32,

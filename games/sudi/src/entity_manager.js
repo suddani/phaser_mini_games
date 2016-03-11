@@ -11,7 +11,12 @@ define("games/sudi/src/entity_manager", [
   "games/sudi/src/lava",
   "games/sudi/src/lever",
   "games/sudi/src/cloud",
-function(Trigger, Player, Coin, Flag, Tourtle, Mole, Worm, Bullet, TrapDoor, Lava, Lever, Cloud) {
+  "games/sudi/src/music",
+function(Trigger, Player, Coin,
+         Flag, Tourtle, Mole,
+         Worm, Bullet, TrapDoor,
+         Lava, Lever, Cloud,
+         Music) {
 function EntityManager(state) {
   this.state = state;
   // this.entities = [];
@@ -20,7 +25,8 @@ function EntityManager(state) {
     "collectable": createGroup(state),
     "interactable": createGroup(state),
     "bullet": createGroup(state),
-    "trigger": createGroup(state)
+    "trigger": createGroup(state),
+    "none": createGroup(state)
   };
   function createGroup(state) {
     var group = state.add.group();
@@ -148,7 +154,7 @@ EntityManager.prototype.update = function(dt) {
 }
 
 EntityManager.prototype.render = function() {
-  if (this.debug) {
+  if (this.debug=true) {
     for (var g in this.groups) {
       this.groups[g].forEach(function(member) {
         this.state.game.debug.body(member);

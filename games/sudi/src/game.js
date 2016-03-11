@@ -25,7 +25,7 @@ function(Physics, Map, EntityManager, Coin, SoundSystem, HUD, SpritesheetGenerat
     this.load.atlasJSONHash("atlas");
 
     //SoundSystem
-    SoundSystem.preload(this.game);
+    SoundSystem.preload(this);
   };
   Main.prototype.create = function() {
     this.game.time.advancedTiming = true;
@@ -38,9 +38,11 @@ function(Physics, Map, EntityManager, Coin, SoundSystem, HUD, SpritesheetGenerat
     this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 
     Physics.init(this.game);
-    SoundSystem.init(this.game);
+    SoundSystem.init(this);
     HUD.init(this);
     Coin.totalCount = 0;
+
+    SoundSystem.theme("cave");
 
     this.entity_manager = new EntityManager(this);
 
@@ -48,6 +50,9 @@ function(Physics, Map, EntityManager, Coin, SoundSystem, HUD, SpritesheetGenerat
     this.map.load("level1", "atlas");
 
     this.game.stage.backgroundColor = "#4488AA";
+  };
+  Main.prototype.shutdown = function() {
+    SoundSystem.shutdown();
   };
   Main.prototype.update = function() {
     var dt = this.time.physicsElapsedMS * 0.001;
