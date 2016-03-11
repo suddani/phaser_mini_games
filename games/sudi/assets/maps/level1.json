@@ -3477,12 +3477,28 @@
                  "name":"coin",
                  "properties":
                     {
-                     "class":"Coin",
+                     "anchor":"0.5, 1",
+                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"coins",
+                     "size":"16,16",
+                     "sound":"pickup",
+                     "sprite":"atlas,coin_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,

@@ -1300,8 +1300,16 @@
   </object>
   <object id="63" name="coin" gid="93" x="1292" y="106" width="16" height="16">
    <properties>
-    <property name="class" value="Coin"/>
-    <property name="type" value="collectable"/>
+   <property name="anchor" value="0.5, 1"/>
+   <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
+   <property name="bounce" value="1"/>
+   <property name="class" value="Collectable"/>
+   <property name="gravity" type="float" value="100"/>
+   <property name="name" value="coins"/>
+   <property name="size" value="16,16"/>
+   <property name="sound" value="pickup"/>
+   <property name="sprite" value="atlas,coin_0000"/>
+   <property name="type" value="collectable"/>
    </properties>
   </object>
   <object id="64" name="coin" gid="93" x="1368" y="106" width="16" height="16">
