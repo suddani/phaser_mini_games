@@ -1309,8 +1309,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1198.3333,
-                 "y":336
+                 "x":84.3299999999999,
+                 "y":414
                 }, 
                 {
                  "gid":93,
@@ -2673,20 +2673,36 @@
                  "name":"worm",
                  "properties":
                     {
-                     "class":"Worm",
+                     "anchor":"0.5,1",
+                     "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":100,
+                     "name":"worms",
+                     "size":"22,8,0,-10",
+                     "sound":"pickup",
+                     "sprite":"atlas,wormbullet_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":132,
-                 "y":444
+                 "x":134,
+                 "y":438
                 }, 
                 {
                  "gid":93,
@@ -4553,12 +4569,28 @@
                  "name":"worm",
                  "properties":
                     {
-                     "class":"Worm",
+                     "anchor":"0.5,1",
+                     "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":0,
+                     "name":"worms",
+                     "size":"22,8,0,-10",
+                     "sound":"pickup",
+                     "sprite":"atlas,wormbullet_0000",
                      "type":"collectable"
                     },
                  "propertytypes":
                     {
+                     "anchor":"string",
+                     "animation":"string",
+                     "bounce":"string",
                      "class":"string",
+                     "gravity":"float",
+                     "name":"string",
+                     "size":"string",
+                     "sound":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,

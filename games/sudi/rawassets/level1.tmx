@@ -513,7 +513,7 @@
   <object id="227" x="625" y="785" width="59" height="32"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object id="2" name="player" gid="85" x="1198.33" y="336" width="32" height="32">
+  <object id="2" name="player" gid="85" x="84.33" y="414" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
@@ -1001,9 +1001,17 @@
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="42" name="worm" gid="121" x="132" y="444" width="32" height="32">
+  <object id="42" name="worm" gid="121" x="134" y="438" width="32" height="32">
    <properties>
-    <property name="class" value="Worm"/>
+    <property name="anchor" value="0.5,1"/>
+    <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
+    <property name="bounce" value="1"/>
+    <property name="class" value="Collectable"/>
+    <property name="gravity" type="float" value="100"/>
+    <property name="name" value="worms"/>
+    <property name="size" value="22,8,0,-10"/>
+    <property name="sound" value="pickup"/>
+    <property name="sprite" value="atlas,wormbullet_0000"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
@@ -1673,7 +1681,15 @@
   </object>
   <object id="148" name="worm" gid="121" x="896" y="222" width="32" height="32">
    <properties>
-    <property name="class" value="Worm"/>
+    <property name="anchor" value="0.5,1"/>
+    <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
+    <property name="bounce" value="1"/>
+    <property name="class" value="Collectable"/>
+    <property name="gravity" type="float" value="0"/>
+    <property name="name" value="worms"/>
+    <property name="size" value="22,8,0,-10"/>
+    <property name="sound" value="pickup"/>
+    <property name="sprite" value="atlas,wormbullet_0000"/>
     <property name="type" value="collectable"/>
    </properties>
   </object>
