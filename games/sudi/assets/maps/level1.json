@@ -438,6 +438,7 @@
                  "name":"worm",
                  "properties":
                     {
+                     "amount":2,
                      "anchor":"0.5,1",
                      "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
                      "bounce":"1",
@@ -451,6 +452,7 @@
                     },
                  "propertytypes":
                     {
+                     "amount":"int",
                      "anchor":"string",
                      "animation":"string",
                      "bounce":"string",
@@ -476,6 +478,7 @@
                  "name":"coin",
                  "properties":
                     {
+                     "amount":1,
                      "anchor":"0.5, 1",
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
@@ -489,6 +492,7 @@
                     },
                  "propertytypes":
                     {
+                     "amount":"int",
                      "anchor":"string",
                      "animation":"string",
                      "bounce":"string",
@@ -2673,6 +2677,7 @@
                  "name":"worm",
                  "properties":
                     {
+                     "amount":2,
                      "anchor":"0.5,1",
                      "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
                      "bounce":"1",
@@ -2686,6 +2691,7 @@
                     },
                  "propertytypes":
                     {
+                     "amount":"int",
                      "anchor":"string",
                      "animation":"string",
                      "bounce":"string",
@@ -4569,6 +4575,7 @@
                  "name":"worm",
                  "properties":
                     {
+                     "amount":2,
                      "anchor":"0.5,1",
                      "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
                      "bounce":"1",
@@ -4582,6 +4589,7 @@
                     },
                  "propertytypes":
                     {
+                     "amount":"int",
                      "anchor":"string",
                      "animation":"string",
                      "bounce":"string",

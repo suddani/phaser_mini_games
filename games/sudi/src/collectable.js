@@ -90,6 +90,7 @@ Collectable.prototype.set = function (property, value) {
 
 Collectable.prototype.get = function (property, value) {
   this.properties = this.properties||{};
+  if (property=="amount") return parseInt(this.properties[property])||1;
   return this.properties[property]||0;
 };
 
@@ -105,7 +106,7 @@ Collectable.prototype.update = function(dt) {
 };
 
 Collectable.prototype.interact = function(entity) {
-  entity.set(this.get("name"), entity.get(this.get("name"))+1);
+  entity.set(this.get("name"), entity.get(this.get("name"))+this.get("amount"));
   SoundSystem.play(this.get("sound"));
   this.owner = null;
   this.manager = null;
