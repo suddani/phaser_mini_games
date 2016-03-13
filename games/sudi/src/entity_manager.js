@@ -174,7 +174,7 @@ EntityManager.prototype.update = function(dt) {
 }
 
 EntityManager.prototype.render = function() {
-  if (this.debug=true) {
+  if (this.debug) {
     for (var g in this.groups) {
       this.groups[g].forEach(function(member) {
         this.state.game.debug.body(member);
