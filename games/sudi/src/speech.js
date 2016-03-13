@@ -15,7 +15,10 @@ function Speech(state, group) {
     this.group.add(this.sprite);
   }
 
+  this.active = false;
+
   this.texts = [];
+  this.current = 0;
 };
 
 Speech.prototype.set = function (property, value) {
@@ -45,14 +48,32 @@ Speech.prototype.damage = function(ammount) {
 };
 
 Speech.prototype.update = function(dt) {
+  if (!this.active) return;
+  if (Pad.justDown(Pad.JUMP) || Pad.justDown(Pad.SHOOT)) {
+        this.current += 1;
+        if (this.current < this.texts.length) {
+          HUD.speech(this.texts[this.current]);
+        } else {
+          this.current = 0;
+          this.active = false;
+          HUD.hideBars();
+          HUD.hideSpeech();
+          if (this.get("target"))
+            this.manager.triggerById(parseInt(this.get("target")), this, this.entity, true);
+          this.entity = null;
+        }
+      }
 };
 
 Speech.prototype.interact = function(entity) {
 };
 
 Speech.prototype.trigger = function (t, player) {
-  // HUD.showBars();
-  console.log("SPEECH")
+  this.active = true;
+  this.current = 0;
+  this.entity = player;
+  HUD.showBars();
+  HUD.speech(this.texts[this.current]);
 };
 
 Speech.prototype.trigger_end = function (t, player) {

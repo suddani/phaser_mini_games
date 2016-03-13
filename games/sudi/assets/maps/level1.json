@@ -151,7 +151,7 @@
                      "target":"99",
                      "target_name":"",
                      "trigger_frame":"false",
-                     "trigger_once":"false"
+                     "trigger_once":"true"
                     },
                  "rotation":0,
                  "type":"",
@@ -331,7 +331,7 @@
                      "target":"8",
                      "target_name":"",
                      "trigger_frame":"false",
-                     "trigger_once":"true"
+                     "trigger_once":"false"
                     },
                  "rotation":0,
                  "type":"",
@@ -339,6 +339,42 @@
                  "width":12.1515333333332,
                  "x":1544.5909,
                  "y":386.72725
+                }, 
+                {
+                 "height":31.8788333333333,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":"27",
+                     "target_name":"",
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":17.4848666666668,
+                 "x":549.924233333333,
+                 "y":652.393916666667
+                }, 
+                {
+                 "height":31.8788333333334,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":"29",
+                     "target_name":"",
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":54.8182000000002,
+                 "x":1291.25756666667,
+                 "y":654.72725
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -563,6 +599,7 @@
                     {
                      "class":"Speech",
                      "id":"-1",
+                     "target":"",
                      "texts":"Jack|Oh, ein Hebel.\\nWas der wohl macht.",
                      "type":"none"
                     },
@@ -1674,8 +1711,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1502.66333333333,
-                 "y":372.833333333333
+                 "x":1238.66333333333,
+                 "y":644.833333333333
                 }, 
                 {
                  "gid":93,
@@ -4116,7 +4153,7 @@
                  "properties":
                     {
                      "class":"TrapDoor",
-                     "id":"-1",
+                     "id":"20",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -4240,6 +4277,7 @@
                  "properties":
                     {
                      "class":"Lever",
+                     "id":"9",
                      "interact":"false",
                      "target":"20",
                      "type":"interactable"
@@ -4259,7 +4297,7 @@
                     {
                      "class":"Cloud",
                      "despawn":"true",
-                     "id":"99",
+                     "id":"100",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -4277,7 +4315,7 @@
                     {
                      "class":"Cloud",
                      "despawn":"true",
-                     "id":"99",
+                     "id":"100",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -4295,7 +4333,7 @@
                     {
                      "class":"Cloud",
                      "despawn":"true",
-                     "id":"99",
+                     "id":"100",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -4313,7 +4351,7 @@
                     {
                      "class":"Cloud",
                      "despawn":"true",
-                     "id":"99",
+                     "id":"100",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -4331,7 +4369,7 @@
                     {
                      "class":"Cloud",
                      "despawn":"true",
-                     "id":"99",
+                     "id":"100",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -4349,7 +4387,7 @@
                     {
                      "class":"Cloud",
                      "despawn":"true",
-                     "id":"99",
+                     "id":"100",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -4367,7 +4405,7 @@
                     {
                      "class":"Cloud",
                      "despawn":"true",
-                     "id":"99",
+                     "id":"100",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -5647,7 +5685,7 @@
                  "properties":
                     {
                      "class":"TrapDoor",
-                     "id":"-1",
+                     "id":"29",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -5664,6 +5702,9 @@
                  "properties":
                     {
                      "class":"Lever",
+                     "id":"28",
+                     "interact":"false",
+                     "target":"29",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -5731,7 +5772,8 @@
                     {
                      "class":"Speech",
                      "id":"8",
-                     "texts":"Jack|Oh, ein Hebel.\\nWas der wohl macht.",
+                     "target":"9",
+                     "texts":"Jack|Oh, ein Hebel. Was der wohl macht.",
                      "type":"none"
                     },
                  "rotation":0,
@@ -5740,6 +5782,60 @@
                  "width":69.3333,
                  "x":1186.66668333333,
                  "y":11.3333166666667
+                }, 
+                {
+                 "height":41.3333666666666,
+                 "name":"Speech",
+                 "properties":
+                    {
+                     "class":"Speech",
+                     "id":"27",
+                     "target":"28",
+                     "texts":"Jack|Wow noch ein Hebel. Ob der wohl auch irgendwas macht.",
+                     "type":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":46.6666333333332,
+                 "x":538.666683333333,
+                 "y":587.333316666667
+                }, 
+                {
+                 "height":41.3334,
+                 "name":"Speech",
+                 "properties":
+                    {
+                     "class":"Speech",
+                     "id":"99",
+                     "target":"100",
+                     "texts":"Jack|Endlich geschafft. Jetzt muss ich nur noch hier raus kommen;Jack|Vielleicht gehts ja da oben an der Flagge raus;Jack|Nur wie komm ich da hin?",
+                     "type":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":46.6666,
+                 "x":1367.33336666667,
+                 "y":765.999966666667
+                }, 
+                {
+                 "height":41.3334,
+                 "name":"Speech",
+                 "properties":
+                    {
+                     "class":"Speech",
+                     "id":"100",
+                     "target":"",
+                     "texts":"Jack|Ach so...easy",
+                     "type":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":46.6666,
+                 "x":1348.6667,
+                 "y":821.999966666667
                 }],
          "opacity":1,
          "type":"objectgroup",
