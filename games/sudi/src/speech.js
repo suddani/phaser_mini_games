@@ -49,7 +49,7 @@ Speech.prototype.damage = function(ammount) {
 
 Speech.prototype.update = function(dt) {
   if (!this.active) return;
-  if (Pad.justDown(Pad.JUMP) || Pad.justDown(Pad.SHOOT)) {
+  if (Pad.justDown(Pad.SHOOT)) {
         this.current += 1;
         if (this.current < this.texts.length) {
           HUD.speech(this.texts[this.current]);
