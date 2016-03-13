@@ -36,13 +36,15 @@ Flag.prototype.update = function(dt) {
 };
 
 Flag.prototype.interact = function(entity) {
-  var coinsMissing = Collectable.totalCount["coins"]-entity.get("coins");
-  if (coinsMissing<=0)
-    onVictory();
-  else {
-    console.log("You missed "+coinsMissing+" coins!");
-    onLose();
-  }
+  // Collecting all coins is really hard so let the player win even if he didnt
+  onVictory();
+  // var coinsMissing = Collectable.totalCount["coins"]-entity.get("coins");
+  // if (coinsMissing<=0)
+  //   onVictory();
+  // else {
+  //   console.log("You missed "+coinsMissing+" coins!");
+  //   onLose();
+  // }
 };
 
 return Flag;
