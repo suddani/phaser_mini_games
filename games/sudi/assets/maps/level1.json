@@ -349,14 +349,14 @@
                      "target":"27",
                      "target_name":"",
                      "trigger_frame":"false",
-                     "trigger_once":"false"
+                     "trigger_once":"true"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":17.4849,
-                 "x":549.924,
-                 "y":652.394
+                 "x":553.674,
+                 "y":656.144
                 }, 
                 {
                  "height":66.5455,
@@ -1747,8 +1747,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":86.6633,
-                 "y":426.167
+                 "x":85.6633,
+                 "y":428.167
                 }, 
                 {
                  "gid":93,
