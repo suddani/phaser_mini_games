@@ -470,13 +470,22 @@
     <property name="trigger_once" value="false"/>
    </properties>
   </object>
-  <object name="trigger" x="1291.26" y="654.727" width="54.8182" height="31.8788">
+  <object name="trigger" x="664.591" y="-137.273" width="54.8182" height="66.5455">
    <properties>
     <property name="behaviour" value=""/>
-    <property name="target" value="29"/>
+    <property name="target" value="-1"/>
     <property name="target_name" value=""/>
     <property name="trigger_frame" value="false"/>
     <property name="trigger_once" value="false"/>
+   </properties>
+  </object>
+  <object name="trigger" x="157.667" y="377.455" width="14.8182" height="53.2122">
+   <properties>
+    <property name="behaviour" value=""/>
+    <property name="target" value="60"/>
+    <property name="target_name" value=""/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="true"/>
    </properties>
   </object>
  </objectgroup>
@@ -520,15 +529,6 @@
     <property name="interact" value="false"/>
     <property name="target" value="-1"/>
     <property name="type" value="interactable"/>
-   </properties>
-  </object>
-  <object name="trigger" x="665.667" y="-134.545" width="54.8182" height="66.5455">
-   <properties>
-    <property name="behaviour" value=""/>
-    <property name="target" value="-1"/>
-    <property name="target_name" value=""/>
-    <property name="trigger_frame" value="false"/>
-    <property name="trigger_once" value="false"/>
    </properties>
   </object>
   <object name="music" x="734.667" y="-114.667" width="44" height="48">
@@ -584,6 +584,15 @@
     <property name="target" value=""/>
     <property name="texts" value="Jack|Oh, ein Hebel.\nWas der wohl macht."/>
     <property name="type" value="none"/>
+   </properties>
+  </object>
+  <object name="trigger" x="1291.26" y="654.727" width="54.8182" height="31.8788">
+   <properties>
+    <property name="behaviour" value=""/>
+    <property name="target" value="29"/>
+    <property name="target_name" value=""/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
    </properties>
   </object>
  </objectgroup>
@@ -666,7 +675,7 @@
   <object x="1169" y="691" width="30" height="29"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="player" gid="85" x="1238.66" y="644.833" width="32" height="32">
+  <object name="player" gid="85" x="90.6633" y="422.167" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
@@ -2869,6 +2878,15 @@
     <property name="id" value="100"/>
     <property name="target" value=""/>
     <property name="texts" value="Jack|Ach so...easy"/>
+    <property name="type" value="none"/>
+   </properties>
+  </object>
+  <object name="Speech" x="980" y="-62" width="69.3333" height="38.6667">
+   <properties>
+    <property name="class" value="Speech"/>
+    <property name="id" value="60"/>
+    <property name="target" value=""/>
+    <property name="texts" value="Jack|Oh ein Wurm was ich damit wohl machen kann?;Wurm|Du kannst mich werfen;Jack|Aha;Wurm|Außerdem kannst du auch auf mich drauf springen wenn mich jemand geworfen hat und dann erscheine ich manchmal"/>
     <property name="type" value="none"/>
    </properties>
   </object>

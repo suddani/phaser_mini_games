@@ -359,12 +359,12 @@
                  "y":652.393916666667
                 }, 
                 {
-                 "height":31.8788333333334,
+                 "height":66.5455,
                  "name":"trigger",
                  "properties":
                     {
                      "behaviour":"",
-                     "target":"29",
+                     "target":"-1",
                      "target_name":"",
                      "trigger_frame":"false",
                      "trigger_once":"false"
@@ -372,9 +372,27 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":54.8182000000002,
-                 "x":1291.25756666667,
-                 "y":654.72725
+                 "width":54.8182,
+                 "x":664.5909,
+                 "y":-137.27275
+                }, 
+                {
+                 "height":53.2121666666667,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":"60",
+                     "target_name":"",
+                     "trigger_frame":"false",
+                     "trigger_once":"true"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":14.8182,
+                 "x":157.667,
+                 "y":377.455
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -490,24 +508,6 @@
                  "y":-66.6667
                 }, 
                 {
-                 "height":66.5455,
-                 "name":"trigger",
-                 "properties":
-                    {
-                     "behaviour":"",
-                     "target":"-1",
-                     "target_name":"",
-                     "trigger_frame":"false",
-                     "trigger_once":"false"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":54.8182,
-                 "x":665.667,
-                 "y":-134.545
-                }, 
-                {
                  "height":48,
                  "name":"music",
                  "properties":
@@ -609,6 +609,24 @@
                  "width":69.3333333333333,
                  "x":852,
                  "y":-122.666666666667
+                }, 
+                {
+                 "height":31.8788333333334,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":"29",
+                     "target_name":"",
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":54.8182000000002,
+                 "x":1291.25756666667,
+                 "y":654.72725
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1711,8 +1729,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1238.66333333333,
-                 "y":644.833333333333
+                 "x":90.6633333333332,
+                 "y":422.166666666667
                 }, 
                 {
                  "gid":93,
@@ -5836,6 +5854,24 @@
                  "width":46.6666,
                  "x":1348.6667,
                  "y":821.999966666667
+                }, 
+                {
+                 "height":38.6667,
+                 "name":"Speech",
+                 "properties":
+                    {
+                     "class":"Speech",
+                     "id":"60",
+                     "target":"",
+                     "texts":"Jack|Oh ein Wurm was ich damit wohl machen kann?;Wurm|Du kannst mich werfen;Jack|Aha;Wurm|Au\u00dferdem kannst du auch auf mich drauf springen wenn mich jemand geworfen hat und dann erscheine ich manchmal",
+                     "type":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":69.3333,
+                 "x":980.000016666667,
+                 "y":-62.0000166666667
                 }],
          "opacity":1,
          "type":"objectgroup",

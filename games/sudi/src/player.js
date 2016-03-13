@@ -73,6 +73,9 @@ Player.prototype.update = function(dt) {
   this.on_floor = (this.sprite.body.onFloor() || this.sprite.body.touching.down);
   if (!HUD.cinematic) {
     var isMoved = this.controls(dt);
+  } else {
+    // stop moving...
+    this.sprite.body.velocity.x = 0;
   }
   if (this.shoot > 0) {
     this.shoot-=dt;
@@ -112,7 +115,7 @@ Player.prototype.controls = function() {
     isMoved = true;
     SoundSystem.play("jump")
   }
-  if (Pad.isDown(Pad.SHOOT) && this.get("worms") > 0 && this.shoot <= 0) {
+  if (Pad.justDown(Pad.SHOOT) && this.get("worms") > 0 && this.shoot <= 0) {
     this.manager.fireBullet(this);
     this.set("worms", this.get("worms")-1);
     this.shoot = 0.5;
