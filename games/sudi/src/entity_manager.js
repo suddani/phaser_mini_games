@@ -11,11 +11,12 @@ define("games/sudi/src/entity_manager", [
   "games/sudi/src/cloud",
   "games/sudi/src/music",
   "games/sudi/src/collectable",
+  "games/sudi/src/speech",
 function(Trigger, Player,
          Flag, Tourtle, Mole,
          Bullet, TrapDoor,
          Lava, Lever, Cloud,
-         Music, Collectable) {
+         Music, Collectable, Speech) {
 function EntityManager(state) {
   this.state = state;
   // this.entities = [];
@@ -48,6 +49,7 @@ EntityManager.prototype.setWorldGeometry = function(worldGeometry) {
 EntityManager.prototype.fireBullet = function(owner, target, x, y) {
   var bullet = new Bullet(this.state, this.getGroup("bullet"));
   bullet.owner = owner;
+  bullet.manager = this;
   bullet.setPosition(owner.sprite.x+10*owner.sprite.scale.x, owner.sprite.y-(owner.duck ? 0 : 8));
   if (target) {
     bullet.sprite.body.velocity.x = target.sprite.x-bullet.sprite.x;
@@ -131,7 +133,7 @@ EntityManager.prototype.update = function(dt) {
   }, function(player, interactable) {
     //this is for ladders...
     var check = interactable.entity.dead_timer == null && (interactable.entity.shouldCollide ? interactable.entity.shouldCollide(player.entity) : true);
-    console.log("Shoudl check collision between player and interactable: "+check);
+    // console.log("Shoudl check collision between player and interactable: "+check);
     return check;
   }, this);
   this.state.game.physics.arcade.collide(this.groups["bullet"], this.worldGeometry, function(bullet, folliage) {

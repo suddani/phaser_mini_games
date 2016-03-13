@@ -367,6 +367,15 @@
     <property name="target" value="20"/>
    </properties>
   </object>
+  <object name="trigger" x="1520.59" y="808.061" width="54.8182" height="66.5455">
+   <properties>
+    <property name="behaviour" value=""/>
+    <property name="target" value="99"/>
+    <property name="target_name" value=""/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="prefabs">
   <object name="Trapdoor" gid="130" x="508" y="-66.6667" width="64" height="32">
@@ -404,8 +413,8 @@
   </object>
   <object name="lever" gid="132" x="622.667" y="-66.6667" width="32" height="32">
    <properties>
-    <property name="class" value="lever"/>
-    <property name="typer" value="interactable"/>
+    <property name="class" value="Lever"/>
+    <property name="type" value="interactable"/>
    </properties>
   </object>
   <object name="trigger" x="665.667" y="-134.545" width="54.8182" height="66.5455">
@@ -528,7 +537,7 @@
   <object x="1090" y="754.667" width="44.6667" height="124.667"/>
   <object x="1134.67" y="880" width="462.667" height="14"/>
   <object x="1584.67" y="625.333" width="14" height="253.333"/>
-  <object x="1462.67" y="690.667" width="122.667" height="22"/>
+  <object x="1462.67" y="689.334" width="122.667" height="22"/>
   <object x="1108" y="594.667" width="25.3333" height="91.3333"/>
   <object x="1396.67" y="621.333" width="25.3333" height="96.6667"/>
   <object x="1423.33" y="621.333" width="160.667" height="30"/>
@@ -536,7 +545,7 @@
   <object x="625" y="785" width="59" height="32"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="player" gid="85" x="1055" y="363.167" width="32" height="32">
+  <object name="player" gid="85" x="1329.66" y="860.5" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
@@ -962,7 +971,7 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object name="flag" gid="101" x="1553" y="434" width="32" height="32">
+  <object name="flag" gid="101" x="1551.67" y="690" width="32" height="32">
    <properties>
     <property name="class" value="Flag"/>
     <property name="type" value="interactable"/>
@@ -1945,6 +1954,68 @@
     <property name="class" value="Cloud"/>
     <property name="despawn" value="true"/>
     <property name="id" value="20"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="lever" gid="132" x="1553.33" y="433.333" width="32" height="32">
+   <properties>
+    <property name="class" value="Lever"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="cloud" gid="145" x="1425.33" y="732">
+   <properties>
+    <property name="class" value="Cloud"/>
+    <property name="despawn" value="true"/>
+    <property name="id" value="99"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="cloud" gid="145" x="1462.67" y="761.333">
+   <properties>
+    <property name="class" value="Cloud"/>
+    <property name="despawn" value="true"/>
+    <property name="id" value="99"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="cloud" gid="145" x="1429.33" y="834.667">
+   <properties>
+    <property name="class" value="Cloud"/>
+    <property name="despawn" value="true"/>
+    <property name="id" value="99"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="cloud" gid="145" x="1470.67" y="806.667">
+   <properties>
+    <property name="class" value="Cloud"/>
+    <property name="despawn" value="true"/>
+    <property name="id" value="99"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="cloud" gid="145" x="1425.33" y="784">
+   <properties>
+    <property name="class" value="Cloud"/>
+    <property name="despawn" value="true"/>
+    <property name="id" value="99"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="cloud" gid="145" x="1470.67" y="858.667">
+   <properties>
+    <property name="class" value="Cloud"/>
+    <property name="despawn" value="true"/>
+    <property name="id" value="99"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="cloud" gid="145" x="1426.67" y="706.667">
+   <properties>
+    <property name="class" value="Cloud"/>
+    <property name="despawn" value="true"/>
+    <property name="id" value="99"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>

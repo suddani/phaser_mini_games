@@ -155,6 +155,24 @@
                  "width":39.5,
                  "x":973.5,
                  "y":400
+                }, 
+                {
+                 "height":66.5455,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":"99",
+                     "target_name":"",
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":54.8182,
+                 "x":1520.5909,
+                 "y":808.060583333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -257,8 +275,8 @@
                  "name":"lever",
                  "properties":
                     {
-                     "class":"lever",
-                     "typer":"interactable"
+                     "class":"Lever",
+                     "type":"interactable"
                     },
                  "rotation":0,
                  "type":"",
@@ -1276,7 +1294,7 @@
                  "visible":true,
                  "width":122.667,
                  "x":1462.67,
-                 "y":690.667
+                 "y":689.333666666667
                 }, 
                 {
                  "height":91.3333,
@@ -1373,8 +1391,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1054.99666666667,
-                 "y":363.166666666667
+                 "x":1329.66333333333,
+                 "y":860.5
                 }, 
                 {
                  "gid":93,
@@ -2109,8 +2127,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1553,
-                 "y":434
+                 "x":1551.66666666667,
+                 "y":690
                 }, 
                 {
                  "gid":102,
@@ -3931,6 +3949,148 @@
                  "width":0,
                  "x":948,
                  "y":285
+                }, 
+                {
+                 "gid":132,
+                 "height":32,
+                 "name":"lever",
+                 "properties":
+                    {
+                     "class":"Lever",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1553.33333333333,
+                 "y":433.333333333333
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"true",
+                     "id":"99",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1425.33333333333,
+                 "y":732
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"true",
+                     "id":"99",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1462.66666666667,
+                 "y":761.333333333333
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"true",
+                     "id":"99",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1429.33333333333,
+                 "y":834.666666666667
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"true",
+                     "id":"99",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1470.66666666667,
+                 "y":806.666666666667
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"true",
+                     "id":"99",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1425.33333333333,
+                 "y":784
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"true",
+                     "id":"99",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1470.66666666667,
+                 "y":858.666666666667
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"true",
+                     "id":"99",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1426.66666666667,
+                 "y":706.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",

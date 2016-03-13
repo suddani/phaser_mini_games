@@ -30,8 +30,29 @@ Bullet.prototype.kill = function () {
 
 Bullet.prototype.interact = function (entity) {
   if (!this.sprite.alive) return;
+  if (this.sprite.body.touching.up) {
+    if (Math.random()*100<30)
+    this.manager.create_entity_from_element({
+      x: this.sprite.x+16,
+      y: this.sprite.y,
+      properties : {
+        type: "collectable",
+        class: "Collectable",
+        amount: "1",
+        anchor: "0.5,1",
+        animation: "wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
+        bounce: "1",
+        gravity: "100",
+        name: "worms",
+        size: "22,8,0,-10",
+        sound: "pickup",
+        sprite: "atlas,wormbullet_0000"
+      }
+    });
+  } else {
+    if (entity.damage) entity.damage(1);
+  }
   this.kill();
-  if (entity.damage) entity.damage(1);
 };
 
 Bullet.prototype.set = function (property, value) {

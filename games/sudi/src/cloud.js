@@ -34,6 +34,9 @@ Cloud.prototype.set = function (property, value) {
 
 Cloud.prototype.get = function (property, value) {
   this.properties = this.properties||{};
+  if (property == "respawn") {
+    return this.properties["respawn"] ? parseFloat(this.properties["respawn"]) : 5;
+  }
   return this.properties[property]||0;
 };
 
@@ -48,7 +51,8 @@ Cloud.prototype.damage = function(ammount) {
 };
 
 Cloud.prototype.shouldCollide = function(entity) {
-  return entity.sprite.body.velocity.y >= 0;
+  return (entity.sprite.body.velocity.y > 0 &&
+      ((entity.sprite.body.position.y+entity.sprite.body.height-10) < this.sprite.body.position.y));
 }
 
 Cloud.prototype.update = function(dt) {
@@ -68,7 +72,7 @@ Cloud.prototype.update = function(dt) {
 
 Cloud.prototype.interact = function(entity) {
   if (!this.dead && this.sprite.body.touching.up) {
-    this.respawn_timer = this.respawn;
+    this.respawn_timer = this.get("respawn");
     this.dead = true;
     this.sprite.body.enable = false;
     this.sprite.play("die");
