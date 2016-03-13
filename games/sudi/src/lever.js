@@ -45,19 +45,26 @@ Lever.prototype.damage = function(ammount) {
 Lever.prototype.update = function(dt) {
 };
 
-Lever.prototype.interact = function(entity) {
+Lever.prototype.switch = function(entity) {
   if (this.open) {
     this.sprite.play("close", 12).onComplete.addOnce(function() {
       this.open=false;
+      this.manager.triggerById(parseInt(this.get("target")), this, entity, false);
     }, this);
   } else {
     this.sprite.play("open", 12).onComplete.addOnce(function() {
       this.open=true;
+      this.manager.triggerById(parseInt(this.get("target")), this, entity, true);
     }, this);
   }
+}
+
+Lever.prototype.interact = function(entity) {
+  this.switch(entity);
 };
 
 Lever.prototype.trigger = function (t, player) {
+  this.switch(player);
 };
 
 Lever.prototype.trigger_end = function (t, player) {

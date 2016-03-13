@@ -143,20 +143,6 @@
                  "y":27.6667
                 }, 
                 {
-                 "height":22.5,
-                 "name":"",
-                 "properties":
-                    {
-                     "target":"20"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":39.5,
-                 "x":973.5,
-                 "y":400
-                }, 
-                {
                  "height":66.5455,
                  "name":"trigger",
                  "properties":
@@ -306,7 +292,7 @@
                  "properties":
                     {
                      "behaviour":"",
-                     "target":"11",
+                     "target":"30",
                      "target_name":"",
                      "trigger_frame":"false",
                      "trigger_once":"false"
@@ -324,7 +310,7 @@
                  "properties":
                     {
                      "behaviour":"",
-                     "target":"12",
+                     "target":"31",
                      "target_name":"",
                      "trigger_frame":"false",
                      "trigger_once":"false"
@@ -335,6 +321,24 @@
                  "width":69.4849,
                  "x":1293.21965,
                  "y":742.0305
+                }, 
+                {
+                 "height":46.5455,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":"8",
+                     "target_name":"",
+                     "trigger_frame":"false",
+                     "trigger_once":"true"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":12.1515333333332,
+                 "x":1544.5909,
+                 "y":386.72725
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -438,6 +442,7 @@
                  "properties":
                     {
                      "class":"Lever",
+                     "target":"-1",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -549,6 +554,23 @@
                  "width":0,
                  "x":790,
                  "y":-67.3333
+                }, 
+                {
+                 "height":38.6666666666667,
+                 "name":"Speech",
+                 "properties":
+                    {
+                     "class":"Speech",
+                     "id":"-1",
+                     "texts":"Jack|Oh, ein Hebel.\\nWas der wohl macht.",
+                     "type":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":69.3333333333333,
+                 "x":852,
+                 "y":-122.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1651,8 +1673,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1247.99666666667,
-                 "y":643.5
+                 "x":1502.66333333333,
+                 "y":372.833333333333
                 }, 
                 {
                  "gid":93,
@@ -4217,6 +4239,7 @@
                  "properties":
                     {
                      "class":"Lever",
+                     "target":"20",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -5654,7 +5677,7 @@
                  "properties":
                     {
                      "class":"Music",
-                     "id":"11",
+                     "id":"30",
                      "music":"cave",
                      "type":"none"
                     },
@@ -5671,7 +5694,7 @@
                  "properties":
                     {
                      "class":"Music",
-                     "id":"12",
+                     "id":"31",
                      "music":"boss",
                      "type":"none"
                     },
@@ -5698,6 +5721,23 @@
                  "width":44,
                  "x":1530,
                  "y":744
+                }, 
+                {
+                 "height":38.6667,
+                 "name":"Speech",
+                 "properties":
+                    {
+                     "class":"Speech",
+                     "id":"8",
+                     "texts":"Jack|Oh, ein Hebel.\\nWas der wohl macht.",
+                     "type":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":69.3333,
+                 "x":1186.66668333333,
+                 "y":11.3333166666667
                 }],
          "opacity":1,
          "type":"objectgroup",

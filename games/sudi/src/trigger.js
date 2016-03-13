@@ -19,6 +19,8 @@ function Trigger(state, group) {
   this.x = 0;
   this.y = 0;
 
+  this.already_triggered = false;
+
   this.interactions = {};
 };
 
@@ -61,11 +63,16 @@ Trigger.prototype.update = function(dt) {
 };
 
 Trigger.prototype.beginInteraction = function(entity) {
+  if (JSON.parse(this.get("trigger_once")) && this.already_triggered)
+    return;
   this.manager.triggerById(parseInt(this.get("target")), this, entity, true);
 };
 
 Trigger.prototype.endInteraction = function(entity) {
+  if (JSON.parse(this.get("trigger_once")) && this.already_triggered)
+    return;
   this.manager.triggerById(parseInt(this.get("target")), this, entity, false);
+  this.already_triggered = true;
 };
 
 return Trigger;

@@ -168,6 +168,9 @@ EntityManager.prototype.update = function(dt) {
   this.groups["trigger"].forEach(function(member) {
     member.entity.update(dt);
   }, this);
+  this.groups["none"].forEach(function(member) {
+    member.entity.update(dt);
+  }, this);
 }
 
 EntityManager.prototype.render = function() {

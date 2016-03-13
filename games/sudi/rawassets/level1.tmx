@@ -362,11 +362,6 @@
     <property name="trigger_once" value="false"/>
    </properties>
   </object>
-  <object x="973.5" y="400" width="39.5" height="22.5">
-   <properties>
-    <property name="target" value="20"/>
-   </properties>
-  </object>
   <object name="trigger" x="1520.59" y="808.061" width="54.8182" height="66.5455">
    <properties>
     <property name="behaviour" value=""/>
@@ -442,7 +437,7 @@
   <object name="trigger" x="73.9242" y="456.061" width="69.4849" height="10.5455">
    <properties>
     <property name="behaviour" value=""/>
-    <property name="target" value="11"/>
+    <property name="target" value="30"/>
     <property name="target_name" value=""/>
     <property name="trigger_frame" value="false"/>
     <property name="trigger_once" value="false"/>
@@ -451,10 +446,19 @@
   <object name="trigger" x="1293.22" y="742.031" width="69.4849" height="10.5455">
    <properties>
     <property name="behaviour" value=""/>
-    <property name="target" value="12"/>
+    <property name="target" value="31"/>
     <property name="target_name" value=""/>
     <property name="trigger_frame" value="false"/>
     <property name="trigger_once" value="false"/>
+   </properties>
+  </object>
+  <object name="trigger" x="1544.59" y="386.727" width="12.1515" height="46.5455">
+   <properties>
+    <property name="behaviour" value=""/>
+    <property name="target" value="8"/>
+    <property name="target_name" value=""/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="true"/>
    </properties>
   </object>
  </objectgroup>
@@ -495,6 +499,7 @@
   <object name="lever" gid="132" x="622.667" y="-66.6667" width="32" height="32">
    <properties>
     <property name="class" value="Lever"/>
+    <property name="target" value="-1"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
@@ -551,6 +556,14 @@
     <property name="despawn" value="false"/>
     <property name="id" value="-1"/>
     <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="Speech" x="852" y="-122.667" width="69.3333" height="38.6667">
+   <properties>
+    <property name="class" value="Speech"/>
+    <property name="id" value="-1"/>
+    <property name="texts" value="Jack|Oh, ein Hebel.\nWas der wohl macht."/>
+    <property name="type" value="none"/>
    </properties>
   </object>
  </objectgroup>
@@ -633,7 +646,7 @@
   <object x="1169" y="691" width="30" height="29"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="player" gid="85" x="1248" y="643.5" width="32" height="32">
+  <object name="player" gid="85" x="1502.66" y="372.833" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
@@ -2048,6 +2061,7 @@
   <object name="lever" gid="132" x="1553.33" y="433.333" width="32" height="32">
    <properties>
     <property name="class" value="Lever"/>
+    <property name="target" value="20"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
@@ -2776,7 +2790,7 @@
   <object name="music" x="66" y="508" width="44" height="48">
    <properties>
     <property name="class" value="Music"/>
-    <property name="id" value="11"/>
+    <property name="id" value="30"/>
     <property name="music" value="cave"/>
     <property name="type" value="none"/>
    </properties>
@@ -2784,7 +2798,7 @@
   <object name="music" x="1281.3" y="799.303" width="44" height="48">
    <properties>
     <property name="class" value="Music"/>
-    <property name="id" value="12"/>
+    <property name="id" value="31"/>
     <property name="music" value="boss"/>
     <property name="type" value="none"/>
    </properties>
@@ -2794,6 +2808,14 @@
     <property name="class" value="Music"/>
     <property name="id" value="99"/>
     <property name="music" value="win"/>
+    <property name="type" value="none"/>
+   </properties>
+  </object>
+  <object name="Speech" x="1186.67" y="11.3333" width="69.3333" height="38.6667">
+   <properties>
+    <property name="class" value="Speech"/>
+    <property name="id" value="8"/>
+    <property name="texts" value="Jack|Oh, ein Hebel.\nWas der wohl macht."/>
     <property name="type" value="none"/>
    </properties>
   </object>
