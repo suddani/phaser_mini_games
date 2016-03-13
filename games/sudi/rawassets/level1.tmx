@@ -582,7 +582,7 @@
     <property name="class" value="Speech"/>
     <property name="id" value="-1"/>
     <property name="target" value=""/>
-    <property name="texts" value="Jack|Oh, ein Hebel.\nWas der wohl macht."/>
+    <property name="texts" value="Jack|Oh, ein Hebel.Was der wohl macht."/>
     <property name="type" value="none"/>
    </properties>
   </object>
@@ -593,6 +593,14 @@
     <property name="target_name" value=""/>
     <property name="trigger_frame" value="false"/>
     <property name="trigger_once" value="false"/>
+   </properties>
+  </object>
+  <object name="NPC" gid="107" x="280" y="-62.6667">
+   <properties>
+    <property name="class" value="NPC"/>
+    <property name="has_coins" value="-1"/>
+    <property name="has_nocoins" value="-1"/>
+    <property name="type" value="interactable"/>
    </properties>
   </object>
  </objectgroup>
@@ -675,7 +683,7 @@
   <object x="1169" y="691" width="30" height="29"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="player" gid="85" x="82.6633" y="424.833" width="32" height="32">
+  <object name="player" gid="85" x="209.33" y="808.833" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
@@ -2051,7 +2059,7 @@
   <object name="Trapdoor" gid="130" x="63.6667" y="827.333" width="64" height="32">
    <properties>
     <property name="class" value="TrapDoor"/>
-    <property name="id" value="-1"/>
+    <property name="id" value="68"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
@@ -2386,20 +2394,6 @@
    </properties>
   </object>
   <object name="coin" gid="93" x="106.667" y="480" width="16" height="16">
-   <properties>
-    <property name="anchor" value="0.5, 1"/>
-    <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
-    <property name="bounce" value="1"/>
-    <property name="class" value="Collectable"/>
-    <property name="gravity" value="0"/>
-    <property name="name" value="coins"/>
-    <property name="size" value="16,16"/>
-    <property name="sound" value="pickup"/>
-    <property name="sprite" value="atlas,coin_0000"/>
-    <property name="type" value="collectable"/>
-   </properties>
-  </object>
-  <object name="coin" gid="93" x="105.333" y="510.667" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
@@ -2881,13 +2875,144 @@
     <property name="type" value="none"/>
    </properties>
   </object>
-  <object name="Speech" x="980" y="-62" width="69.3333" height="38.6667">
+  <object name="Speech" x="980" y="-18" width="69.3333" height="38.6667">
    <properties>
     <property name="class" value="Speech"/>
     <property name="id" value="60"/>
     <property name="target" value=""/>
     <property name="texts" value="Jack|Oh ein Wurm was ich damit wohl machen kann?;Wurm|Du kannst mich werfen;Jack|Aha;Wurm|Außerdem kannst du auch auf mich drauf springen wenn mich jemand geworfen hat und dann erscheine ich manchmal"/>
     <property name="type" value="none"/>
+   </properties>
+  </object>
+  <object name="NPC" gid="107" x="148" y="817.333">
+   <properties>
+    <property name="class" value="NPC"/>
+    <property name="has_coins" value="67"/>
+    <property name="has_nocoins" value="66"/>
+    <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="Speech" x="54.6667" y="776.667" width="61.3333" height="16">
+   <properties>
+    <property name="class" value="Speech"/>
+    <property name="id" value="67"/>
+    <property name="target" value="68"/>
+    <property name="texts" value="Jack|So hier ist jetzt dein Geld;Typ|Danke dir aber behalts nur erstmal;Typ|Ich hols mir wieder wenn du vom Troll getötet wurdest;Jack|Das werden wir sehen"/>
+    <property name="type" value="none"/>
+   </properties>
+  </object>
+  <object name="Speech" x="50.6667" y="749.333" width="61.3333" height="16">
+   <properties>
+    <property name="class" value="Speech"/>
+    <property name="id" value="66"/>
+    <property name="target" value="-1"/>
+    <property name="texts" value="Typ|Ich sehe das du was von meinem Geld gefunden hast.;Typ|Aber das ist gar nicht alles...;Jack|Wie deins und nicht alles;Typ|Ja wenn du es mir wieder gibst kriegst meine Würmer"/>
+    <property name="type" value="none"/>
+   </properties>
+  </object>
+  <object name="worm" gid="121" x="26.6667" y="881.333" width="32" height="32">
+   <properties>
+    <property name="amount" value="2"/>
+    <property name="anchor" value="0.5,1"/>
+    <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
+    <property name="bounce" value="1"/>
+    <property name="class" value="Collectable"/>
+    <property name="gravity" value="100"/>
+    <property name="name" value="worms"/>
+    <property name="size" value="22,8,0,-10"/>
+    <property name="sound" value="pickup"/>
+    <property name="sprite" value="atlas,wormbullet_0000"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="worm" gid="121" x="58.6667" y="885.333" width="32" height="32">
+   <properties>
+    <property name="amount" value="2"/>
+    <property name="anchor" value="0.5,1"/>
+    <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
+    <property name="bounce" value="1"/>
+    <property name="class" value="Collectable"/>
+    <property name="gravity" value="100"/>
+    <property name="name" value="worms"/>
+    <property name="size" value="22,8,0,-10"/>
+    <property name="sound" value="pickup"/>
+    <property name="sprite" value="atlas,wormbullet_0000"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="worm" gid="121" x="81.3333" y="874.667" width="32" height="32">
+   <properties>
+    <property name="amount" value="2"/>
+    <property name="anchor" value="0.5,1"/>
+    <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
+    <property name="bounce" value="1"/>
+    <property name="class" value="Collectable"/>
+    <property name="gravity" value="100"/>
+    <property name="name" value="worms"/>
+    <property name="size" value="22,8,0,-10"/>
+    <property name="sound" value="pickup"/>
+    <property name="sprite" value="atlas,wormbullet_0000"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="worm" gid="121" x="88" y="853.333" width="32" height="32">
+   <properties>
+    <property name="amount" value="2"/>
+    <property name="anchor" value="0.5,1"/>
+    <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
+    <property name="bounce" value="1"/>
+    <property name="class" value="Collectable"/>
+    <property name="gravity" value="100"/>
+    <property name="name" value="worms"/>
+    <property name="size" value="22,8,0,-10"/>
+    <property name="sound" value="pickup"/>
+    <property name="sprite" value="atlas,wormbullet_0000"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="worm" gid="121" x="110.667" y="853.333" width="32" height="32">
+   <properties>
+    <property name="amount" value="2"/>
+    <property name="anchor" value="0.5,1"/>
+    <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
+    <property name="bounce" value="1"/>
+    <property name="class" value="Collectable"/>
+    <property name="gravity" value="100"/>
+    <property name="name" value="worms"/>
+    <property name="size" value="22,8,0,-10"/>
+    <property name="sound" value="pickup"/>
+    <property name="sprite" value="atlas,wormbullet_0000"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="worm" gid="121" x="37.3333" y="873.333" width="32" height="32">
+   <properties>
+    <property name="amount" value="2"/>
+    <property name="anchor" value="0.5,1"/>
+    <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
+    <property name="bounce" value="1"/>
+    <property name="class" value="Collectable"/>
+    <property name="gravity" value="100"/>
+    <property name="name" value="worms"/>
+    <property name="size" value="22,8,0,-10"/>
+    <property name="sound" value="pickup"/>
+    <property name="sprite" value="atlas,wormbullet_0000"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="worm" gid="121" x="65.3333" y="872" width="32" height="32">
+   <properties>
+    <property name="amount" value="2"/>
+    <property name="anchor" value="0.5,1"/>
+    <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
+    <property name="bounce" value="1"/>
+    <property name="class" value="Collectable"/>
+    <property name="gravity" value="100"/>
+    <property name="name" value="worms"/>
+    <property name="size" value="22,8,0,-10"/>
+    <property name="sound" value="pickup"/>
+    <property name="sprite" value="atlas,wormbullet_0000"/>
+    <property name="type" value="collectable"/>
    </properties>
   </object>
  </objectgroup>

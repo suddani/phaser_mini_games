@@ -600,7 +600,7 @@
                      "class":"Speech",
                      "id":"-1",
                      "target":"",
-                     "texts":"Jack|Oh, ein Hebel.\\nWas der wohl macht.",
+                     "texts":"Jack|Oh, ein Hebel.Was der wohl macht.",
                      "type":"none"
                     },
                  "rotation":0,
@@ -627,6 +627,24 @@
                  "width":54.8182000000002,
                  "x":1291.25756666667,
                  "y":654.72725
+                }, 
+                {
+                 "gid":107,
+                 "height":0,
+                 "name":"NPC",
+                 "properties":
+                    {
+                     "class":"NPC",
+                     "has_coins":"-1",
+                     "has_nocoins":"-1",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":280,
+                 "y":-62.6666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1729,8 +1747,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":82.6633333333333,
-                 "y":424.833333333333
+                 "x":209.33,
+                 "y":808.833333333333
                 }, 
                 {
                  "gid":93,
@@ -4206,7 +4224,7 @@
                  "properties":
                     {
                      "class":"TrapDoor",
-                     "id":"-1",
+                     "id":"68",
                      "type":"interactable"
                     },
                  "rotation":0,
@@ -5871,7 +5889,236 @@
                  "visible":true,
                  "width":69.3333,
                  "x":980.000016666667,
-                 "y":-62.0000166666667
+                 "y":-18.0000166666667
+                }, 
+                {
+                 "gid":107,
+                 "height":0,
+                 "name":"NPC",
+                 "properties":
+                    {
+                     "class":"NPC",
+                     "has_coins":"67",
+                     "has_nocoins":"66",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":148,
+                 "y":817.333333333333
+                }, 
+                {
+                 "height":16.0000333333333,
+                 "name":"Speech",
+                 "properties":
+                    {
+                     "class":"Speech",
+                     "id":"67",
+                     "target":"68",
+                     "texts":"Jack|So hier ist jetzt dein Geld;Typ|Danke dir aber behalts nur erstmal;Typ|Ich hols mir wieder wenn du vom Troll get\u00f6tet wurdest;Jack|Das werden wir sehen",
+                     "type":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":61.3332999999998,
+                 "x":54.6666833333333,
+                 "y":776.66665
+                }, 
+                {
+                 "height":16,
+                 "name":"Speech",
+                 "properties":
+                    {
+                     "class":"Speech",
+                     "id":"66",
+                     "target":"-1",
+                     "texts":"Typ|Ich sehe das du was von meinem Geld gefunden hast.;Typ|Aber das ist gar nicht alles...;Jack|Wie deins und nicht alles;Typ|Ja wenn du es mir wieder gibst kriegst meine W\u00fcrmer",
+                     "type":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":61.3333,
+                 "x":50.6666833333333,
+                 "y":749.333333333333
+                }, 
+                {
+                 "gid":121,
+                 "height":32,
+                 "name":"worm",
+                 "properties":
+                    {
+                     "amount":"2",
+                     "anchor":"0.5,1",
+                     "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":"100",
+                     "name":"worms",
+                     "size":"22,8,0,-10",
+                     "sound":"pickup",
+                     "sprite":"atlas,wormbullet_0000",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":26.6666666666667,
+                 "y":881.333333333333
+                }, 
+                {
+                 "gid":121,
+                 "height":32,
+                 "name":"worm",
+                 "properties":
+                    {
+                     "amount":"2",
+                     "anchor":"0.5,1",
+                     "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":"100",
+                     "name":"worms",
+                     "size":"22,8,0,-10",
+                     "sound":"pickup",
+                     "sprite":"atlas,wormbullet_0000",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":58.6666666666666,
+                 "y":885.333333333333
+                }, 
+                {
+                 "gid":121,
+                 "height":32,
+                 "name":"worm",
+                 "properties":
+                    {
+                     "amount":"2",
+                     "anchor":"0.5,1",
+                     "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":"100",
+                     "name":"worms",
+                     "size":"22,8,0,-10",
+                     "sound":"pickup",
+                     "sprite":"atlas,wormbullet_0000",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":81.3333333333333,
+                 "y":874.666666666667
+                }, 
+                {
+                 "gid":121,
+                 "height":32,
+                 "name":"worm",
+                 "properties":
+                    {
+                     "amount":"2",
+                     "anchor":"0.5,1",
+                     "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":"100",
+                     "name":"worms",
+                     "size":"22,8,0,-10",
+                     "sound":"pickup",
+                     "sprite":"atlas,wormbullet_0000",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":88,
+                 "y":853.333333333333
+                }, 
+                {
+                 "gid":121,
+                 "height":32,
+                 "name":"worm",
+                 "properties":
+                    {
+                     "amount":"2",
+                     "anchor":"0.5,1",
+                     "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":"100",
+                     "name":"worms",
+                     "size":"22,8,0,-10",
+                     "sound":"pickup",
+                     "sprite":"atlas,wormbullet_0000",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":110.666666666667,
+                 "y":853.333333333333
+                }, 
+                {
+                 "gid":121,
+                 "height":32,
+                 "name":"worm",
+                 "properties":
+                    {
+                     "amount":"2",
+                     "anchor":"0.5,1",
+                     "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":"100",
+                     "name":"worms",
+                     "size":"22,8,0,-10",
+                     "sound":"pickup",
+                     "sprite":"atlas,wormbullet_0000",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":37.3333333333333,
+                 "y":873.333333333333
+                }, 
+                {
+                 "gid":121,
+                 "height":32,
+                 "name":"worm",
+                 "properties":
+                    {
+                     "amount":"2",
+                     "anchor":"0.5,1",
+                     "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
+                     "bounce":"1",
+                     "class":"Collectable",
+                     "gravity":"100",
+                     "name":"worms",
+                     "size":"22,8,0,-10",
+                     "sound":"pickup",
+                     "sprite":"atlas,wormbullet_0000",
+                     "type":"collectable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":65.3333333333333,
+                 "y":872
                 }],
          "opacity":1,
          "type":"objectgroup",

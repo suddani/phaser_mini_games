@@ -12,11 +12,13 @@ define("games/sudi/src/entity_manager", [
   "games/sudi/src/music",
   "games/sudi/src/collectable",
   "games/sudi/src/speech",
+  "games/sudi/src/npc",
 function(Trigger, Player,
          Flag, Tourtle, Mole,
          Bullet, TrapDoor,
          Lava, Lever, Cloud,
-         Music, Collectable, Speech) {
+         Music, Collectable, Speech,
+         NPC) {
 function EntityManager(state) {
   this.state = state;
   // this.entities = [];
