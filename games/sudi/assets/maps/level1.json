@@ -1747,8 +1747,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":209.33,
-                 "y":808.833333333333
+                 "x":86.6633333333333,
+                 "y":426.166666666667
                 }, 
                 {
                  "gid":93,
@@ -5017,30 +5017,6 @@
                  "width":16,
                  "x":106.666666666667,
                  "y":480
-                }, 
-                {
-                 "gid":93,
-                 "height":16,
-                 "name":"coin",
-                 "properties":
-                    {
-                     "anchor":"0.5, 1",
-                     "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
-                     "bounce":"1",
-                     "class":"Collectable",
-                     "gravity":"0",
-                     "name":"coins",
-                     "size":"16,16",
-                     "sound":"pickup",
-                     "sprite":"atlas,coin_0000",
-                     "type":"collectable"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":105.333333333333,
-                 "y":510.666666666667
                 }, 
                 {
                  "gid":93,

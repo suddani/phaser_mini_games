@@ -50,7 +50,6 @@ NPC.prototype.update = function(dt) {
 
 NPC.prototype.interact = function(entity) {
   var coinsMissing = Collectable.totalCount["coins"]-entity.get("coins");
-  coinsMissing = 0;
   if (coinsMissing<=0) {
     this.manager.triggerById(parseInt(this.get("has_coins")), this, entity, true);
     this.quest_done = true;

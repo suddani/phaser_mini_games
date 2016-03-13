@@ -683,7 +683,7 @@
   <object x="1169" y="691" width="30" height="29"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="player" gid="85" x="209.33" y="808.833" width="32" height="32">
+  <object name="player" gid="85" x="86.6633" y="426.167" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
