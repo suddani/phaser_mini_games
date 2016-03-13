@@ -2879,6 +2879,7 @@
    <properties>
     <property name="class" value="Speech"/>
     <property name="id" value="60"/>
+    <property name="show_once" value="true"/>
     <property name="target" value=""/>
     <property name="texts" value="Jack|Oh ein Wurm was ich damit wohl machen kann?;Wurm|Du kannst mich werfen;Jack|Aha;Wurm|Außerdem kannst du auch auf mich drauf springen wenn mich jemand geworfen hat und dann erscheine ich manchmal"/>
     <property name="type" value="none"/>

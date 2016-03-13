@@ -1,6 +1,8 @@
 define("games/sudi/src/speech", [
   "games/sudi/src/hud",
 function(HUD) {
+
+Speech.shown = {};
 function Conversation(name, text) {
   this.name = name;
   this.text = text;
@@ -69,6 +71,10 @@ Speech.prototype.interact = function(entity) {
 };
 
 Speech.prototype.trigger = function (t, player) {
+  if (JSON.parse(this.get("show_once")) && Speech.shown[this.id]) {
+    return;
+  }
+  Speech.shown[this.id] = true;
   this.active = true;
   this.current = 0;
   this.entity = player;
