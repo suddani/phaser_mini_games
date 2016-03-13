@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="28" tilewidth="32" tileheight="32" nextobjectid="240">
- <tileset firstgid="1" name="ground2" tilewidth="32" tileheight="32" tilecount="84" columns="12">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="28" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ground2" tilewidth="32" tileheight="32">
   <image source="tmp/ground2.png" width="384" height="224"/>
   <terraintypes>
    <terrain name="Dirt" tile="49"/>
@@ -9,20 +9,20 @@
   </terraintypes>
   <tile id="0" terrain="1,1,1,2">
    <objectgroup draworder="index">
-    <object id="0" x="0" y="17" width="34" height="13"/>
+    <object x="0" y="17" width="34" height="13"/>
    </objectgroup>
   </tile>
   <tile id="1" terrain="1,1,2,2"/>
   <tile id="2" terrain="1,1,2,1">
    <objectgroup draworder="index">
-    <object id="0" x="0" y="2">
+    <object x="0" y="2">
      <polygon points="0,0 18,-1 23,13 33,16 33,29 1,30"/>
     </object>
    </objectgroup>
   </tile>
   <tile id="3" terrain="1,2,1,0">
    <objectgroup draworder="index">
-    <object id="0" x="15" y="1">
+    <object x="15" y="1">
      <polygon points="0,0 -6,14 -15,16 -16,30 17,31 17,0"/>
     </object>
    </objectgroup>
@@ -31,43 +31,43 @@
   <tile id="5" terrain="2,2,2,0"/>
   <tile id="6" terrain="2,2,0,0">
    <objectgroup draworder="index">
-    <object id="0" x="15" y="1" width="16" height="31"/>
+    <object x="15" y="1" width="16" height="31"/>
    </objectgroup>
   </tile>
   <tile id="7" terrain="2,2,0,2">
    <objectgroup draworder="index">
-    <object id="0" x="0" y="0" width="18" height="31"/>
+    <object x="0" y="0" width="18" height="31"/>
    </objectgroup>
   </tile>
   <tile id="8" terrain="0,2,1,1">
    <objectgroup draworder="index">
-    <object id="0" x="2" y="1" width="29" height="16"/>
+    <object x="2" y="1" width="29" height="16"/>
    </objectgroup>
   </tile>
   <tile id="9" terrain="0,1,2,1">
    <objectgroup draworder="index">
-    <object id="0" x="0" y="17">
+    <object x="0" y="17">
      <polygon points="0,0 18,-16 0,-16"/>
     </object>
    </objectgroup>
   </tile>
   <tile id="10" terrain="2,2,0,1">
    <objectgroup draworder="index">
-    <object id="0" x="15" y="1">
+    <object x="15" y="1">
      <polygon points="0,0 18,0 18,18"/>
     </object>
    </objectgroup>
   </tile>
   <tile id="11" terrain="2,1,0,1">
    <objectgroup draworder="index">
-    <object id="0" x="32" y="18">
+    <object x="32" y="18">
      <polygon points="0,0 -18,14 0,14"/>
     </object>
    </objectgroup>
   </tile>
   <tile id="12" terrain="1,2,1,2">
    <objectgroup draworder="index">
-    <object id="0" x="0" y="18">
+    <object x="0" y="18">
      <polygon points="0,0 0,14 18,13"/>
     </object>
    </objectgroup>
@@ -129,7 +129,7 @@
   <tile id="69" terrain="1,2,0,2"/>
   <tile id="70" terrain="0,2,1,2"/>
  </tileset>
- <tileset firstgid="85" name="jack" tilewidth="32" tileheight="32" tilecount="8" columns="8">
+ <tileset firstgid="85" name="jack" tilewidth="32" tileheight="32">
   <image source="tmp/jack.png" width="256" height="32"/>
   <tile id="0">
    <properties>
@@ -143,7 +143,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="93" name="coin" tilewidth="16" tileheight="16" tilecount="7" columns="7">
+ <tileset firstgid="93" name="coin" tilewidth="16" tileheight="16">
   <image source="tmp/coin.png" width="112" height="16"/>
   <tile id="0">
    <animation>
@@ -156,13 +156,13 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="100" name="leader" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+ <tileset firstgid="100" name="leader" tilewidth="32" tileheight="32">
   <image source="tmp/leader.png" width="32" height="32"/>
  </tileset>
- <tileset firstgid="101" name="flag" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+ <tileset firstgid="101" name="flag" tilewidth="32" tileheight="32">
   <image source="tmp/flag.png" width="32" height="32"/>
  </tileset>
- <tileset firstgid="102" name="tourtle" tilewidth="32" tileheight="32" tilecount="5" columns="5">
+ <tileset firstgid="102" name="tourtle" tilewidth="32" tileheight="32">
   <image source="tmp/tourtle.png" width="160" height="32"/>
   <tile id="0">
    <animation>
@@ -175,7 +175,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="107" name="enemy" tilewidth="32" tileheight="32" tilecount="5" columns="5">
+ <tileset firstgid="107" name="enemy" tilewidth="32" tileheight="32">
   <image source="tmp/enemy.png" width="160" height="32"/>
   <tile id="0">
    <animation>
@@ -186,7 +186,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="112" name="mole" tilewidth="32" tileheight="32" tilecount="9" columns="9">
+ <tileset firstgid="112" name="mole" tilewidth="32" tileheight="32">
   <image source="tmp/mole.png" width="288" height="32"/>
   <tile id="0">
    <animation>
@@ -197,7 +197,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="121" name="wormbullet" tilewidth="32" tileheight="32" tilecount="9" columns="9">
+ <tileset firstgid="121" name="wormbullet" tilewidth="32" tileheight="32">
   <image source="tmp/wormbullet.png" width="288" height="32"/>
   <tile id="0">
    <animation>
@@ -218,10 +218,10 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="130" name="trapdoor" tilewidth="64" tileheight="32" tilecount="2" columns="2">
+ <tileset firstgid="130" name="trapdoor" tilewidth="64" tileheight="32">
   <image source="tmp/trapdoor.png" width="128" height="32"/>
  </tileset>
- <tileset firstgid="132" name="lever" tilewidth="32" tileheight="32" tilecount="5" columns="5">
+ <tileset firstgid="132" name="lever" tilewidth="32" tileheight="32">
   <image source="tmp/lever.png" width="160" height="32"/>
   <tile id="0">
    <animation>
@@ -236,7 +236,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="137" name="lavaanim" tilewidth="32" tileheight="64" tilecount="8" columns="8">
+ <tileset firstgid="137" name="lavaanim" tilewidth="32" tileheight="64">
   <image source="tmp/lavaanim.png" width="256" height="64"/>
   <tile id="0">
    <animation>
@@ -284,142 +284,142 @@
 </data>
  </layer>
  <objectgroup name="trigger">
-  <object id="143" name="trigger" x="191" y="337" width="431" height="95">
+  <object name="trigger" x="191" y="337" width="431" height="95">
    <properties>
     <property name="behaviour" value=""/>
-    <property name="target" type="int" value="0"/>
+    <property name="target" value="0"/>
     <property name="target_name" value=""/>
-    <property name="trigger_frame" type="bool" value="false"/>
-    <property name="trigger_once" type="bool" value="false"/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
    </properties>
   </object>
-  <object id="145" name="trigger" x="643" y="49" width="473" height="125">
+  <object name="trigger" x="643" y="49" width="473" height="125">
    <properties>
     <property name="behaviour" value=""/>
-    <property name="target" type="int" value="1"/>
+    <property name="target" value="1"/>
     <property name="target_name" value=""/>
-    <property name="trigger_frame" type="bool" value="false"/>
-    <property name="trigger_once" type="bool" value="false"/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
    </properties>
   </object>
-  <object id="150" name="trigger" x="50" y="117" width="225" height="70">
+  <object name="trigger" x="50" y="117" width="225" height="70">
    <properties>
     <property name="behaviour" value=""/>
-    <property name="target" type="int" value="3"/>
+    <property name="target" value="3"/>
     <property name="target_name" value=""/>
-    <property name="trigger_frame" type="bool" value="false"/>
-    <property name="trigger_once" type="bool" value="false"/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
    </properties>
   </object>
-  <object id="147" name="trigger" x="1144" y="377" width="406" height="53">
+  <object name="trigger" x="1144" y="377" width="406" height="53">
    <properties>
     <property name="behaviour" value=""/>
-    <property name="target" type="int" value="2"/>
+    <property name="target" value="2"/>
     <property name="target_name" value=""/>
-    <property name="trigger_frame" type="bool" value="false"/>
-    <property name="trigger_once" type="bool" value="false"/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
    </properties>
   </object>
-  <object id="153" name="trigger" x="1133.33" y="211" width="448.667" height="91">
+  <object name="trigger" x="1133.33" y="211" width="448.667" height="91">
    <properties>
     <property name="behaviour" value=""/>
-    <property name="target" type="int" value="4"/>
+    <property name="target" value="4"/>
     <property name="target_name" value=""/>
-    <property name="trigger_frame" type="bool" value="false"/>
-    <property name="trigger_once" type="bool" value="false"/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
    </properties>
   </object>
-  <object id="170" name="trigger" x="1136" y="204" width="442.667" height="37.3333">
+  <object name="trigger" x="1136" y="204" width="442.667" height="37.3333">
    <properties>
     <property name="behaviour" value=""/>
-    <property name="target" type="int" value="5"/>
+    <property name="target" value="5"/>
     <property name="target_name" value=""/>
-    <property name="trigger_frame" type="bool" value="false"/>
-    <property name="trigger_once" type="bool" value="false"/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
    </properties>
   </object>
-  <object id="175" name="trigger" x="141.333" y="27.6667" width="343.333" height="181">
+  <object name="trigger" x="141.333" y="27.6667" width="343.333" height="181">
    <properties>
     <property name="behaviour" value=""/>
-    <property name="target" type="int" value="6"/>
+    <property name="target" value="6"/>
     <property name="target_name" value=""/>
-    <property name="trigger_frame" type="bool" value="false"/>
-    <property name="trigger_once" type="bool" value="false"/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup name="prefabs">
-  <object id="181" name="Trapdoor" gid="130" x="508" y="-66.6667" width="64" height="32">
+  <object name="Trapdoor" gid="130" x="508" y="-66.6667" width="64" height="32">
    <properties>
     <property name="class" value="TrapDoor"/>
-    <property name="id" type="int" value="-1"/>
+    <property name="id" value="-1"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="183" name="player" gid="85" x="424.667" y="-66.6667" width="32" height="32">
+  <object name="player" gid="85" x="424.667" y="-66.6667" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
    </properties>
   </object>
-  <object id="184" name="mole" gid="112" x="463" y="-65.6667" width="32" height="32">
+  <object name="mole" gid="112" x="463" y="-65.6667" width="32" height="32">
    <properties>
     <property name="class" value="Mole"/>
-    <property name="id" type="int" value="1"/>
+    <property name="id" value="1"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="185" name="turtle" gid="102" x="386" y="-65.6667" width="32" height="32">
+  <object name="turtle" gid="102" x="386" y="-65.6667" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="20"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="188" name="flag" gid="101" x="582.333" y="-66" width="32" height="32">
+  <object name="flag" gid="101" x="582.333" y="-66" width="32" height="32">
    <properties>
     <property name="class" value="Flag"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="198" name="Trapdoor" gid="130" x="63.6667" y="824.333" width="64" height="32">
+  <object name="Trapdoor" gid="130" x="63.6667" y="824.333" width="64" height="32">
    <properties>
     <property name="class" value="TrapDoor"/>
-    <property name="id" type="int" value="-1"/>
+    <property name="id" value="-1"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="223" name="lever" gid="132" x="622.667" y="-66.6667" width="32" height="32">
+  <object name="lever" gid="132" x="622.667" y="-66.6667" width="32" height="32">
    <properties>
     <property name="class" value="lever"/>
     <property name="typer" value="interactable"/>
    </properties>
   </object>
-  <object id="229" name="trigger" x="665.667" y="-134.545" width="54.8182" height="66.5455">
+  <object name="trigger" x="665.667" y="-134.545" width="54.8182" height="66.5455">
    <properties>
     <property name="behaviour" value=""/>
-    <property name="target" type="int" value="-1"/>
+    <property name="target" value="-1"/>
     <property name="target_name" value=""/>
-    <property name="trigger_frame" type="bool" value="false"/>
-    <property name="trigger_once" type="bool" value="false"/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
    </properties>
   </object>
-  <object id="230" name="music" x="734.667" y="-114.667" width="44" height="48">
+  <object name="music" x="734.667" y="-114.667" width="44" height="48">
    <properties>
     <property name="class" value="Music"/>
-    <property name="id" type="int" value="-1"/>
+    <property name="id" value="-1"/>
     <property name="music" value=""/>
     <property name="type" value="none"/>
    </properties>
   </object>
-  <object id="239" name="worm" gid="121" x="322.583" y="-66.75" width="32" height="32">
+  <object name="worm" gid="121" x="322.583" y="-66.75" width="32" height="32">
    <properties>
-    <property name="amount" type="int" value="2"/>
+    <property name="amount" value="2"/>
     <property name="anchor" value="0.5,1"/>
     <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="worms"/>
     <property name="size" value="22,8,0,-10"/>
     <property name="sound" value="pickup"/>
@@ -427,14 +427,14 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="235" name="coin" gid="93" x="363.178" y="-67.303" width="16" height="16">
+  <object name="coin" gid="93" x="363.178" y="-67.303" width="16" height="16">
    <properties>
-    <property name="amount" type="int" value="1"/>
+    <property name="amount" value="1"/>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -444,90 +444,90 @@
   </object>
  </objectgroup>
  <objectgroup name="collision">
-  <object id="102" x="143.333" y="434" width="1444.67" height="11"/>
-  <object id="103" x="400" y="275" width="192.273" height="54.8182"/>
-  <object id="105" x="19.2727" y="216.727" width="94.3636" height="90.6364"/>
-  <object id="106" x="36" y="345" width="18" height="101"/>
-  <object id="107" x="56" y="371" width="21" height="25"/>
-  <object id="108" x="79" y="308" width="256" height="53"/>
-  <object id="109" x="592.273" y="305.636" width="128.545" height="15.0909"/>
-  <object id="110" x="624" y="402" width="131" height="30"/>
-  <object id="111" x="687" y="371" width="198" height="30"/>
-  <object id="112" x="752" y="340" width="133.667" height="30.3333"/>
-  <object id="113" x="816" y="308" width="69.6667" height="32"/>
-  <object id="114" x="848" y="274" width="38.125" height="34"/>
-  <object id="115" x="886" y="274" width="26" height="120"/>
-  <object id="116" x="592.727" y="320.909" width="117.636" height="14.5455"/>
-  <object id="117" x="176" y="211" width="46" height="18"/>
-  <object id="118" x="208" y="180" width="63" height="30"/>
-  <object id="119" x="240" y="147" width="52" height="32"/>
-  <object id="120" x="272" y="114" width="97" height="33"/>
-  <object id="121" x="464" y="180" width="63" height="59"/>
-  <object id="122" x="624" y="114" width="222" height="61"/>
-  <object id="123" x="845" y="145" width="66" height="22"/>
-  <object id="124" x="945" y="178" width="126" height="35"/>
-  <object id="125" x="1058" y="212" width="49" height="22"/>
-  <object id="126" x="1102" y="178" width="99" height="35"/>
-  <object id="127" x="1200" y="148" width="64" height="29"/>
-  <object id="128" x="1230" y="115" width="224" height="32"/>
-  <object id="129" x="1042" y="402" width="59" height="33"/>
-  <object id="130" x="1447" y="145" width="102" height="33"/>
-  <object id="131" x="1549" y="43" width="26" height="119"/>
-  <object id="132" x="2" y="97" width="18" height="119"/>
-  <object id="133" x="1138" y="372" width="123" height="27"/>
-  <object id="134" x="1169" y="339" width="103" height="32"/>
-  <object id="135" x="1262.67" y="305.333" width="227.667" height="32"/>
-  <object id="137" x="1552" y="306" width="46.6667" height="84"/>
-  <object id="138" x="1579" y="390" width="17" height="43"/>
-  <object id="165" x="1522" y="305.333" width="30" height="27.3333"/>
-  <object id="166" x="1105.33" y="276" width="122" height="26"/>
-  <object id="167" x="1108.67" y="213.333" width="23.3333" height="58.6667"/>
-  <object id="168" x="1298" y="241.333" width="118.667" height="24.6667"/>
-  <object id="171" x="1578" y="180.5" width="22" height="125"/>
-  <object id="179" x="54.2727" y="434.818" width="20.3939" height="57.182"/>
-  <object id="193" x="143" y="447" width="157" height="207"/>
-  <object id="194" x="0" y="496" width="17" height="398"/>
-  <object id="195" x="16" y="593" width="62" height="127"/>
-  <object id="196" x="112" y="720" width="86" height="28"/>
-  <object id="197" x="239" y="723" width="63" height="24"/>
-  <object id="199" x="33.3333" y="720.667" width="15.3333" height="94.6667"/>
-  <object id="200" x="18" y="813.667" width="57.3334" height="31.3333"/>
-  <object id="201" x="144" y="816" width="126.667" height="74"/>
-  <object id="202" x="432" y="819.333" width="351.333" height="30.6667"/>
-  <object id="203" x="114.667" y="850" width="28.6667" height="40.6667"/>
-  <object id="204" x="18.6667" y="878.667" width="95.3333" height="16"/>
-  <object id="205" x="432" y="691.333" width="222" height="28.6667"/>
-  <object id="206" x="464.667" y="593.333" width="62.6667" height="60.6667"/>
-  <object id="207" x="592" y="562" width="33.3333" height="129.333"/>
-  <object id="208" x="756.667" y="690.667" width="182.667" height="28"/>
-  <object id="209" x="781.333" y="849.333" width="68" height="25.3333"/>
-  <object id="210" x="848" y="818" width="65.3333" height="30.6667"/>
-  <object id="211" x="913.333" y="787.333" width="123.333" height="30"/>
-  <object id="212" x="1040" y="754.667" width="49.3333" height="30"/>
-  <object id="213" x="1090" y="754.667" width="44.6667" height="124.667"/>
-  <object id="214" x="1134.67" y="880" width="462.667" height="14"/>
-  <object id="215" x="1584.67" y="625.333" width="14" height="253.333"/>
-  <object id="216" x="1462.67" y="690.667" width="122.667" height="22"/>
-  <object id="217" x="1108" y="594.667" width="25.3333" height="91.3333"/>
-  <object id="218" x="1396.67" y="621.333" width="25.3333" height="96.6667"/>
-  <object id="219" x="1423.33" y="621.333" width="160.667" height="30"/>
-  <object id="221" x="82.6667" y="688" width="54.6667" height="30.6667"/>
-  <object id="227" x="625" y="785" width="59" height="32"/>
+  <object x="143.333" y="434" width="1444.67" height="11"/>
+  <object x="400" y="275" width="192.273" height="54.8182"/>
+  <object x="19.2727" y="216.727" width="94.3636" height="90.6364"/>
+  <object x="36" y="345" width="18" height="101"/>
+  <object x="56" y="371" width="21" height="25"/>
+  <object x="79" y="308" width="256" height="53"/>
+  <object x="592.273" y="305.636" width="128.545" height="15.0909"/>
+  <object x="624" y="402" width="131" height="30"/>
+  <object x="687" y="371" width="198" height="30"/>
+  <object x="752" y="340" width="133.667" height="30.3333"/>
+  <object x="816" y="308" width="69.6667" height="32"/>
+  <object x="848" y="274" width="38.125" height="34"/>
+  <object x="886" y="274" width="26" height="120"/>
+  <object x="592.727" y="320.909" width="117.636" height="14.5455"/>
+  <object x="176" y="211" width="46" height="18"/>
+  <object x="208" y="180" width="63" height="30"/>
+  <object x="240" y="147" width="52" height="32"/>
+  <object x="272" y="114" width="97" height="33"/>
+  <object x="464" y="180" width="63" height="59"/>
+  <object x="624" y="114" width="222" height="61"/>
+  <object x="845" y="145" width="66" height="22"/>
+  <object x="945" y="178" width="126" height="35"/>
+  <object x="1058" y="212" width="49" height="22"/>
+  <object x="1102" y="178" width="99" height="35"/>
+  <object x="1200" y="148" width="64" height="29"/>
+  <object x="1230" y="115" width="224" height="32"/>
+  <object x="1042" y="402" width="59" height="33"/>
+  <object x="1447" y="145" width="102" height="33"/>
+  <object x="1549" y="43" width="26" height="119"/>
+  <object x="2" y="97" width="18" height="119"/>
+  <object x="1138" y="372" width="123" height="27"/>
+  <object x="1169" y="339" width="103" height="32"/>
+  <object x="1262.67" y="305.333" width="227.667" height="32"/>
+  <object x="1552" y="306" width="46.6667" height="84"/>
+  <object x="1579" y="390" width="17" height="43"/>
+  <object x="1522" y="305.333" width="30" height="27.3333"/>
+  <object x="1105.33" y="276" width="122" height="26"/>
+  <object x="1108.67" y="213.333" width="23.3333" height="58.6667"/>
+  <object x="1298" y="241.333" width="118.667" height="24.6667"/>
+  <object x="1578" y="180.5" width="22" height="125"/>
+  <object x="54.2727" y="434.818" width="20.3939" height="57.182"/>
+  <object x="143" y="447" width="157" height="207"/>
+  <object x="0" y="496" width="17" height="398"/>
+  <object x="16" y="593" width="62" height="127"/>
+  <object x="112" y="720" width="86" height="28"/>
+  <object x="239" y="723" width="63" height="24"/>
+  <object x="33.3333" y="720.667" width="15.3333" height="94.6667"/>
+  <object x="18" y="813.667" width="57.3334" height="31.3333"/>
+  <object x="144" y="816" width="126.667" height="74"/>
+  <object x="432" y="819.333" width="351.333" height="30.6667"/>
+  <object x="114.667" y="850" width="28.6667" height="40.6667"/>
+  <object x="18.6667" y="878.667" width="95.3333" height="16"/>
+  <object x="432" y="691.333" width="222" height="28.6667"/>
+  <object x="464.667" y="593.333" width="62.6667" height="60.6667"/>
+  <object x="592" y="562" width="33.3333" height="129.333"/>
+  <object x="756.667" y="690.667" width="182.667" height="28"/>
+  <object x="781.333" y="849.333" width="68" height="25.3333"/>
+  <object x="848" y="818" width="65.3333" height="30.6667"/>
+  <object x="913.333" y="787.333" width="123.333" height="30"/>
+  <object x="1040" y="754.667" width="49.3333" height="30"/>
+  <object x="1090" y="754.667" width="44.6667" height="124.667"/>
+  <object x="1134.67" y="880" width="462.667" height="14"/>
+  <object x="1584.67" y="625.333" width="14" height="253.333"/>
+  <object x="1462.67" y="690.667" width="122.667" height="22"/>
+  <object x="1108" y="594.667" width="25.3333" height="91.3333"/>
+  <object x="1396.67" y="621.333" width="25.3333" height="96.6667"/>
+  <object x="1423.33" y="621.333" width="160.667" height="30"/>
+  <object x="82.6667" y="688" width="54.6667" height="30.6667"/>
+  <object x="625" y="785" width="59" height="32"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object id="2" name="player" gid="85" x="84.33" y="414" width="32" height="32">
+  <object name="player" gid="85" x="84.33" y="414" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
    </properties>
   </object>
-  <object id="3" name="coin" gid="93" x="423" y="424" width="16" height="16">
+  <object name="coin" gid="93" x="423" y="424" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -535,13 +535,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="4" name="coin" gid="93" x="442" y="424" width="16" height="16">
+  <object name="coin" gid="93" x="442" y="424" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -549,13 +549,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="5" name="coin" gid="93" x="459" y="424" width="16" height="16">
+  <object name="coin" gid="93" x="459" y="424" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -563,13 +563,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="6" name="coin" gid="93" x="516" y="424" width="16" height="16">
+  <object name="coin" gid="93" x="516" y="424" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -577,13 +577,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="7" name="coin" gid="93" x="499" y="424" width="16" height="16">
+  <object name="coin" gid="93" x="499" y="424" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -591,13 +591,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="8" name="coin" gid="93" x="480" y="424" width="16" height="16">
+  <object name="coin" gid="93" x="480" y="424" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -605,13 +605,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="9" name="coin" gid="93" x="496" y="266" width="16" height="16">
+  <object name="coin" gid="93" x="496" y="266" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -619,13 +619,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="10" name="coin" gid="93" x="532" y="266" width="16" height="16">
+  <object name="coin" gid="93" x="532" y="266" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -633,13 +633,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="11" name="coin" gid="93" x="515" y="266" width="16" height="16">
+  <object name="coin" gid="93" x="515" y="266" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -647,13 +647,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="12" name="coin" gid="93" x="475" y="266" width="16" height="16">
+  <object name="coin" gid="93" x="475" y="266" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -661,13 +661,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="13" name="coin" gid="93" x="458" y="266" width="16" height="16">
+  <object name="coin" gid="93" x="458" y="266" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -675,13 +675,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="14" name="coin" gid="93" x="439" y="266" width="16" height="16">
+  <object name="coin" gid="93" x="439" y="266" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -689,13 +689,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="15" name="coin" gid="93" x="188.273" y="299.273" width="16" height="16">
+  <object name="coin" gid="93" x="188.273" y="299.273" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -703,13 +703,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="16" name="coin" gid="93" x="238.818" y="299.455" width="16" height="16">
+  <object name="coin" gid="93" x="238.818" y="299.455" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -717,13 +717,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="17" name="coin" gid="93" x="212.545" y="299.455" width="16" height="16">
+  <object name="coin" gid="93" x="212.545" y="299.455" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -731,13 +731,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="18" name="coin" gid="93" x="164.182" y="294.545" width="16" height="16">
+  <object name="coin" gid="93" x="164.182" y="294.545" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="0"/>
+    <property name="gravity" value="0"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -745,13 +745,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="19" name="coin" gid="93" x="140.5" y="281.091" width="16" height="16">
+  <object name="coin" gid="93" x="140.5" y="281.091" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="0"/>
+    <property name="gravity" value="0"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -759,13 +759,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="20" name="coin" gid="93" x="114.045" y="262.591" width="16" height="16">
+  <object name="coin" gid="93" x="114.045" y="262.591" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="0"/>
+    <property name="gravity" value="0"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -773,13 +773,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="21" name="coin" gid="93" x="239" y="425" width="16" height="16">
+  <object name="coin" gid="93" x="239" y="425" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -787,13 +787,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="22" name="coin" gid="93" x="275" y="425" width="16" height="16">
+  <object name="coin" gid="93" x="275" y="425" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -801,13 +801,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="23" name="coin" gid="93" x="258" y="425" width="16" height="16">
+  <object name="coin" gid="93" x="258" y="425" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -815,13 +815,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="24" name="coin" gid="93" x="218" y="425" width="16" height="16">
+  <object name="coin" gid="93" x="218" y="425" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -829,13 +829,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="25" name="coin" gid="93" x="201" y="425" width="16" height="16">
+  <object name="coin" gid="93" x="201" y="425" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -843,13 +843,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="26" name="coin" gid="93" x="182" y="425" width="16" height="16">
+  <object name="coin" gid="93" x="182" y="425" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -857,13 +857,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="27" name="coin" gid="93" x="823" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="823" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -871,13 +871,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="28" name="coin" gid="93" x="859" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="859" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -885,13 +885,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="29" name="coin" gid="93" x="842" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="842" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -899,13 +899,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="30" name="coin" gid="93" x="802" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="802" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -913,13 +913,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="31" name="coin" gid="93" x="785" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="785" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -927,13 +927,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="32" name="coin" gid="93" x="766" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="766" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -941,76 +941,76 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="33" name="flag" gid="101" x="1553" y="434" width="32" height="32">
+  <object name="flag" gid="101" x="1553" y="434" width="32" height="32">
    <properties>
     <property name="class" value="Flag"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="34" name="turtle" gid="102" x="227.5" y="433.25" width="32" height="32">
+  <object name="turtle" gid="102" x="227.5" y="433.25" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="50"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="35" name="turtle" gid="102" x="492.75" y="432.5" width="32" height="32">
+  <object name="turtle" gid="102" x="492.75" y="432.5" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="36" name="turtle" gid="102" x="474" y="272" width="32" height="32">
+  <object name="turtle" gid="102" x="474" y="272" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="37" name="turtle" gid="102" x="863.5" y="432.625" width="32" height="32">
+  <object name="turtle" gid="102" x="863.5" y="432.625" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="38" name="turtle" gid="102" x="1232" y="433" width="32" height="32">
+  <object name="turtle" gid="102" x="1232" y="433" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="39" name="turtle" gid="102" x="1461" y="432" width="32" height="32">
+  <object name="turtle" gid="102" x="1461" y="432" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="40" name="turtle" gid="102" x="869.25" y="273" width="32" height="32">
+  <object name="turtle" gid="102" x="869.25" y="273" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="10"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="41" name="mole" gid="112" x="348.666" y="432.667" width="32" height="32">
+  <object name="mole" gid="112" x="348.666" y="432.667" width="32" height="32">
    <properties>
     <property name="class" value="Mole"/>
-    <property name="id" type="int" value="0"/>
+    <property name="id" value="0"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="42" name="worm" gid="121" x="134" y="438" width="32" height="32">
+  <object name="worm" gid="121" x="134" y="438" width="32" height="32">
    <properties>
-    <property name="amount" type="int" value="2"/>
+    <property name="amount" value="2"/>
     <property name="anchor" value="0.5,1"/>
     <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="worms"/>
     <property name="size" value="22,8,0,-10"/>
     <property name="sound" value="pickup"/>
@@ -1018,13 +1018,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="43" name="coin" gid="93" x="409" y="144" width="16" height="16">
+  <object name="coin" gid="93" x="409" y="144" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="0"/>
+    <property name="gravity" value="0"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1032,13 +1032,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="44" name="coin" gid="93" x="537" y="173" width="16" height="16">
+  <object name="coin" gid="93" x="537" y="173" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="0"/>
+    <property name="gravity" value="0"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1046,13 +1046,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="45" name="coin" gid="93" x="563.5" y="161.5" width="16" height="16">
+  <object name="coin" gid="93" x="563.5" y="161.5" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="0"/>
+    <property name="gravity" value="0"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1060,13 +1060,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="46" name="coin" gid="93" x="589.5" y="150.5" width="16" height="16">
+  <object name="coin" gid="93" x="589.5" y="150.5" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="0"/>
+    <property name="gravity" value="0"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1074,13 +1074,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="47" name="coin" gid="93" x="679" y="106" width="16" height="16">
+  <object name="coin" gid="93" x="679" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1088,13 +1088,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="48" name="coin" gid="93" x="700" y="106" width="16" height="16">
+  <object name="coin" gid="93" x="700" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1102,13 +1102,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="49" name="coin" gid="93" x="662" y="106" width="16" height="16">
+  <object name="coin" gid="93" x="662" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1116,13 +1116,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="50" name="coin" gid="93" x="736" y="106" width="16" height="16">
+  <object name="coin" gid="93" x="736" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1130,13 +1130,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="51" name="coin" gid="93" x="643" y="106" width="16" height="16">
+  <object name="coin" gid="93" x="643" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1144,13 +1144,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="52" name="coin" gid="93" x="719" y="106" width="16" height="16">
+  <object name="coin" gid="93" x="719" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1158,13 +1158,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="53" name="coin" gid="93" x="902" y="135" width="16" height="16">
+  <object name="coin" gid="93" x="902" y="135" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1172,13 +1172,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="54" name="coin" gid="93" x="926" y="126" width="16" height="16">
+  <object name="coin" gid="93" x="926" y="126" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1186,13 +1186,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="55" name="coin" gid="93" x="885" y="135" width="16" height="16">
+  <object name="coin" gid="93" x="885" y="135" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1200,13 +1200,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="56" name="coin" gid="93" x="962" y="170" width="16" height="16">
+  <object name="coin" gid="93" x="962" y="170" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1214,13 +1214,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="57" name="coin" gid="93" x="866" y="135" width="16" height="16">
+  <object name="coin" gid="93" x="866" y="135" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1228,13 +1228,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="58" name="coin" gid="93" x="942" y="149" width="16" height="16">
+  <object name="coin" gid="93" x="942" y="149" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1242,13 +1242,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="59" name="coin" gid="93" x="1328" y="106" width="16" height="16">
+  <object name="coin" gid="93" x="1328" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1256,13 +1256,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="60" name="coin" gid="93" x="1349" y="106" width="16" height="16">
+  <object name="coin" gid="93" x="1349" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1270,13 +1270,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="61" name="coin" gid="93" x="1311" y="106" width="16" height="16">
+  <object name="coin" gid="93" x="1311" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1284,13 +1284,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="62" name="coin" gid="93" x="1385" y="106" width="16" height="16">
+  <object name="coin" gid="93" x="1385" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1298,27 +1298,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="63" name="coin" gid="93" x="1292" y="106" width="16" height="16">
-   <properties>
-   <property name="anchor" value="0.5, 1"/>
-   <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
-   <property name="bounce" value="1"/>
-   <property name="class" value="Collectable"/>
-   <property name="gravity" type="float" value="100"/>
-   <property name="name" value="coins"/>
-   <property name="size" value="16,16"/>
-   <property name="sound" value="pickup"/>
-   <property name="sprite" value="atlas,coin_0000"/>
-   <property name="type" value="collectable"/>
-   </properties>
-  </object>
-  <object id="64" name="coin" gid="93" x="1368" y="106" width="16" height="16">
+  <object name="coin" gid="93" x="1292" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1326,13 +1312,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="65" name="coin" gid="93" x="1318" y="298" width="16" height="16">
+  <object name="coin" gid="93" x="1368" y="106" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1340,13 +1326,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="66" name="coin" gid="93" x="1339" y="298" width="16" height="16">
+  <object name="coin" gid="93" x="1318" y="298" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1354,13 +1340,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="67" name="coin" gid="93" x="1301" y="298" width="16" height="16">
+  <object name="coin" gid="93" x="1339" y="298" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1368,13 +1354,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="68" name="coin" gid="93" x="1375" y="298" width="16" height="16">
+  <object name="coin" gid="93" x="1301" y="298" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1382,13 +1368,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="69" name="coin" gid="93" x="1282" y="298" width="16" height="16">
+  <object name="coin" gid="93" x="1375" y="298" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1396,13 +1382,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="70" name="coin" gid="93" x="1358" y="298" width="16" height="16">
+  <object name="coin" gid="93" x="1282" y="298" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1410,13 +1396,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="71" name="coin" gid="93" x="1341" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="1358" y="298" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1424,13 +1410,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="72" name="coin" gid="93" x="1362" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="1341" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1438,13 +1424,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="73" name="coin" gid="93" x="1324" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="1362" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1452,13 +1438,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="74" name="coin" gid="93" x="1398" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="1324" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1466,13 +1452,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="75" name="coin" gid="93" x="1305" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="1398" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1480,13 +1466,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="76" name="coin" gid="93" x="1381" y="426" width="16" height="16">
+  <object name="coin" gid="93" x="1305" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1494,13 +1480,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="77" name="coin" gid="93" x="1503" y="139" width="16" height="16">
+  <object name="coin" gid="93" x="1381" y="426" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1508,13 +1494,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="78" name="coin" gid="93" x="1524" y="139" width="16" height="16">
+  <object name="coin" gid="93" x="1503" y="139" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1522,13 +1508,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="79" name="coin" gid="93" x="1486" y="139" width="16" height="16">
+  <object name="coin" gid="93" x="1524" y="139" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1536,13 +1522,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="80" name="coin" gid="93" x="1467" y="139" width="16" height="16">
+  <object name="coin" gid="93" x="1486" y="139" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1550,13 +1536,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="81" name="coin" gid="93" x="1123" y="167" width="16" height="16">
+  <object name="coin" gid="93" x="1467" y="139" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1564,13 +1550,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="82" name="coin" gid="93" x="1106" y="167" width="16" height="16">
+  <object name="coin" gid="93" x="1123" y="167" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1578,13 +1564,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="83" name="coin" gid="93" x="1030" y="167" width="16" height="16">
+  <object name="coin" gid="93" x="1106" y="167" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1592,13 +1578,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="84" name="coin" gid="93" x="1049" y="167" width="16" height="16">
+  <object name="coin" gid="93" x="1030" y="167" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1606,13 +1592,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="85" name="coin" gid="93" x="1080" y="200" width="16" height="16">
+  <object name="coin" gid="93" x="1049" y="167" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1620,84 +1606,98 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="86" name="turtle" gid="102" x="306" y="114" width="32" height="32">
+  <object name="coin" gid="93" x="1080" y="200" width="16" height="16">
+   <properties>
+    <property name="anchor" value="0.5, 1"/>
+    <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
+    <property name="bounce" value="1"/>
+    <property name="class" value="Collectable"/>
+    <property name="gravity" value="100"/>
+    <property name="name" value="coins"/>
+    <property name="size" value="16,16"/>
+    <property name="sound" value="pickup"/>
+    <property name="sprite" value="atlas,coin_0000"/>
+    <property name="type" value="collectable"/>
+   </properties>
+  </object>
+  <object name="turtle" gid="102" x="306" y="114" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="20"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="87" name="turtle" gid="102" x="683" y="113" width="32" height="32">
+  <object name="turtle" gid="102" x="683" y="113" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="88" name="turtle" gid="102" x="1329" y="112" width="32" height="32">
+  <object name="turtle" gid="102" x="1329" y="112" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="89" name="turtle" gid="102" x="1323" y="306" width="32" height="32">
+  <object name="turtle" gid="102" x="1323" y="306" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="90" name="turtle" gid="102" x="1487" y="146" width="32" height="32">
+  <object name="turtle" gid="102" x="1487" y="146" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="10"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="91" name="turtle" gid="102" x="238" y="305" width="32" height="32">
+  <object name="turtle" gid="102" x="238" y="305" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="60"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="92" name="turtle" gid="102" x="990" y="177" width="32" height="32">
+  <object name="turtle" gid="102" x="990" y="177" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="20"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="93" name="turtle" gid="102" x="1056" y="401" width="32" height="32">
+  <object name="turtle" gid="102" x="1056" y="401" width="32" height="32">
    <properties>
     <property name="class" value="Tourtle"/>
     <property name="move" value="10"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="144" name="mole" gid="112" x="799" y="113" width="32" height="32">
+  <object name="mole" gid="112" x="799" y="113" width="32" height="32">
    <properties>
     <property name="class" value="Mole"/>
-    <property name="id" type="int" value="1"/>
+    <property name="id" value="1"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="146" name="mole" gid="112" x="1126" y="433" width="32" height="32">
+  <object name="mole" gid="112" x="1126" y="433" width="32" height="32">
    <properties>
     <property name="class" value="Mole"/>
-    <property name="id" type="int" value="2"/>
+    <property name="id" value="2"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="148" name="worm" gid="121" x="896" y="222" width="32" height="32">
+  <object name="worm" gid="121" x="896" y="222" width="32" height="32">
    <properties>
-    <property name="amount" type="int" value="2"/>
+    <property name="amount" value="2"/>
     <property name="anchor" value="0.5,1"/>
     <property name="animation" value="wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="0"/>
+    <property name="gravity" value="0"/>
     <property name="name" value="worms"/>
     <property name="size" value="22,8,0,-10"/>
     <property name="sound" value="pickup"/>
@@ -1705,27 +1705,27 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="149" name="mole" gid="112" x="20.5" y="211.5" width="32" height="32">
+  <object name="mole" gid="112" x="20.5" y="211.5" width="32" height="32">
    <properties>
     <property name="class" value="Mole"/>
-    <property name="id" type="int" value="3"/>
+    <property name="id" value="3"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="152" name="mole" gid="112" x="1538" y="306.333" width="32" height="32">
+  <object name="mole" gid="112" x="1538" y="306.333" width="32" height="32">
    <properties>
     <property name="class" value="Mole"/>
-    <property name="id" type="int" value="4"/>
+    <property name="id" value="4"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="155" name="coin" gid="93" x="1268.67" y="263" width="16" height="16">
+  <object name="coin" gid="93" x="1268.67" y="263" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="0"/>
+    <property name="gravity" value="0"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1733,13 +1733,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="156" name="coin" gid="93" x="1308.33" y="239" width="16" height="16">
+  <object name="coin" gid="93" x="1308.33" y="239" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1747,13 +1747,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="157" name="coin" gid="93" x="1325" y="239.667" width="16" height="16">
+  <object name="coin" gid="93" x="1325" y="239.667" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1761,13 +1761,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="158" name="coin" gid="93" x="1357" y="239.667" width="16" height="16">
+  <object name="coin" gid="93" x="1357" y="239.667" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1775,13 +1775,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="159" name="coin" gid="93" x="1340.33" y="239" width="16" height="16">
+  <object name="coin" gid="93" x="1340.33" y="239" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1789,13 +1789,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="160" name="coin" gid="93" x="1389" y="240.333" width="16" height="16">
+  <object name="coin" gid="93" x="1389" y="240.333" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1803,13 +1803,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="161" name="coin" gid="93" x="1372.33" y="239.667" width="16" height="16">
+  <object name="coin" gid="93" x="1372.33" y="239.667" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1817,13 +1817,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="162" name="coin" gid="93" x="1190.33" y="269" width="16" height="16">
+  <object name="coin" gid="93" x="1190.33" y="269" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1831,13 +1831,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="163" name="coin" gid="93" x="1175" y="269.667" width="16" height="16">
+  <object name="coin" gid="93" x="1175" y="269.667" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1845,13 +1845,13 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="164" name="coin" gid="93" x="1158.33" y="269" width="16" height="16">
+  <object name="coin" gid="93" x="1158.33" y="269" width="16" height="16">
    <properties>
     <property name="anchor" value="0.5, 1"/>
     <property name="animation" value="coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5"/>
     <property name="bounce" value="1"/>
     <property name="class" value="Collectable"/>
-    <property name="gravity" type="float" value="100"/>
+    <property name="gravity" value="100"/>
     <property name="name" value="coins"/>
     <property name="size" value="16,16"/>
     <property name="sound" value="pickup"/>
@@ -1859,33 +1859,33 @@
     <property name="type" value="collectable"/>
    </properties>
   </object>
-  <object id="169" name="mole" gid="112" x="1355.33" y="243.333" width="32" height="32">
+  <object name="mole" gid="112" x="1355.33" y="243.333" width="32" height="32">
    <properties>
     <property name="class" value="Mole"/>
-    <property name="id" type="int" value="5"/>
+    <property name="id" value="5"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="174" name="mole" gid="112" x="79.3333" y="84" width="32" height="32">
+  <object name="mole" gid="112" x="79.3333" y="84" width="32" height="32">
    <properties>
     <property name="class" value="Mole"/>
-    <property name="id" type="int" value="6"/>
+    <property name="id" value="6"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="190" name="Trapdoor" gid="130" x="65.1667" y="445.417" width="64" height="32">
+  <object name="Trapdoor" gid="130" x="65.1667" y="445.417" width="64" height="32">
    <properties>
     <property name="class" value="TrapDoor"/>
-    <property name="id" type="int" value="-1"/>
+    <property name="id" value="-1"/>
     <property name="type" value="interactable"/>
    </properties>
   </object>
-  <object id="224" name="Lava" gid="137" x="244.333" y="890.667" width="32" height="64">
+  <object name="Lava" gid="137" x="244.333" y="890.667" width="32" height="64">
    <properties>
     <property name="class" value="Lava"/>
-    <property name="id" type="int" value="7"/>
+    <property name="id" value="7"/>
     <property name="type" value="interactable"/>
-    <property name="width" type="int" value="6"/>
+    <property name="width" value="6"/>
    </properties>
   </object>
  </objectgroup>

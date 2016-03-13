@@ -18,23 +18,14 @@
          "objects":[
                 {
                  "height":95,
-                 "id":143,
                  "name":"trigger",
                  "properties":
                     {
                      "behaviour":"",
-                     "target":0,
+                     "target":"0",
                      "target_name":"",
-                     "trigger_frame":false,
-                     "trigger_once":false
-                    },
-                 "propertytypes":
-                    {
-                     "behaviour":"string",
-                     "target":"int",
-                     "target_name":"string",
-                     "trigger_frame":"bool",
-                     "trigger_once":"bool"
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
                     },
                  "rotation":0,
                  "type":"",
@@ -45,23 +36,14 @@
                 }, 
                 {
                  "height":125,
-                 "id":145,
                  "name":"trigger",
                  "properties":
                     {
                      "behaviour":"",
-                     "target":1,
+                     "target":"1",
                      "target_name":"",
-                     "trigger_frame":false,
-                     "trigger_once":false
-                    },
-                 "propertytypes":
-                    {
-                     "behaviour":"string",
-                     "target":"int",
-                     "target_name":"string",
-                     "trigger_frame":"bool",
-                     "trigger_once":"bool"
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
                     },
                  "rotation":0,
                  "type":"",
@@ -72,23 +54,14 @@
                 }, 
                 {
                  "height":70,
-                 "id":150,
                  "name":"trigger",
                  "properties":
                     {
                      "behaviour":"",
-                     "target":3,
+                     "target":"3",
                      "target_name":"",
-                     "trigger_frame":false,
-                     "trigger_once":false
-                    },
-                 "propertytypes":
-                    {
-                     "behaviour":"string",
-                     "target":"int",
-                     "target_name":"string",
-                     "trigger_frame":"bool",
-                     "trigger_once":"bool"
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
                     },
                  "rotation":0,
                  "type":"",
@@ -99,23 +72,14 @@
                 }, 
                 {
                  "height":53,
-                 "id":147,
                  "name":"trigger",
                  "properties":
                     {
                      "behaviour":"",
-                     "target":2,
+                     "target":"2",
                      "target_name":"",
-                     "trigger_frame":false,
-                     "trigger_once":false
-                    },
-                 "propertytypes":
-                    {
-                     "behaviour":"string",
-                     "target":"int",
-                     "target_name":"string",
-                     "trigger_frame":"bool",
-                     "trigger_once":"bool"
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
                     },
                  "rotation":0,
                  "type":"",
@@ -126,23 +90,14 @@
                 }, 
                 {
                  "height":91,
-                 "id":153,
                  "name":"trigger",
                  "properties":
                     {
                      "behaviour":"",
-                     "target":4,
+                     "target":"4",
                      "target_name":"",
-                     "trigger_frame":false,
-                     "trigger_once":false
-                    },
-                 "propertytypes":
-                    {
-                     "behaviour":"string",
-                     "target":"int",
-                     "target_name":"string",
-                     "trigger_frame":"bool",
-                     "trigger_once":"bool"
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
                     },
                  "rotation":0,
                  "type":"",
@@ -153,23 +108,14 @@
                 }, 
                 {
                  "height":37.3333,
-                 "id":170,
                  "name":"trigger",
                  "properties":
                     {
                      "behaviour":"",
-                     "target":5,
+                     "target":"5",
                      "target_name":"",
-                     "trigger_frame":false,
-                     "trigger_once":false
-                    },
-                 "propertytypes":
-                    {
-                     "behaviour":"string",
-                     "target":"int",
-                     "target_name":"string",
-                     "trigger_frame":"bool",
-                     "trigger_once":"bool"
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
                     },
                  "rotation":0,
                  "type":"",
@@ -180,23 +126,14 @@
                 }, 
                 {
                  "height":181,
-                 "id":175,
                  "name":"trigger",
                  "properties":
                     {
                      "behaviour":"",
-                     "target":6,
+                     "target":"6",
                      "target_name":"",
-                     "trigger_frame":false,
-                     "trigger_once":false
-                    },
-                 "propertytypes":
-                    {
-                     "behaviour":"string",
-                     "target":"int",
-                     "target_name":"string",
-                     "trigger_frame":"bool",
-                     "trigger_once":"bool"
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
                     },
                  "rotation":0,
                  "type":"",
@@ -220,19 +157,12 @@
                 {
                  "gid":130,
                  "height":32,
-                 "id":181,
                  "name":"Trapdoor",
                  "properties":
                     {
                      "class":"TrapDoor",
-                     "id":-1,
+                     "id":"-1",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -244,17 +174,11 @@
                 {
                  "gid":85,
                  "height":32,
-                 "id":183,
                  "name":"player",
                  "properties":
                     {
                      "class":"Player",
                      "type":"player"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -266,19 +190,12 @@
                 {
                  "gid":112,
                  "height":32,
-                 "id":184,
                  "name":"mole",
                  "properties":
                     {
                      "class":"Mole",
-                     "id":1,
+                     "id":"1",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -290,19 +207,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":185,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"20",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -314,17 +224,11 @@
                 {
                  "gid":101,
                  "height":32,
-                 "id":188,
                  "name":"flag",
                  "properties":
                     {
                      "class":"Flag",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -336,19 +240,12 @@
                 {
                  "gid":130,
                  "height":32,
-                 "id":198,
                  "name":"Trapdoor",
                  "properties":
                     {
                      "class":"TrapDoor",
-                     "id":-1,
+                     "id":"-1",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -360,17 +257,11 @@
                 {
                  "gid":132,
                  "height":32,
-                 "id":223,
                  "name":"lever",
                  "properties":
                     {
                      "class":"lever",
                      "typer":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "typer":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -381,23 +272,14 @@
                 }, 
                 {
                  "height":66.5455,
-                 "id":229,
                  "name":"trigger",
                  "properties":
                     {
                      "behaviour":"",
-                     "target":-1,
+                     "target":"-1",
                      "target_name":"",
-                     "trigger_frame":false,
-                     "trigger_once":false
-                    },
-                 "propertytypes":
-                    {
-                     "behaviour":"string",
-                     "target":"int",
-                     "target_name":"string",
-                     "trigger_frame":"bool",
-                     "trigger_once":"bool"
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
                     },
                  "rotation":0,
                  "type":"",
@@ -408,21 +290,13 @@
                 }, 
                 {
                  "height":48,
-                 "id":230,
                  "name":"music",
                  "properties":
                     {
                      "class":"Music",
-                     "id":-1,
+                     "id":"-1",
                      "music":"",
                      "type":"none"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "music":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -434,35 +308,20 @@
                 {
                  "gid":121,
                  "height":32,
-                 "id":239,
                  "name":"worm",
                  "properties":
                     {
-                     "amount":2,
+                     "amount":"2",
                      "anchor":"0.5,1",
                      "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"worms",
                      "size":"22,8,0,-10",
                      "sound":"pickup",
                      "sprite":"atlas,wormbullet_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "amount":"int",
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -474,35 +333,20 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":235,
                  "name":"coin",
                  "properties":
                     {
-                     "amount":1,
+                     "amount":"1",
                      "anchor":"0.5, 1",
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "amount":"int",
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -525,8 +369,11 @@
          "objects":[
                 {
                  "height":11,
-                 "id":102,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -536,8 +383,11 @@
                 }, 
                 {
                  "height":54.8182,
-                 "id":103,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -547,8 +397,11 @@
                 }, 
                 {
                  "height":90.6364,
-                 "id":105,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -558,8 +411,11 @@
                 }, 
                 {
                  "height":101,
-                 "id":106,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -569,8 +425,11 @@
                 }, 
                 {
                  "height":25,
-                 "id":107,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -580,8 +439,11 @@
                 }, 
                 {
                  "height":53,
-                 "id":108,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -591,8 +453,11 @@
                 }, 
                 {
                  "height":15.0909,
-                 "id":109,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -602,8 +467,11 @@
                 }, 
                 {
                  "height":30,
-                 "id":110,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -613,8 +481,11 @@
                 }, 
                 {
                  "height":30,
-                 "id":111,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -624,8 +495,11 @@
                 }, 
                 {
                  "height":30.3333,
-                 "id":112,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -635,8 +509,11 @@
                 }, 
                 {
                  "height":32,
-                 "id":113,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -646,8 +523,11 @@
                 }, 
                 {
                  "height":34,
-                 "id":114,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -657,8 +537,11 @@
                 }, 
                 {
                  "height":120,
-                 "id":115,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -668,8 +551,11 @@
                 }, 
                 {
                  "height":14.5455,
-                 "id":116,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -679,8 +565,11 @@
                 }, 
                 {
                  "height":18,
-                 "id":117,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -690,8 +579,11 @@
                 }, 
                 {
                  "height":30,
-                 "id":118,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -701,8 +593,11 @@
                 }, 
                 {
                  "height":32,
-                 "id":119,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -712,8 +607,11 @@
                 }, 
                 {
                  "height":33,
-                 "id":120,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -723,8 +621,11 @@
                 }, 
                 {
                  "height":59,
-                 "id":121,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -734,8 +635,11 @@
                 }, 
                 {
                  "height":61,
-                 "id":122,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -745,8 +649,11 @@
                 }, 
                 {
                  "height":22,
-                 "id":123,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -756,8 +663,11 @@
                 }, 
                 {
                  "height":35,
-                 "id":124,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -767,8 +677,11 @@
                 }, 
                 {
                  "height":22,
-                 "id":125,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -778,8 +691,11 @@
                 }, 
                 {
                  "height":35,
-                 "id":126,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -789,8 +705,11 @@
                 }, 
                 {
                  "height":29,
-                 "id":127,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -800,8 +719,11 @@
                 }, 
                 {
                  "height":32,
-                 "id":128,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -811,8 +733,11 @@
                 }, 
                 {
                  "height":33,
-                 "id":129,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -822,8 +747,11 @@
                 }, 
                 {
                  "height":33,
-                 "id":130,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -833,8 +761,11 @@
                 }, 
                 {
                  "height":119,
-                 "id":131,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -844,8 +775,11 @@
                 }, 
                 {
                  "height":119,
-                 "id":132,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -855,8 +789,11 @@
                 }, 
                 {
                  "height":27,
-                 "id":133,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -866,8 +803,11 @@
                 }, 
                 {
                  "height":32,
-                 "id":134,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -877,8 +817,11 @@
                 }, 
                 {
                  "height":32,
-                 "id":135,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -888,8 +831,11 @@
                 }, 
                 {
                  "height":84,
-                 "id":137,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -899,8 +845,11 @@
                 }, 
                 {
                  "height":43,
-                 "id":138,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -910,8 +859,11 @@
                 }, 
                 {
                  "height":27.3333,
-                 "id":165,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -921,8 +873,11 @@
                 }, 
                 {
                  "height":26,
-                 "id":166,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -932,8 +887,11 @@
                 }, 
                 {
                  "height":58.6667,
-                 "id":167,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -943,8 +901,11 @@
                 }, 
                 {
                  "height":24.6667,
-                 "id":168,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -954,8 +915,11 @@
                 }, 
                 {
                  "height":125,
-                 "id":171,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -965,8 +929,11 @@
                 }, 
                 {
                  "height":57.182,
-                 "id":179,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -976,8 +943,11 @@
                 }, 
                 {
                  "height":207,
-                 "id":193,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -987,8 +957,11 @@
                 }, 
                 {
                  "height":398,
-                 "id":194,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -998,8 +971,11 @@
                 }, 
                 {
                  "height":127,
-                 "id":195,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1009,8 +985,11 @@
                 }, 
                 {
                  "height":28,
-                 "id":196,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1020,8 +999,11 @@
                 }, 
                 {
                  "height":24,
-                 "id":197,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1031,8 +1013,11 @@
                 }, 
                 {
                  "height":94.6667,
-                 "id":199,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1042,8 +1027,11 @@
                 }, 
                 {
                  "height":31.3333,
-                 "id":200,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1053,8 +1041,11 @@
                 }, 
                 {
                  "height":74,
-                 "id":201,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1064,8 +1055,11 @@
                 }, 
                 {
                  "height":30.6667,
-                 "id":202,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1075,8 +1069,11 @@
                 }, 
                 {
                  "height":40.6667,
-                 "id":203,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1086,8 +1083,11 @@
                 }, 
                 {
                  "height":16,
-                 "id":204,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1097,8 +1097,11 @@
                 }, 
                 {
                  "height":28.6667,
-                 "id":205,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1108,8 +1111,11 @@
                 }, 
                 {
                  "height":60.6667,
-                 "id":206,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1119,8 +1125,11 @@
                 }, 
                 {
                  "height":129.333,
-                 "id":207,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1130,8 +1139,11 @@
                 }, 
                 {
                  "height":28,
-                 "id":208,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1141,8 +1153,11 @@
                 }, 
                 {
                  "height":25.3333,
-                 "id":209,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1152,8 +1167,11 @@
                 }, 
                 {
                  "height":30.6667,
-                 "id":210,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1163,8 +1181,11 @@
                 }, 
                 {
                  "height":30,
-                 "id":211,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1174,8 +1195,11 @@
                 }, 
                 {
                  "height":30,
-                 "id":212,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1185,8 +1209,11 @@
                 }, 
                 {
                  "height":124.667,
-                 "id":213,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1196,8 +1223,11 @@
                 }, 
                 {
                  "height":14,
-                 "id":214,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1207,8 +1237,11 @@
                 }, 
                 {
                  "height":253.333,
-                 "id":215,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1218,8 +1251,11 @@
                 }, 
                 {
                  "height":22,
-                 "id":216,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1229,8 +1265,11 @@
                 }, 
                 {
                  "height":91.3333,
-                 "id":217,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1240,8 +1279,11 @@
                 }, 
                 {
                  "height":96.6667,
-                 "id":218,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1251,8 +1293,11 @@
                 }, 
                 {
                  "height":30,
-                 "id":219,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1262,8 +1307,11 @@
                 }, 
                 {
                  "height":30.6667,
-                 "id":221,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1273,8 +1321,11 @@
                 }, 
                 {
                  "height":32,
-                 "id":227,
                  "name":"",
+                 "properties":
+                    {
+
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1297,17 +1348,11 @@
                 {
                  "gid":85,
                  "height":32,
-                 "id":2,
                  "name":"player",
                  "properties":
                     {
                      "class":"Player",
                      "type":"player"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1319,7 +1364,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":3,
                  "name":"coin",
                  "properties":
                     {
@@ -1327,25 +1371,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1357,7 +1388,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":4,
                  "name":"coin",
                  "properties":
                     {
@@ -1365,25 +1395,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1395,7 +1412,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":5,
                  "name":"coin",
                  "properties":
                     {
@@ -1403,25 +1419,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1433,7 +1436,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":6,
                  "name":"coin",
                  "properties":
                     {
@@ -1441,25 +1443,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1471,7 +1460,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":7,
                  "name":"coin",
                  "properties":
                     {
@@ -1479,25 +1467,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1509,7 +1484,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":8,
                  "name":"coin",
                  "properties":
                     {
@@ -1517,25 +1491,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1547,7 +1508,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":9,
                  "name":"coin",
                  "properties":
                     {
@@ -1555,25 +1515,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1585,7 +1532,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":10,
                  "name":"coin",
                  "properties":
                     {
@@ -1593,25 +1539,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1623,7 +1556,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":11,
                  "name":"coin",
                  "properties":
                     {
@@ -1631,25 +1563,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1661,7 +1580,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":12,
                  "name":"coin",
                  "properties":
                     {
@@ -1669,25 +1587,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1699,7 +1604,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":13,
                  "name":"coin",
                  "properties":
                     {
@@ -1707,25 +1611,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1737,7 +1628,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":14,
                  "name":"coin",
                  "properties":
                     {
@@ -1745,25 +1635,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1775,7 +1652,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":15,
                  "name":"coin",
                  "properties":
                     {
@@ -1783,25 +1659,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1813,7 +1676,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":16,
                  "name":"coin",
                  "properties":
                     {
@@ -1821,25 +1683,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1851,7 +1700,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":17,
                  "name":"coin",
                  "properties":
                     {
@@ -1859,25 +1707,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1889,7 +1724,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":18,
                  "name":"coin",
                  "properties":
                     {
@@ -1897,25 +1731,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":0,
+                     "gravity":"0",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1927,7 +1748,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":19,
                  "name":"coin",
                  "properties":
                     {
@@ -1935,25 +1755,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":0,
+                     "gravity":"0",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -1965,7 +1772,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":20,
                  "name":"coin",
                  "properties":
                     {
@@ -1973,25 +1779,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":0,
+                     "gravity":"0",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2003,7 +1796,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":21,
                  "name":"coin",
                  "properties":
                     {
@@ -2011,25 +1803,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2041,7 +1820,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":22,
                  "name":"coin",
                  "properties":
                     {
@@ -2049,25 +1827,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2079,7 +1844,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":23,
                  "name":"coin",
                  "properties":
                     {
@@ -2087,25 +1851,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2117,7 +1868,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":24,
                  "name":"coin",
                  "properties":
                     {
@@ -2125,25 +1875,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2155,7 +1892,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":25,
                  "name":"coin",
                  "properties":
                     {
@@ -2163,25 +1899,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2193,7 +1916,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":26,
                  "name":"coin",
                  "properties":
                     {
@@ -2201,25 +1923,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2231,7 +1940,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":27,
                  "name":"coin",
                  "properties":
                     {
@@ -2239,25 +1947,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2269,7 +1964,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":28,
                  "name":"coin",
                  "properties":
                     {
@@ -2277,25 +1971,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2307,7 +1988,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":29,
                  "name":"coin",
                  "properties":
                     {
@@ -2315,25 +1995,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2345,7 +2012,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":30,
                  "name":"coin",
                  "properties":
                     {
@@ -2353,25 +2019,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2383,7 +2036,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":31,
                  "name":"coin",
                  "properties":
                     {
@@ -2391,25 +2043,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2421,7 +2060,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":32,
                  "name":"coin",
                  "properties":
                     {
@@ -2429,25 +2067,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2459,17 +2084,11 @@
                 {
                  "gid":101,
                  "height":32,
-                 "id":33,
                  "name":"flag",
                  "properties":
                     {
                      "class":"Flag",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2481,19 +2100,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":34,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"50",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2505,19 +2117,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":35,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"60",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2529,19 +2134,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":36,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"60",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2553,19 +2151,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":37,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"60",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2577,19 +2168,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":38,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"60",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2601,19 +2185,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":39,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"60",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2625,19 +2202,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":40,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"10",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2649,19 +2219,12 @@
                 {
                  "gid":112,
                  "height":32,
-                 "id":41,
                  "name":"mole",
                  "properties":
                     {
                      "class":"Mole",
-                     "id":0,
+                     "id":"0",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2673,35 +2236,20 @@
                 {
                  "gid":121,
                  "height":32,
-                 "id":42,
                  "name":"worm",
                  "properties":
                     {
-                     "amount":2,
+                     "amount":"2",
                      "anchor":"0.5,1",
                      "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"worms",
                      "size":"22,8,0,-10",
                      "sound":"pickup",
                      "sprite":"atlas,wormbullet_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "amount":"int",
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2713,7 +2261,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":43,
                  "name":"coin",
                  "properties":
                     {
@@ -2721,25 +2268,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":0,
+                     "gravity":"0",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2751,7 +2285,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":44,
                  "name":"coin",
                  "properties":
                     {
@@ -2759,25 +2292,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":0,
+                     "gravity":"0",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2789,7 +2309,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":45,
                  "name":"coin",
                  "properties":
                     {
@@ -2797,25 +2316,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":0,
+                     "gravity":"0",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2827,7 +2333,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":46,
                  "name":"coin",
                  "properties":
                     {
@@ -2835,25 +2340,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":0,
+                     "gravity":"0",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2865,7 +2357,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":47,
                  "name":"coin",
                  "properties":
                     {
@@ -2873,25 +2364,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2903,7 +2381,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":48,
                  "name":"coin",
                  "properties":
                     {
@@ -2911,25 +2388,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2941,7 +2405,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":49,
                  "name":"coin",
                  "properties":
                     {
@@ -2949,25 +2412,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -2979,7 +2429,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":50,
                  "name":"coin",
                  "properties":
                     {
@@ -2987,25 +2436,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3017,7 +2453,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":51,
                  "name":"coin",
                  "properties":
                     {
@@ -3025,25 +2460,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3055,7 +2477,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":52,
                  "name":"coin",
                  "properties":
                     {
@@ -3063,25 +2484,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3093,7 +2501,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":53,
                  "name":"coin",
                  "properties":
                     {
@@ -3101,25 +2508,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3131,7 +2525,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":54,
                  "name":"coin",
                  "properties":
                     {
@@ -3139,25 +2532,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3169,7 +2549,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":55,
                  "name":"coin",
                  "properties":
                     {
@@ -3177,25 +2556,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3207,7 +2573,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":56,
                  "name":"coin",
                  "properties":
                     {
@@ -3215,25 +2580,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3245,7 +2597,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":57,
                  "name":"coin",
                  "properties":
                     {
@@ -3253,25 +2604,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3283,7 +2621,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":58,
                  "name":"coin",
                  "properties":
                     {
@@ -3291,25 +2628,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3321,7 +2645,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":59,
                  "name":"coin",
                  "properties":
                     {
@@ -3329,25 +2652,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3359,7 +2669,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":60,
                  "name":"coin",
                  "properties":
                     {
@@ -3367,25 +2676,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3397,7 +2693,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":61,
                  "name":"coin",
                  "properties":
                     {
@@ -3405,25 +2700,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3435,7 +2717,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":62,
                  "name":"coin",
                  "properties":
                     {
@@ -3443,25 +2724,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3473,7 +2741,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":63,
                  "name":"coin",
                  "properties":
                     {
@@ -3481,25 +2748,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3511,7 +2765,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":64,
                  "name":"coin",
                  "properties":
                     {
@@ -3519,25 +2772,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3549,7 +2789,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":65,
                  "name":"coin",
                  "properties":
                     {
@@ -3557,25 +2796,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3587,7 +2813,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":66,
                  "name":"coin",
                  "properties":
                     {
@@ -3595,25 +2820,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3625,7 +2837,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":67,
                  "name":"coin",
                  "properties":
                     {
@@ -3633,25 +2844,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3663,7 +2861,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":68,
                  "name":"coin",
                  "properties":
                     {
@@ -3671,25 +2868,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3701,7 +2885,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":69,
                  "name":"coin",
                  "properties":
                     {
@@ -3709,25 +2892,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3739,7 +2909,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":70,
                  "name":"coin",
                  "properties":
                     {
@@ -3747,25 +2916,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3777,7 +2933,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":71,
                  "name":"coin",
                  "properties":
                     {
@@ -3785,25 +2940,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3815,7 +2957,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":72,
                  "name":"coin",
                  "properties":
                     {
@@ -3823,25 +2964,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3853,7 +2981,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":73,
                  "name":"coin",
                  "properties":
                     {
@@ -3861,25 +2988,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3891,7 +3005,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":74,
                  "name":"coin",
                  "properties":
                     {
@@ -3899,25 +3012,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3929,7 +3029,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":75,
                  "name":"coin",
                  "properties":
                     {
@@ -3937,25 +3036,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -3967,7 +3053,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":76,
                  "name":"coin",
                  "properties":
                     {
@@ -3975,25 +3060,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4005,7 +3077,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":77,
                  "name":"coin",
                  "properties":
                     {
@@ -4013,25 +3084,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4043,7 +3101,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":78,
                  "name":"coin",
                  "properties":
                     {
@@ -4051,25 +3108,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4081,7 +3125,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":79,
                  "name":"coin",
                  "properties":
                     {
@@ -4089,25 +3132,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4119,7 +3149,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":80,
                  "name":"coin",
                  "properties":
                     {
@@ -4127,25 +3156,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4157,7 +3173,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":81,
                  "name":"coin",
                  "properties":
                     {
@@ -4165,25 +3180,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4195,7 +3197,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":82,
                  "name":"coin",
                  "properties":
                     {
@@ -4203,25 +3204,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4233,7 +3221,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":83,
                  "name":"coin",
                  "properties":
                     {
@@ -4241,25 +3228,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4271,7 +3245,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":84,
                  "name":"coin",
                  "properties":
                     {
@@ -4279,25 +3252,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4309,7 +3269,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":85,
                  "name":"coin",
                  "properties":
                     {
@@ -4317,25 +3276,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4347,19 +3293,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":86,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"20",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4371,19 +3310,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":87,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"60",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4395,19 +3327,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":88,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"60",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4419,19 +3344,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":89,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"60",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4443,19 +3361,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":90,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"10",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4467,19 +3378,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":91,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"60",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4491,19 +3395,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":92,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"20",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4515,19 +3412,12 @@
                 {
                  "gid":102,
                  "height":32,
-                 "id":93,
                  "name":"turtle",
                  "properties":
                     {
                      "class":"Tourtle",
                      "move":"10",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "move":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4539,19 +3429,12 @@
                 {
                  "gid":112,
                  "height":32,
-                 "id":144,
                  "name":"mole",
                  "properties":
                     {
                      "class":"Mole",
-                     "id":1,
+                     "id":"1",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4563,19 +3446,12 @@
                 {
                  "gid":112,
                  "height":32,
-                 "id":146,
                  "name":"mole",
                  "properties":
                     {
                      "class":"Mole",
-                     "id":2,
+                     "id":"2",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4587,35 +3463,20 @@
                 {
                  "gid":121,
                  "height":32,
-                 "id":148,
                  "name":"worm",
                  "properties":
                     {
-                     "amount":2,
+                     "amount":"2",
                      "anchor":"0.5,1",
                      "animation":"wormbullet_0000,wormbullet_0001,wormbullet_0002,wormbullet_0001,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":0,
+                     "gravity":"0",
                      "name":"worms",
                      "size":"22,8,0,-10",
                      "sound":"pickup",
                      "sprite":"atlas,wormbullet_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "amount":"int",
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4627,19 +3488,12 @@
                 {
                  "gid":112,
                  "height":32,
-                 "id":149,
                  "name":"mole",
                  "properties":
                     {
                      "class":"Mole",
-                     "id":3,
+                     "id":"3",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4651,19 +3505,12 @@
                 {
                  "gid":112,
                  "height":32,
-                 "id":152,
                  "name":"mole",
                  "properties":
                     {
                      "class":"Mole",
-                     "id":4,
+                     "id":"4",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4675,7 +3522,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":155,
                  "name":"coin",
                  "properties":
                     {
@@ -4683,25 +3529,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":0,
+                     "gravity":"0",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4713,7 +3546,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":156,
                  "name":"coin",
                  "properties":
                     {
@@ -4721,25 +3553,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4751,7 +3570,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":157,
                  "name":"coin",
                  "properties":
                     {
@@ -4759,25 +3577,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4789,7 +3594,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":158,
                  "name":"coin",
                  "properties":
                     {
@@ -4797,25 +3601,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4827,7 +3618,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":159,
                  "name":"coin",
                  "properties":
                     {
@@ -4835,25 +3625,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4865,7 +3642,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":160,
                  "name":"coin",
                  "properties":
                     {
@@ -4873,25 +3649,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4903,7 +3666,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":161,
                  "name":"coin",
                  "properties":
                     {
@@ -4911,25 +3673,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4941,7 +3690,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":162,
                  "name":"coin",
                  "properties":
                     {
@@ -4949,25 +3697,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -4979,7 +3714,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":163,
                  "name":"coin",
                  "properties":
                     {
@@ -4987,25 +3721,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -5017,7 +3738,6 @@
                 {
                  "gid":93,
                  "height":16,
-                 "id":164,
                  "name":"coin",
                  "properties":
                     {
@@ -5025,25 +3745,12 @@
                      "animation":"coin_0000,coin_0001,coin_0002,coin_0003,coin_0004,coin_0005,5",
                      "bounce":"1",
                      "class":"Collectable",
-                     "gravity":100,
+                     "gravity":"100",
                      "name":"coins",
                      "size":"16,16",
                      "sound":"pickup",
                      "sprite":"atlas,coin_0000",
                      "type":"collectable"
-                    },
-                 "propertytypes":
-                    {
-                     "anchor":"string",
-                     "animation":"string",
-                     "bounce":"string",
-                     "class":"string",
-                     "gravity":"float",
-                     "name":"string",
-                     "size":"string",
-                     "sound":"string",
-                     "sprite":"string",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -5055,19 +3762,12 @@
                 {
                  "gid":112,
                  "height":32,
-                 "id":169,
                  "name":"mole",
                  "properties":
                     {
                      "class":"Mole",
-                     "id":5,
+                     "id":"5",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -5079,19 +3779,12 @@
                 {
                  "gid":112,
                  "height":32,
-                 "id":174,
                  "name":"mole",
                  "properties":
                     {
                      "class":"Mole",
-                     "id":6,
+                     "id":"6",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -5103,19 +3796,12 @@
                 {
                  "gid":130,
                  "height":32,
-                 "id":190,
                  "name":"Trapdoor",
                  "properties":
                     {
                      "class":"TrapDoor",
-                     "id":-1,
+                     "id":"-1",
                      "type":"interactable"
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -5127,21 +3813,13 @@
                 {
                  "gid":137,
                  "height":64,
-                 "id":224,
                  "name":"Lava",
                  "properties":
                     {
                      "class":"Lava",
-                     "id":7,
+                     "id":"7",
                      "type":"interactable",
-                     "width":6
-                    },
-                 "propertytypes":
-                    {
-                     "class":"string",
-                     "id":"int",
-                     "type":"string",
-                     "width":"int"
+                     "width":"6"
                     },
                  "rotation":0,
                  "type":"",
@@ -5157,19 +3835,25 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":240,
  "orientation":"orthogonal",
+ "properties":
+    {
+
+    },
  "renderorder":"right-down",
  "tileheight":32,
  "tilesets":[
         {
-         "columns":12,
          "firstgid":1,
          "image":"..\/..\/rawassets\/tmp\/ground2.png",
          "imageheight":224,
          "imagewidth":384,
          "margin":0,
          "name":"ground2",
+         "properties":
+            {
+
+            },
          "spacing":0,
          "terrains":[
                 {
@@ -5184,7 +3868,6 @@
                  "name":"Stone",
                  "tile":13
                 }],
-         "tilecount":84,
          "tileheight":32,
          "tiles":
             {
@@ -5198,8 +3881,11 @@
                      "objects":[
                             {
                              "height":13,
-                             "id":0,
                              "name":"",
+                             "properties":
+                                {
+
+                                },
                              "rotation":0,
                              "type":"",
                              "visible":true,
@@ -5230,7 +3916,6 @@
                      "objects":[
                             {
                              "height":0,
-                             "id":0,
                              "name":"",
                              "polygon":[
                                     {
@@ -5245,6 +3930,10 @@
                                      "x":18,
                                      "y":18
                                     }],
+                             "properties":
+                                {
+
+                                },
                              "rotation":0,
                              "type":"",
                              "visible":true,
@@ -5271,7 +3960,6 @@
                      "objects":[
                             {
                              "height":0,
-                             "id":0,
                              "name":"",
                              "polygon":[
                                     {
@@ -5286,6 +3974,10 @@
                                      "x":0,
                                      "y":14
                                     }],
+                             "properties":
+                                {
+
+                                },
                              "rotation":0,
                              "type":"",
                              "visible":true,
@@ -5312,7 +4004,6 @@
                      "objects":[
                             {
                              "height":0,
-                             "id":0,
                              "name":"",
                              "polygon":[
                                     {
@@ -5327,6 +4018,10 @@
                                      "x":18,
                                      "y":13
                                     }],
+                             "properties":
+                                {
+
+                                },
                              "rotation":0,
                              "type":"",
                              "visible":true,
@@ -5377,7 +4072,6 @@
                      "objects":[
                             {
                              "height":0,
-                             "id":0,
                              "name":"",
                              "polygon":[
                                     {
@@ -5404,6 +4098,10 @@
                                      "x":1,
                                      "y":30
                                     }],
+                             "properties":
+                                {
+
+                                },
                              "rotation":0,
                              "type":"",
                              "visible":true,
@@ -5470,7 +4168,6 @@
                      "objects":[
                             {
                              "height":0,
-                             "id":0,
                              "name":"",
                              "polygon":[
                                     {
@@ -5497,6 +4194,10 @@
                                      "x":17,
                                      "y":0
                                     }],
+                             "properties":
+                                {
+
+                                },
                              "rotation":0,
                              "type":"",
                              "visible":true,
@@ -5647,8 +4348,11 @@
                      "objects":[
                             {
                              "height":31,
-                             "id":0,
                              "name":"",
+                             "properties":
+                                {
+
+                                },
                              "rotation":0,
                              "type":"",
                              "visible":true,
@@ -5715,8 +4419,11 @@
                      "objects":[
                             {
                              "height":31,
-                             "id":0,
                              "name":"",
+                             "properties":
+                                {
+
+                                },
                              "rotation":0,
                              "type":"",
                              "visible":true,
@@ -5747,8 +4454,11 @@
                      "objects":[
                             {
                              "height":16,
-                             "id":0,
                              "name":"",
+                             "properties":
+                                {
+
+                                },
                              "rotation":0,
                              "type":"",
                              "visible":true,
@@ -5775,7 +4485,6 @@
                      "objects":[
                             {
                              "height":0,
-                             "id":0,
                              "name":"",
                              "polygon":[
                                     {
@@ -5790,6 +4499,10 @@
                                      "x":0,
                                      "y":-16
                                     }],
+                             "properties":
+                                {
+
+                                },
                              "rotation":0,
                              "type":"",
                              "visible":true,
@@ -5810,28 +4523,23 @@
          "tilewidth":32
         }, 
         {
-         "columns":8,
          "firstgid":85,
          "image":"..\/..\/rawassets\/tmp\/jack.png",
          "imageheight":32,
          "imagewidth":256,
          "margin":0,
          "name":"jack",
+         "properties":
+            {
+
+            },
          "spacing":0,
-         "tilecount":8,
          "tileheight":32,
          "tileproperties":
             {
              "0":
                 {
                  "type":"player"
-                }
-            },
-         "tilepropertytypes":
-            {
-             "0":
-                {
-                 "type":"string"
                 }
             },
          "tiles":
@@ -5860,15 +4568,17 @@
          "tilewidth":32
         }, 
         {
-         "columns":7,
          "firstgid":93,
          "image":"..\/..\/rawassets\/tmp\/coin.png",
          "imageheight":16,
          "imagewidth":112,
          "margin":0,
          "name":"coin",
+         "properties":
+            {
+
+            },
          "spacing":0,
-         "tilecount":7,
          "tileheight":16,
          "tiles":
             {
@@ -5904,41 +4614,47 @@
          "tilewidth":16
         }, 
         {
-         "columns":1,
          "firstgid":100,
          "image":"..\/..\/rawassets\/tmp\/leader.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
          "name":"leader",
+         "properties":
+            {
+
+            },
          "spacing":0,
-         "tilecount":1,
          "tileheight":32,
          "tilewidth":32
         }, 
         {
-         "columns":1,
          "firstgid":101,
          "image":"..\/..\/rawassets\/tmp\/flag.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
          "name":"flag",
+         "properties":
+            {
+
+            },
          "spacing":0,
-         "tilecount":1,
          "tileheight":32,
          "tilewidth":32
         }, 
         {
-         "columns":5,
          "firstgid":102,
          "image":"..\/..\/rawassets\/tmp\/tourtle.png",
          "imageheight":32,
          "imagewidth":160,
          "margin":0,
          "name":"tourtle",
+         "properties":
+            {
+
+            },
          "spacing":0,
-         "tilecount":5,
          "tileheight":32,
          "tiles":
             {
@@ -5974,15 +4690,17 @@
          "tilewidth":32
         }, 
         {
-         "columns":5,
          "firstgid":107,
          "image":"..\/..\/rawassets\/tmp\/enemy.png",
          "imageheight":32,
          "imagewidth":160,
          "margin":0,
          "name":"enemy",
+         "properties":
+            {
+
+            },
          "spacing":0,
-         "tilecount":5,
          "tileheight":32,
          "tiles":
             {
@@ -6010,15 +4728,17 @@
          "tilewidth":32
         }, 
         {
-         "columns":9,
          "firstgid":112,
          "image":"..\/..\/rawassets\/tmp\/mole.png",
          "imageheight":32,
          "imagewidth":288,
          "margin":0,
          "name":"mole",
+         "properties":
+            {
+
+            },
          "spacing":0,
-         "tilecount":9,
          "tileheight":32,
          "tiles":
             {
@@ -6046,15 +4766,17 @@
          "tilewidth":32
         }, 
         {
-         "columns":9,
          "firstgid":121,
          "image":"..\/..\/rawassets\/tmp\/wormbullet.png",
          "imageheight":32,
          "imagewidth":288,
          "margin":0,
          "name":"wormbullet",
+         "properties":
+            {
+
+            },
          "spacing":0,
-         "tilecount":9,
          "tileheight":32,
          "tiles":
             {
@@ -6110,28 +4832,32 @@
          "tilewidth":32
         }, 
         {
-         "columns":2,
          "firstgid":130,
          "image":"..\/..\/rawassets\/tmp\/trapdoor.png",
          "imageheight":32,
          "imagewidth":128,
          "margin":0,
          "name":"trapdoor",
+         "properties":
+            {
+
+            },
          "spacing":0,
-         "tilecount":2,
          "tileheight":32,
          "tilewidth":64
         }, 
         {
-         "columns":5,
          "firstgid":132,
          "image":"..\/..\/rawassets\/tmp\/lever.png",
          "imageheight":32,
          "imagewidth":160,
          "margin":0,
          "name":"lever",
+         "properties":
+            {
+
+            },
          "spacing":0,
-         "tilecount":5,
          "tileheight":32,
          "tiles":
             {
@@ -6175,15 +4901,17 @@
          "tilewidth":32
         }, 
         {
-         "columns":8,
          "firstgid":137,
          "image":"..\/..\/rawassets\/tmp\/lavaanim.png",
          "imageheight":64,
          "imagewidth":256,
          "margin":0,
          "name":"lavaanim",
+         "properties":
+            {
+
+            },
          "spacing":0,
-         "tilecount":8,
          "tileheight":64,
          "tiles":
             {
