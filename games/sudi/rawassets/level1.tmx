@@ -452,13 +452,13 @@
     <property name="trigger_once" value="false"/>
    </properties>
   </object>
-  <object name="trigger" x="1544.59" y="386.727" width="12.1515" height="46.5455">
+  <object name="trigger" x="1549.92" y="390.727" width="12.1515" height="46.5455">
    <properties>
     <property name="behaviour" value=""/>
     <property name="target" value="8"/>
     <property name="target_name" value=""/>
     <property name="trigger_frame" value="false"/>
-    <property name="trigger_once" value="false"/>
+    <property name="trigger_once" value="true"/>
    </properties>
   </object>
   <object name="trigger" x="549.924" y="652.394" width="17.4849" height="31.8788">
@@ -675,7 +675,7 @@
   <object x="1169" y="691" width="30" height="29"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="player" gid="85" x="90.6633" y="422.167" width="32" height="32">
+  <object name="player" gid="85" x="82.6633" y="424.833" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
