@@ -62,6 +62,10 @@ TrapDoor.prototype.close = function() {
 }
 
 TrapDoor.prototype.interact = function(entity) {
+
+};
+
+TrapDoor.prototype.trigger = function (t, player) {
   if (this.opened && this.sprite.angle <= -90) {
     this.sprite.body.setSize(64, 10, 0, 0);
     this.opened = false;
@@ -69,9 +73,6 @@ TrapDoor.prototype.interact = function(entity) {
     this.sprite.body.setSize(10, 64, 0, 0);
     this.opened = true;
   }
-};
-
-TrapDoor.prototype.trigger = function (t, player) {
 };
 
 TrapDoor.prototype.trigger_end = function (t, player) {

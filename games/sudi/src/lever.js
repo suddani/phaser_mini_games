@@ -60,7 +60,8 @@ Lever.prototype.switch = function(entity) {
 }
 
 Lever.prototype.interact = function(entity) {
-  this.switch(entity);
+  if (JSON.parse(this.get("interact")))
+    this.switch(entity);
 };
 
 Lever.prototype.trigger = function (t, player) {

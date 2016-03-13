@@ -442,6 +442,7 @@
                  "properties":
                     {
                      "class":"Lever",
+                     "interact":"false",
                      "target":"-1",
                      "type":"interactable"
                     },
@@ -4239,6 +4240,7 @@
                  "properties":
                     {
                      "class":"Lever",
+                     "interact":"false",
                      "target":"20",
                      "type":"interactable"
                     },

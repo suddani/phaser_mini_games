@@ -499,6 +499,7 @@
   <object name="lever" gid="132" x="622.667" y="-66.6667" width="32" height="32">
    <properties>
     <property name="class" value="Lever"/>
+    <property name="interact" value="false"/>
     <property name="target" value="-1"/>
     <property name="type" value="interactable"/>
    </properties>
@@ -2061,6 +2062,7 @@
   <object name="lever" gid="132" x="1553.33" y="433.333" width="32" height="32">
    <properties>
     <property name="class" value="Lever"/>
+    <property name="interact" value="false"/>
     <property name="target" value="20"/>
     <property name="type" value="interactable"/>
    </properties>
