@@ -54,7 +54,7 @@ Player.prototype.setPosition = function(x,y) {
 }
 
 Player.prototype.damage = function(ammount) {
-  this.kill();
+  // this.kill();
 }
 
 Player.prototype.reset_body_size = function() {

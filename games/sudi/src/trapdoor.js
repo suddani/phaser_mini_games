@@ -43,11 +43,14 @@ TrapDoor.prototype.damage = function(ammount) {
 };
 
 TrapDoor.prototype.update = function(dt) {
-  if (this.opened && this.sprite.angle < 90)  {
-    this.sprite.angle += 45*dt;
-  } else if (!this.opened && this.sprite.angle>=0) {
+  if (this.opened && this.sprite.angle > -90)  {
     this.sprite.angle -= 45*dt;
-  }
+  } else if (!this.opened && this.sprite.angle < 0) {
+    this.sprite.angle += 45*dt;
+  } else if (this.sprite.angle>0)
+    this.sprite.angle = 0;
+  else if (this.sprite.angle<-90)
+    this.sprite.angle = -90;
 };
 
 TrapDoor.prototype.open = function() {
@@ -59,10 +62,13 @@ TrapDoor.prototype.close = function() {
 }
 
 TrapDoor.prototype.interact = function(entity) {
-  if (this.opened && this.sprite.angle >= 90)
+  if (this.opened && this.sprite.angle <= -90) {
+    this.sprite.body.setSize(64, 10, 0, 0);
     this.opened = false;
-  else if (!this.opened && this.sprite.angle<=0)
+  } else if (!this.opened && this.sprite.angle>=0) {
+    this.sprite.body.setSize(10, 64, 0, 0);
     this.opened = true;
+  }
 };
 
 TrapDoor.prototype.trigger = function (t, player) {

@@ -61,17 +61,11 @@ Trigger.prototype.update = function(dt) {
 };
 
 Trigger.prototype.beginInteraction = function(entity) {
-  // console.log("Begin touch")
-  var target = this.manager.getById(parseInt(this.get("target")));
-  // crash like hell here otherwise we dont know whats wrong
-  if (target) target.trigger(this, entity);
+  this.manager.triggerById(parseInt(this.get("target")), this, entity, true);
 };
 
 Trigger.prototype.endInteraction = function(entity) {
-  // console.log("End touch")
-  var target = this.manager.getById(parseInt(this.get("target")));
-  // crash like hell here otherwise we dont know whats wrong
-  if (target) target.trigger_end(this, entity);
+  this.manager.triggerById(parseInt(this.get("target")), this, entity, false);
 };
 
 return Trigger;

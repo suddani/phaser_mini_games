@@ -141,6 +141,20 @@
                  "width":343.333,
                  "x":141.333,
                  "y":27.6667
+                }, 
+                {
+                 "height":22.5,
+                 "name":"",
+                 "properties":
+                    {
+                     "target":"20"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":39.5,
+                 "x":973.5,
+                 "y":400
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -236,23 +250,6 @@
                  "width":32,
                  "x":582.333,
                  "y":-66
-                }, 
-                {
-                 "gid":130,
-                 "height":32,
-                 "name":"Trapdoor",
-                 "properties":
-                    {
-                     "class":"TrapDoor",
-                     "id":"-1",
-                     "type":"interactable"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":64,
-                 "x":63.6667,
-                 "y":824.333
                 }, 
                 {
                  "gid":132,
@@ -354,6 +351,24 @@
                  "width":16,
                  "x":363.178,
                  "y":-67.303
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"false",
+                     "id":"-1",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":790,
+                 "y":-67.3333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1036,8 +1051,8 @@
                  "type":"",
                  "visible":true,
                  "width":57.3334,
-                 "x":18,
-                 "y":813.667
+                 "x":18.3333,
+                 "y":816.334
                 }, 
                 {
                  "height":74,
@@ -1358,8 +1373,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":84.33,
-                 "y":414
+                 "x":1054.99666666667,
+                 "y":363.166666666667
                 }, 
                 {
                  "gid":93,
@@ -3827,6 +3842,95 @@
                  "width":32,
                  "x":244.333,
                  "y":890.667
+                }, 
+                {
+                 "gid":130,
+                 "height":32,
+                 "name":"Trapdoor",
+                 "properties":
+                    {
+                     "class":"TrapDoor",
+                     "id":"-1",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":64,
+                 "x":63.6667,
+                 "y":827.333
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"true",
+                     "id":"20",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1000,
+                 "y":372
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"true",
+                     "id":"20",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":955,
+                 "y":344.5
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"true",
+                     "id":"20",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1003,
+                 "y":309.5
+                }, 
+                {
+                 "gid":145,
+                 "height":0,
+                 "name":"cloud",
+                 "properties":
+                    {
+                     "class":"Cloud",
+                     "despawn":"true",
+                     "id":"20",
+                     "type":"interactable"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":948,
+                 "y":285
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -4913,6 +5017,60 @@
             },
          "spacing":0,
          "tileheight":64,
+         "tiles":
+            {
+             "0":
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":0
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":2
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":3
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":4
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":5
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":6
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":7
+                        }]
+                }
+            },
+         "tilewidth":32
+        }, 
+        {
+         "firstgid":145,
+         "image":"..\/..\/rawassets\/tmp\/cloud.png",
+         "imageheight":32,
+         "imagewidth":256,
+         "margin":0,
+         "name":"cloud",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
          "tiles":
             {
              "0":

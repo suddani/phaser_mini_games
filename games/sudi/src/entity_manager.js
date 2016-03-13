@@ -92,6 +92,18 @@ EntityManager.prototype.create_entity_from_element = function(element) {
   }
 }
 
+EntityManager.prototype.triggerById = function(id, trigger, trigger_entity, starting) {
+  for (var g in this.groups) {
+    this.groups[g].forEachAlive(function(member) {
+      if (member.entity && member.entity.id == id){
+        var target = member.entity;
+        if (target && starting) target.trigger(trigger, trigger_entity);
+        else if (target && !starting) target.trigger_end(trigger, trigger_entity);
+      }
+    }, this);
+  }
+}
+
 EntityManager.prototype.getById = function(id) {
   // console.log("Find entity: "+id)
   var entity = null;
@@ -118,7 +130,9 @@ EntityManager.prototype.update = function(dt) {
     return true;
   }, function(player, interactable) {
     //this is for ladders...
-    return interactable.entity.dead_timer == null;
+    var check = interactable.entity.dead_timer == null && (interactable.entity.shouldCollide ? interactable.entity.shouldCollide(player.entity) : true);
+    console.log("Shoudl check collision between player and interactable: "+check);
+    return check;
   }, this);
   this.state.game.physics.arcade.collide(this.groups["bullet"], this.worldGeometry, function(bullet, folliage) {
     bullet.entity.kill();
@@ -155,7 +169,7 @@ EntityManager.prototype.update = function(dt) {
 }
 
 EntityManager.prototype.render = function() {
-  if (this.debug) {
+  if (this.debug=true) {
     for (var g in this.groups) {
       this.groups[g].forEach(function(member) {
         this.state.game.debug.body(member);

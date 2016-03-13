@@ -18,8 +18,8 @@ class PiskelFile
       height= image.height
       config_path = Pathname.new img_path.to_s+".config"
       puts "Config File? #{config_path} : #{config_path.file?}"
-      config = config_path.file? ? JSON.parse(config_path.read) : {"spritesheet": true, config: nil}
-      frameCount = config["spritesheet"] ? width/height : 1
+      config = config_path.file? ? JSON.parse(config_path.read) : {"spritesheet": true, config: nil, frames: nil}
+      frameCount = config["spritesheet"] ? (config["frames"] ? config["frames"] : width/height) : 1
       frameWidth = config["spritesheet"] ? width/frameCount : width
       {
         modelVersion: 2,
