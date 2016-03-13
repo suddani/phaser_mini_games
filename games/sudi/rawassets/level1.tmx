@@ -326,7 +326,7 @@
     <property name="trigger_once" value="false"/>
    </properties>
   </object>
-  <object name="trigger" x="1144" y="377" width="406" height="53">
+  <object name="trigger" x="1144" y="377" width="357" height="57">
    <properties>
     <property name="behaviour" value=""/>
     <property name="target" value="2"/>
@@ -434,6 +434,24 @@
    <properties>
     <property name="behaviour" value=""/>
     <property name="target" value="80"/>
+    <property name="target_name" value=""/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
+   </properties>
+  </object>
+  <object name="trigger" x="73.9242" y="456.061" width="69.4849" height="10.5455">
+   <properties>
+    <property name="behaviour" value=""/>
+    <property name="target" value="11"/>
+    <property name="target_name" value=""/>
+    <property name="trigger_frame" value="false"/>
+    <property name="trigger_once" value="false"/>
+   </properties>
+  </object>
+  <object name="trigger" x="1293.22" y="742.031" width="69.4849" height="10.5455">
+   <properties>
+    <property name="behaviour" value=""/>
+    <property name="target" value="12"/>
     <property name="target_name" value=""/>
     <property name="trigger_frame" value="false"/>
     <property name="trigger_once" value="false"/>
@@ -615,7 +633,7 @@
   <object x="1169" y="691" width="30" height="29"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="player" gid="85" x="1168.33" y="686.5" width="32" height="32">
+  <object name="player" gid="85" x="1248" y="643.5" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
@@ -2753,6 +2771,30 @@
    <properties>
     <property name="class" value="Lever"/>
     <property name="type" value="interactable"/>
+   </properties>
+  </object>
+  <object name="music" x="66" y="508" width="44" height="48">
+   <properties>
+    <property name="class" value="Music"/>
+    <property name="id" value="11"/>
+    <property name="music" value="cave"/>
+    <property name="type" value="none"/>
+   </properties>
+  </object>
+  <object name="music" x="1281.3" y="799.303" width="44" height="48">
+   <properties>
+    <property name="class" value="Music"/>
+    <property name="id" value="12"/>
+    <property name="music" value="boss"/>
+    <property name="type" value="none"/>
+   </properties>
+  </object>
+  <object name="music" x="1530" y="744" width="44" height="48">
+   <properties>
+    <property name="class" value="Music"/>
+    <property name="id" value="99"/>
+    <property name="music" value="win"/>
+    <property name="type" value="none"/>
    </properties>
   </object>
  </objectgroup>

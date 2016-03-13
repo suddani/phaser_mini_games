@@ -71,7 +71,7 @@
                  "y":117
                 }, 
                 {
-                 "height":53,
+                 "height":57,
                  "name":"trigger",
                  "properties":
                     {
@@ -84,7 +84,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":406,
+                 "width":357,
                  "x":1144,
                  "y":377
                 }, 
@@ -299,6 +299,42 @@
                  "width":29.4848666666668,
                  "x":628.5909,
                  "y":634.72725
+                }, 
+                {
+                 "height":10.5455,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":"11",
+                     "target_name":"",
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":69.4848666666666,
+                 "x":73.9242333333333,
+                 "y":456.060583333333
+                }, 
+                {
+                 "height":10.5455,
+                 "name":"trigger",
+                 "properties":
+                    {
+                     "behaviour":"",
+                     "target":"12",
+                     "target_name":"",
+                     "trigger_frame":"false",
+                     "trigger_once":"false"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":69.4849,
+                 "x":1293.21965,
+                 "y":742.0305
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1615,8 +1651,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1168.33,
-                 "y":686.5
+                 "x":1247.99666666667,
+                 "y":643.5
                 }, 
                 {
                  "gid":93,
@@ -5611,6 +5647,57 @@
                  "width":32,
                  "x":558,
                  "y":689
+                }, 
+                {
+                 "height":48,
+                 "name":"music",
+                 "properties":
+                    {
+                     "class":"Music",
+                     "id":"11",
+                     "music":"cave",
+                     "type":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":44,
+                 "x":66,
+                 "y":508
+                }, 
+                {
+                 "height":48,
+                 "name":"music",
+                 "properties":
+                    {
+                     "class":"Music",
+                     "id":"12",
+                     "music":"boss",
+                     "type":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":44,
+                 "x":1281.29545,
+                 "y":799.302833333333
+                }, 
+                {
+                 "height":48,
+                 "name":"music",
+                 "properties":
+                    {
+                     "class":"Music",
+                     "id":"99",
+                     "music":"win",
+                     "type":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":44,
+                 "x":1530,
+                 "y":744
                 }],
          "opacity":1,
          "type":"objectgroup",

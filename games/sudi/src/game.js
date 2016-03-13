@@ -42,7 +42,7 @@ function(Physics, Map, EntityManager, Collectable, SoundSystem, HUD, Spritesheet
     HUD.init(this);
     Collectable.totalCount = {};
 
-    SoundSystem.theme("cave");
+    SoundSystem.theme("standard");
 
     this.entity_manager = new EntityManager(this);
 

@@ -13,7 +13,8 @@ SoundSystem.prototype.init = function(game) {
   this.music = {
     "standard": this.game.add.audio("Netherplace_Looping", 1, true, true),
     "boss": this.game.add.audio("Goblin-Loop", 1, true, true),
-    "cave": this.game.add.audio("Secret-Journey_Looping", 1, true, true)
+    "cave": this.game.add.audio("Secret-Journey_Looping", 1, true, true),
+    "win": this.game.add.audio("Dont-Mess-with-the-8-Bit-Knight", 1, true, true)
   }
 };
 
@@ -31,6 +32,7 @@ SoundSystem.prototype.preload = function(game) {
   this.game.load.audio('Netherplace_Looping', 'audio/Netherplace_Looping.mp3');
   this.game.load.audio('Goblin-Loop', 'audio/Goblin-Loop.mp3');
   this.game.load.audio('Secret-Journey_Looping', 'audio/Secret-Journey_Looping.mp3');
+  this.game.load.audio('Dont-Mess-with-the-8-Bit-Knight', 'audio/Dont-Mess-with-the-8-Bit-Knight.mp3');
 };
 
 SoundSystem.prototype.play = function(name) {
