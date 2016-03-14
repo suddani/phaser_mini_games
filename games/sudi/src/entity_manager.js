@@ -149,7 +149,7 @@ EntityManager.prototype.update = function(dt) {
   this.state.game.physics.arcade.collide(this.groups["bullet"], this.groups["player"], function(bullet, player) {
     bullet.entity.interact(player.entity);
   }, function(bullet, player) {
-    return bullet.entity.owner != player.entity;
+    return bullet.entity.owner != player.entity && (bullet.entity.shouldCollide ? bullet.entity.shouldCollide(player.entity) : true);
   }, this);
   this.state.game.physics.arcade.overlap(this.groups["player"], this.groups["trigger"], function(player, trigger) {
 

@@ -20,6 +20,10 @@ function Bullet(state, group) {
   this.sprite.body.bounce.set(0);
 };
 
+Bullet.prototype.shouldCollide = function(entity) {
+  return this.dead_timer== null;
+}
+
 Bullet.prototype.kill = function () {
   this.dead_timer = 0.5;
   this.sprite.play("die", 10);
