@@ -172,6 +172,12 @@ I hope this explains the system enough. Have fun coding
 - http://www.bfxr.net/
 - http://audiojungle.net/
 - http://www.freesound.org/search/
+- http://soundimage.org/
+
+# Graphics
+- https://krita.org/
+- http://www.piskelapp.com/
+- https://www.gimp.org/
 
 # TODO
 - Replace Coin and Worm with a generic Collectable that can be configured
