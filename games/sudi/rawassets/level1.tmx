@@ -684,7 +684,7 @@
   <object x="143" y="749" width="31" height="34"/>
  </objectgroup>
  <objectgroup name="entities">
-  <object name="player" gid="85" x="85.6633" y="428.167" width="32" height="32">
+  <object name="player" gid="85" x="86.6633" y="420.167" width="32" height="32">
    <properties>
     <property name="class" value="Player"/>
     <property name="type" value="player"/>
@@ -2886,7 +2886,7 @@
     <property name="type" value="none"/>
    </properties>
   </object>
-  <object name="NPC" gid="107" x="148" y="817.333">
+  <object name="NPC" gid="107" x="143" y="817.333">
    <properties>
     <property name="class" value="NPC"/>
     <property name="has_coins" value="67"/>
