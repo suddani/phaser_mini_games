@@ -12,7 +12,7 @@ function(Physics, Map, EntityManager, Collectable, SoundSystem, HUD, Spritesheet
   };
   Main.prototype.init = function() {
     console.log("init sudi game");
-    addLoadingScreen(this);
+    addLoadingScreen(this, false);
   };
   Main.prototype.preload = function() {
     this.load.path = 'games/' + currentGameData.id + '/assets/';
@@ -28,10 +28,12 @@ function(Physics, Map, EntityManager, Collectable, SoundSystem, HUD, Spritesheet
     SoundSystem.preload(this);
   };
   Main.prototype.create = function() {
-    this.game.time.advancedTiming = true;
-    var self = this;
     Pad.init(this.game);
-    removeLoadingScreen();
+
+
+  }
+  Main.prototype.mycreate = function() {
+    this.game.time.advancedTiming = true;
 
     SpritesheetGenerator.init(this.game);
 
@@ -56,13 +58,15 @@ function(Physics, Map, EntityManager, Collectable, SoundSystem, HUD, Spritesheet
   };
   Main.prototype.update = function() {
     var dt = this.time.physicsElapsedMS * 0.001;
-    this.entity_manager.update(dt);
-    HUD.update();
+    if (this.entity_manager) {
+      this.entity_manager.update(dt);
+      HUD.update();
+    }
   };
   Main.prototype.render = function() {
     // game.debug.text(game.time.suggestedFps, 32, 32);
     this.game.debug.text(game.time.fps, 2, 14, "#00ff00");
-    this.entity_manager.render();
+    if (this.entity_manager) this.entity_manager.render();
   };
   return Main;
 }]);
